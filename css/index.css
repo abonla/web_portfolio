@@ -411,6 +411,12 @@ section#timeline article:hover {
   height: 500px;
   border: none;
 }
+
+/* video */
+.video iframe{
+  width: 100%;
+  height: 220px;
+}
 /* 響應式手機板型 */
 
 @media (max-width: 768px) {
