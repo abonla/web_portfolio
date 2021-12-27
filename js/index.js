@@ -68,7 +68,7 @@ var data = [{
 			},
 			{
 				tag: 'p',
-				content: '嘆服美劇《馬蓋先》的足智多謀，以為化學有趣又實用，沒去念復興美工，選擇念環工科，後來發現自己粗枝大葉，不適合做實驗，倒是挺適合習武，受漫畫《拳兒》啟發，加入國術社，在武壇教練<a href="https://www.wutang.moreward.com/?page_id=58" target="_blank">林仲曦</a>指導下，習練<a href="https://www.youtube.com/watch?v=6w9rplNXMM0" target="_blank">八極拳</a>、<a href="https://www.youtube.com/watch?v=6xzqbm42fis" target="_blank">螳螂拳</a>、<a href="https://www.youtube.com/watch?v=yfy7XVSugUU" target="_blank">太極拳</a>、<a href="https://www.youtube.com/watch?v=__u29fI8nqI" target="_blank">迷蹤拳</a>、<a href="https://www.youtube.com/watch?v=MOYyBXmno3k" target="_blank">劈掛掌</a>，參加全國大專院校國術比賽獲得<a href="images/中正盃.jpg" data-lightbox="timeline" data-title="全國大專院校國術比賽">拳術對練第五名</a>。'
+				content: '嘆服美劇《馬蓋先》的足智多謀，以為化學有趣又實用，沒去念復興美工，選擇念環工科，後來發現自己粗枝大葉，不適合做實驗，倒是挺適合習武，受漫畫《拳兒》啟發，加入國術社，在武壇教練<a href="https://www.wutang.moreward.com/?page_id=58" target="_blank">林仲曦</a>指導下，習練<a href="https://www.youtube.com/watch?v=6w9rplNXMM0" target="_blank">八極拳</a>、<a href="https://www.youtube.com/watch?v=6xzqbm42fis" target="_blank">螳螂拳</a>、<a href="https://www.youtube.com/watch?v=yfy7XVSugUU" target="_blank">太極拳</a>、<a href="https://www.youtube.com/watch?v=__u29fI8nqI" target="_blank">迷蹤拳</a>、<a href="https://www.youtube.com/watch?v=MOYyBXmno3k" target="_blank">劈掛掌</a>，參加全國大專院校國術比賽獲得<a href="images/中正盃.jpg" data-lightbox="timeline" data-title="全國大專院校國術比賽" target="_blank">拳術對練第五名</a>。'
 			}
 		],
 		footer: '參加社團：國術社'
@@ -128,7 +128,7 @@ var data = [{
 			},
 			{
 				tag: 'p',
-				content: '習練傳統武術多年，沒有實戰經驗，心中始終有點遺憾，在公司附近武館「傳龍會」<a href="https://www.youtube.com/user/tstootoo/featured" target="_blank">陳建宇</a>教練指導下，學習散打、柔術，參加陽明盃散打比賽，獲得<a href="images/陽明盃.jpg" data-lightbox="timeline" data-title="陽明盃散打比賽">男子組超重量級第三名</a>，圖為昔日戰友和教練（背影）。'
+				content: '習練傳統武術多年，沒有實戰經驗，心中始終有點遺憾，在公司附近武館「傳龍會」<a href="https://www.youtube.com/user/tstootoo/featured" target="_blank">陳建宇</a>教練指導下，學習散打、柔術，參加陽明盃散打比賽，獲得<a href="images/陽明盃.jpg" data-lightbox="timeline" data-title="陽明盃散打比賽" target="_blank">男子組超重量級第三名</a>，圖為昔日戰友和教練（背影）。'
 			}
 		],
 	}, {
@@ -170,7 +170,7 @@ var data = [{
 				content: '插大考取銘傳大學大傳系，選修電視組，在校園媒體<a href="https://www.facebook.com/MingChuanMCTV" target="_blank">銘傳電視台</a>當助理，採訪校園新聞，畢業製作的劇情短片《TOMORROW IS TODAY》，代表學校參加廣電比賽，校慶快報比賽獲得<a href="images/快報.jpg" data-lightbox="timeline" data-title="銘傳大學校慶快報比賽">團體第二名</a>。'
 			}
 		],
-		footer: '參加社團：吉他社<a href="images/銘傳成績單.jpg" style="float:right; display:block;" data-lightbox="timeline" data-title="銘傳大傳系成績單">銘傳成績單</a>'
+		footer: '參加社團：吉他社<a href="images/銘傳成績單.jpg" style="float:right; display:block;" data-lightbox="timeline" data-title="銘傳大傳系成績單" target="_blank">銘傳成績單</a>'
 	},
 	{
 		time: '2002-09-15',
@@ -233,7 +233,7 @@ var data = [{
 				content: '充實的兩年，修了60個學分，看了許多paper，沒日沒夜地趕報告，在院長<a href="http://www.gsmc.url.tw/teacherdetail.php?url=%E6%B4%AA%E9%9B%85%E6%85%A7" target="_blank">洪雅慧</a>教授指導下，完成碩士論文《<a href="https://hdl.handle.net/11296/afm2jx" target="_blank">反送中事件的第一人效果和第三人效果－以2020年台灣總統大選為例</a>》。此外，還到大學部旁聽實務課程，加入柔道社和乙組一起練習對摔。'
 			}
 		],
-		footer: '參加社團：柔道社 <a href="images/輔大成績單.jpg" style="float:right; display:block;" data-lightbox="timeline" data-title="輔大大傳所成績單">輔大成績單</a>'
+		footer: '參加社團：柔道社 <a href="images/輔大成績單.jpg" style="float:right; display:block;" data-lightbox="timeline" data-title="輔大大傳所成績單" target="_blank">輔大成績單</a>'
 	},
 	{
 		time: '2021-01-15',
