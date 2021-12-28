@@ -317,38 +317,25 @@ $(document).ready(function () {
 
 // loading page
 
-// $(document).ready(function () {
+$(document).ready(function () {
 
-// 	var counter = 0;
-// 	var c = 0;
-// 	var i = setInterval(function () {
-// 		$(".loading-page .counter h1").html(c + "%");
-// 		$(".loading-page .counter hr").css("width", c + "%");
-// 		//$(".loading-page .counter").css("background", "linear-gradient(to right, #f60d54 "+ c + "%,#0d0d0d "+ c + "%)");
+	var counter = 0;
+	var c = 0;
+	var i = setInterval(function () {
+		$(".loading-page .counter h1").html(c + "%");
+		$(".loading-page .counter hr").css("width", c + "%");
 
-// 		/*
-// 		$(".loading-page .counter h1.color").css("width", c + "%");
-// 		*/
-// 		counter++;
-// 		c++;	
+		counter++;
+		c++;	
 
-// 		if (counter == 101) {
-// 			clearInterval(i);
-// 		}}, 50);
+		if (counter == 101) {
+			clearInterval(i);
+		}}, 50);
 		
-// 	$(window).load(function () {
-// 		$('.loading-page').fadeOut(300);
-// 	});
+	$(window).load(function () {
+		$('.loading-page').fadeOut(300);
+	});
 
-// });
+});
 
-// 放大鏡
 
-// $(document).ready(function(){
-//   $('img')
-//     .wrap('<span style="display:inline-block"></span>')
-//     .css('display', 'block')
-//     .parent()
-//     .zoom({'magnify':'1.5'});
-	
-// });
