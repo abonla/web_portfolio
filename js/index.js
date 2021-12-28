@@ -330,11 +330,9 @@ $(document).ready(function () {
 
 		if (counter == 101) {
 			clearInterval(i);
+			$('.loading-page').fadeOut(300);
 		}}, 50);
 		
-	$(window).load(function () {
-		$('.loading-page').fadeOut(300);
-	});
 
 });
 
