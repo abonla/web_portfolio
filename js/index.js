@@ -312,8 +312,3 @@ $(document).ready(function () {
 		return new bootstrap.Tooltip(tooltipTriggerEl)
 	})
 });
-
-
-
-
-
