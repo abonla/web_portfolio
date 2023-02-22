@@ -251,7 +251,7 @@ var data = [{
 			},
 			{
 				tag: 'p',
-				content: '巨匠電腦讓我學會了軟體操作，卻無法教我創意發想，報考台科、北科設計所失利後，興起到南陽街設計升學教室<a href="http://www.idesignmate.com/" target="_blank">IDM</a>上課的念頭，從設計理論和麥克筆表現技法學起。'
+				content: '巨匠電腦讓我學會了軟體操作，卻無法教我創意發想，報考台科、北科設計所失利後，興起到南陽街設計升學教室<a href="http://www.idesignmate.com/" target="_blank">IDM</a>上課的念頭，從設計理論和麥克筆表現技法學起，並到<a href="http://www.fhvs.ntpc.edu.tw/" target="_blank">復興美工</a>念夜間部，一償宿願，開始沒日沒夜趕圖的日子。'
 			}
 		],
 	},
