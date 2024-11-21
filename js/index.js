@@ -289,7 +289,7 @@ var data = [{
 			},
 			{
 				tag: 'h2',
-				content: '電視記者練口條看畫面說故事'
+				content: '練口條看畫面說故事'
 			},
 			{
 				tag: 'p',
