@@ -288,7 +288,7 @@ var data = [{
 			},
 			{
 				tag: 'h2',
-				content: '文字記者'
+				content: '電視記者練口條、看畫面說故事'
 			},
 			{
 				tag: 'p',
@@ -309,7 +309,7 @@ var data = [{
 			},
 			{
 				tag: 'h2',
-				content: '小夜主管'
+				content: '狂發稿衝流量文筆獲肯定'
 			},
 			{
 				tag: 'p',
