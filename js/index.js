@@ -277,6 +277,7 @@ var data = [{
 	},
 	{
 		time: '2022-02-01',
+		header: '中天新聞',
 		body: [{
 				tag: 'img',
 				attr: {
@@ -287,7 +288,7 @@ var data = [{
 			},
 			{
 				tag: 'h2',
-				content: '中天新聞 文字記者'
+				content: '文字記者'
 			},
 			{
 				tag: 'p',
@@ -297,6 +298,7 @@ var data = [{
 	},
 	{
 		time: '2024-04-01',
+		header: '三立新聞網',
 		body: [{
 				tag: 'img',
 				attr: {
@@ -307,7 +309,7 @@ var data = [{
 			},
 			{
 				tag: 'h2',
-				content: '三立新聞網 小夜主管'
+				content: '小夜主管'
 			},
 			{
 				tag: 'p',
