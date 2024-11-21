@@ -257,6 +257,7 @@ var data = [{
 	},
 	{
 		time: '2021-10-01',
+		header: '辰紘行銷',
 		body: [{
 				tag: 'img',
 				attr: {
@@ -267,7 +268,7 @@ var data = [{
 			},
 			{
 				tag: 'h2',
-				content: '辰紘行銷 視覺設計'
+				content: '轉換跑道做美術設計'
 			},
 			{
 				tag: 'p',
