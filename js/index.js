@@ -300,7 +300,7 @@ var data = [{
 		body: [{
 				tag: 'img',
 				attr: {
-					src: 'images/三立新聞.jpg',
+					src: 'images/三立新聞.png',
 					width: '150px',
 					cssclass: 'img-responsive'
 				}
