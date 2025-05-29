@@ -336,7 +336,10 @@ body {
 .grid .grid-item--width5 {
   width: 25%;
 }
-
+/* 修正mark白邊 */
+.mark{
+  padding:0px;
+}
 /* 回頁首箭頭 */
 
 .toTop-arrow {
