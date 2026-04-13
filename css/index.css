@@ -457,7 +457,8 @@ section#timeline article:hover {
     border-radius: 0 0 6px 6px;
   }
 
-  .three-scroll-btns button:active {
+  .three-scroll-btns button:active,
+  .three-scroll-btns button.is-active {
     background: rgba(255, 150, 0, 0.85);
   }
 }

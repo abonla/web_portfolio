@@ -431,6 +431,12 @@ $(document).ready(function () {
 	$(document).on('click', '.three-scroll-down', function () {
 		$('html, body').animate({ scrollTop: $(window).scrollTop() + 520 }, 300);
 	});
+	// iOS Safari :active 不可靠，用 touchstart/touchend 模擬按壓變色
+	$(document).on('touchstart', '.three-scroll-btns button', function () {
+		$(this).addClass('is-active');
+	}).on('touchend touchcancel', '.three-scroll-btns button', function () {
+		$(this).removeClass('is-active');
+	});
 });
 
 // YouTube 點擊播放（facade 容器原地換成 iframe，高度不變不跑版）
