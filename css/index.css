@@ -415,10 +415,50 @@ section#timeline article:hover {
   border: none;
 }
 
-/* 手機版：iframe 不攔截觸控，讓頁面可以正常滾動 */
+/* 手機版 3D 滾動按鈕 */
+.three-scroll-btns {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .three > iframe {
-    pointer-events: none;
+  .grid-item.three {
+    position: relative;
+  }
+
+  .three-scroll-btns {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .three-scroll-btns button {
+    width: 36px;
+    height: 52px;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    font-size: 16px;
+    cursor: pointer;
+    touch-action: manipulation;
+    padding: 0;
+    line-height: 1;
+  }
+
+  .three-scroll-btns button:first-child {
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .three-scroll-btns button:last-child {
+    border-radius: 0 0 6px 6px;
+  }
+
+  .three-scroll-btns button:active {
+    background: rgba(255, 150, 0, 0.85);
   }
 }
 

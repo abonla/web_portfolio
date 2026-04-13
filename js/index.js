@@ -410,9 +410,25 @@ $(document).ready(function () {
 //bs tooltip
 $(document).ready(function () {
 	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+	tooltipTriggerList.map(function (tooltipTriggerEl) {
 		return new bootstrap.Tooltip(tooltipTriggerEl)
 	})
+});
+
+// 手機版 3D 滾動按鈕：注入 ▲▼ 讓使用者可上下滑動頁面，同時保留 3D 觸控操作
+$(document).ready(function () {
+	$('.grid-item.three').append(
+		'<div class="three-scroll-btns">' +
+		'<button class="three-scroll-up">&#9650;</button>' +
+		'<button class="three-scroll-down">&#9660;</button>' +
+		'</div>'
+	);
+	$(document).on('click', '.three-scroll-up', function () {
+		$('html, body').animate({ scrollTop: $(window).scrollTop() - 520 }, 300);
+	});
+	$(document).on('click', '.three-scroll-down', function () {
+		$('html, body').animate({ scrollTop: $(window).scrollTop() + 520 }, 300);
+	});
 });
 
 // YouTube 點擊播放（facade 容器原地換成 iframe，高度不變不跑版）
