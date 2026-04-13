@@ -10,9 +10,15 @@ $(function () {
 		columnWidth: '.grid-sizer',
 		gutter: '.gutter-sizer'
 	});
-	// layout Masonry after each image loads
+
+	// Debounce masonry relayout: batch image-load events so we
+	// do at most one layout per 200ms instead of one per image.
+	var layoutTimer;
 	$grid.imagesLoaded().progress(function () {
-		$grid.masonry();
+		clearTimeout(layoutTimer);
+		layoutTimer = setTimeout(function () {
+			$grid.masonry('layout');
+		}, 200);
 	});
 });
 
