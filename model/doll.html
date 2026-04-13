@@ -76,13 +76,13 @@ function main() {
 
     // 環境光
   {
-    const light = new THREE.AmbientLight(0xffffff, 0.6);
+    const light = new THREE.AmbientLight(0xffffff, 1.2);
     scene.add(light);
   }
 
   // 半球光
   {
-    const light = new THREE.HemisphereLight(0xffffff, 0x888888, 1);
+    const light = new THREE.HemisphereLight(0xffffff, 0x888888, 1.5);
     scene.add(light);
   }
 
