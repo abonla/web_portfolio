@@ -1,0 +1,133 @@
+<h2>頁面整體設計預覽</h2>
+<p class="subtitle">深色捲動式，新增 FIX 05 Git LFS 章節</p>
+
+<div class="mockup">
+  <div class="mockup-header">report.html — 完整頁面結構</div>
+  <div class="mockup-body" style="padding:0;overflow:hidden;font-family:'Segoe UI',sans-serif;">
+
+    <!-- Hero -->
+    <div style="background:linear-gradient(135deg,#0d0d1a 0%,#1a0a2e 100%);padding:32px 24px;text-align:center;position:relative;overflow:hidden;">
+      <div style="position:absolute;inset:0;background:linear-gradient(135deg,#ff057c18,#7c64d540,#4cc3ff18);"></div>
+      <div style="position:relative;">
+        <div style="display:inline-block;background:linear-gradient(90deg,#ff057c,#7c64d5);color:#fff;font-size:9px;letter-spacing:2px;padding:3px 12px;border-radius:20px;margin-bottom:10px;font-weight:700;">PERFORMANCE OPTIMIZATION REPORT</div>
+        <div style="font-size:22px;font-weight:900;color:#fff;line-height:1.2;margin-bottom:6px;">作品集網站<br><span style="background:linear-gradient(90deg,#ff057c,#4cc3ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">效能優化報告</span></div>
+        <div style="color:rgba(255,255,255,0.6);font-size:10px;margin-bottom:16px;">Tony Cheng Portfolio · 2026-04-13</div>
+        <div style="display:flex;justify-content:center;gap:24px;">
+          <div style="text-align:center;"><div style="color:#fff;font-weight:900;font-size:14px;">5 項</div><div style="color:rgba(255,255,255,0.5);font-size:9px;">優化項目</div></div>
+          <div style="text-align:center;"><div style="color:#fff;font-weight:900;font-size:14px;">4 commits</div><div style="color:rgba(255,255,255,0.5);font-size:9px;">程式異動</div></div>
+          <div style="text-align:center;"><div style="color:#fff;font-weight:900;font-size:14px;">623MB→1MB</div><div style="color:rgba(255,255,255,0.5);font-size:9px;">Git pack</div></div>
+        </div>
+      </div>
+      <div style="position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ff057c,#7c64d5,#4cc3ff);"></div>
+    </div>
+
+    <!-- Problem cards row -->
+    <div style="background:#0f0f1e;padding:20px 20px 10px;">
+      <div style="font-size:8px;color:#7c64d5;letter-spacing:2px;font-weight:700;margin-bottom:4px;">SECTION 01</div>
+      <div style="font-size:14px;font-weight:900;color:#fff;margin-bottom:12px;padding-bottom:6px;border-bottom:2px solid #7c64d5;display:inline-block;">問題診斷</div>
+      <div style="display:flex;gap:8px;margin-bottom:14px;">
+        <div style="flex:1;background:#1a1a2e;border-radius:8px;padding:10px;border-left:3px solid #ff6b6b;">
+          <div style="color:#ff6b6b;font-size:16px;font-weight:900;">01</div>
+          <div style="color:#fff;font-size:9px;font-weight:700;">縮圖未壓縮</div>
+          <div style="color:#888;font-size:8px;margin-top:3px;">32 MB 總下載量</div>
+        </div>
+        <div style="flex:1;background:#1a1a2e;border-radius:8px;padding:10px;border-left:3px solid #f7b731;">
+          <div style="color:#f7b731;font-size:16px;font-weight:900;">02</div>
+          <div style="color:#fff;font-size:9px;font-weight:700;">Masonry 重排</div>
+          <div style="color:#888;font-size:8px;margin-top:3px;">200+ 次觸發</div>
+        </div>
+        <div style="flex:1;background:#1a1a2e;border-radius:8px;padding:10px;border-left:3px solid #4cc3ff;">
+          <div style="color:#4cc3ff;font-size:16px;font-weight:900;">03</div>
+          <div style="color:#fff;font-size:9px;font-weight:700;">YouTube 空白</div>
+          <div style="color:#888;font-size:8px;margin-top:3px;">53 個 iframe</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fix blocks (condensed) -->
+    <div style="background:#0f0f1e;padding:0 20px 10px;">
+      <div style="font-size:8px;color:#7c64d5;letter-spacing:2px;font-weight:700;margin-bottom:8px;">FIX 01–04</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;">
+        <div style="background:#1a1a2e;border-radius:8px;padding:10px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+            <span style="background:linear-gradient(90deg,#7c64d5,#4cc3ff);color:#fff;font-size:7px;padding:2px 6px;border-radius:10px;font-weight:700;">Python · Pillow</span>
+          </div>
+          <div style="color:#fff;font-size:9px;font-weight:700;">縮圖批次壓縮</div>
+          <div style="color:#26de81;font-size:11px;font-weight:900;margin-top:4px;">32MB → 12MB</div>
+        </div>
+        <div style="background:#1a1a2e;border-radius:8px;padding:10px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+            <span style="background:linear-gradient(90deg,#7c64d5,#4cc3ff);color:#fff;font-size:7px;padding:2px 6px;border-radius:10px;font-weight:700;">JavaScript</span>
+          </div>
+          <div style="color:#fff;font-size:9px;font-weight:700;">Masonry Debounce</div>
+          <div style="color:#26de81;font-size:11px;font-weight:900;margin-top:4px;">200+ → &lt;5 次</div>
+        </div>
+        <div style="background:#1a1a2e;border-radius:8px;padding:10px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+            <span style="background:linear-gradient(90deg,#7c64d5,#4cc3ff);color:#fff;font-size:7px;padding:2px 6px;border-radius:10px;font-weight:700;">HTML · CSS · JS</span>
+          </div>
+          <div style="color:#fff;font-size:9px;font-weight:700;">YouTube Facade</div>
+          <div style="color:#26de81;font-size:11px;font-weight:900;margin-top:4px;">53 連線 → 0</div>
+        </div>
+        <div style="background:#1a1a2e;border-radius:8px;padding:10px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+            <span style="background:linear-gradient(90deg,#7c64d5,#4cc3ff);color:#fff;font-size:7px;padding:2px 6px;border-radius:10px;font-weight:700;">CSS</span>
+          </div>
+          <div style="color:#fff;font-size:9px;font-weight:700;">點擊不跑版</div>
+          <div style="color:#26de81;font-size:11px;font-weight:900;margin-top:4px;">padding-bottom 16:9</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FIX 05 NEW Git LFS -->
+    <div style="background:#0a1628;padding:16px 20px;border-top:1px solid #7c64d530;border-bottom:1px solid #7c64d530;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+        <div style="background:linear-gradient(90deg,#26de81,#4cc3ff);color:#0d0d1a;font-size:8px;padding:3px 10px;border-radius:20px;font-weight:900;letter-spacing:1px;">FIX 05 · NEW</div>
+        <div style="font-size:11px;font-weight:900;color:#fff;">Git LFS 遷移</div>
+      </div>
+      <div style="color:#aaa;font-size:9px;margin-bottom:10px;">將 647 個圖片/PDF 從 git 歷史移至 LFS，徹底解決每次 push 傳輸整包 600MB 的問題。</div>
+      <div style="display:flex;gap:8px;">
+        <div style="flex:1;background:#0d1f14;border-radius:6px;padding:10px;text-align:center;">
+          <div style="color:#ff6b6b;font-size:14px;font-weight:900;">623 MB</div>
+          <div style="color:#888;font-size:8px;">舊 git pack</div>
+        </div>
+        <div style="display:flex;align-items:center;color:#7c64d5;font-size:14px;">→</div>
+        <div style="flex:1;background:#0d1f14;border-radius:6px;padding:10px;text-align:center;">
+          <div style="color:#26de81;font-size:14px;font-weight:900;">1.1 MB</div>
+          <div style="color:#888;font-size:8px;">LFS 遷移後</div>
+        </div>
+        <div style="flex:1;background:#0a2a1a;border-radius:6px;padding:10px;text-align:center;border:1px solid #26de8140;">
+          <div style="color:#26de81;font-size:14px;font-weight:900;">-99.8%</div>
+          <div style="color:#888;font-size:8px;">pack 縮減</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div style="background:#0f0f1e;padding:16px 20px 8px;">
+      <div style="font-size:8px;color:#7c64d5;letter-spacing:2px;font-weight:700;margin-bottom:8px;">SECTION 02 · 成果總覽</div>
+      <div style="display:flex;gap:8px;margin-bottom:8px;">
+        <div style="flex:1;background:#1a1a2e;border-radius:8px;padding:10px;text-align:center;">
+          <div style="color:#26de81;font-size:18px;font-weight:900;">62%</div>
+          <div style="color:#aaa;font-size:8px;">縮圖下載量</div>
+        </div>
+        <div style="flex:1;background:#1a1a2e;border-radius:8px;padding:10px;text-align:center;">
+          <div style="color:#4cc3ff;font-size:18px;font-weight:900;">0</div>
+          <div style="color:#aaa;font-size:8px;">YT 連線數</div>
+        </div>
+        <div style="flex:1;background:#1a1a2e;border-radius:8px;padding:10px;text-align:center;">
+          <div style="color:#f7b731;font-size:18px;font-weight:900;">97%</div>
+          <div style="color:#aaa;font-size:8px;">Masonry 重排</div>
+        </div>
+        <div style="flex:1;background:#1a1a2e;border-radius:8px;padding:10px;text-align:center;">
+          <div style="color:#26de81;font-size:18px;font-weight:900;">99.8%</div>
+          <div style="color:#aaa;font-size:8px;">Git push 量</div>
+        </div>
+      </div>
+      <div style="font-size:9px;color:#555;text-align:center;padding-bottom:10px;">↓ 繼續捲動查看詳細表格與時間軸</div>
+    </div>
+
+  </div>
+</div>
+
+<p style="margin-top:16px;color:#888;font-size:13px;">這是整頁的縮圖預覽。FIX 05 Git LFS 為新增章節（綠色標記）。確認這個方向後我就開始實作。</p>
