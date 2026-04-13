@@ -415,25 +415,23 @@ section#timeline article:hover {
   border: none;
 }
 
-/* video */
-.video iframe {
-  width: 100%;
-  height: 220px;
-  border: none;
-}
-
-/* YouTube facade (click-to-play) */
+/* YouTube facade (click-to-play) — 16:9 比例固定，換 iframe 不跑版 */
 .yt-facade {
   position: relative;
   display: block;
   width: 100%;
-  cursor: pointer;
+  padding-bottom: 56.25%; /* 16:9 */
   background: #000;
+  cursor: pointer;
+  overflow: hidden;
 }
 .yt-facade img {
-  display: block;
+  position: absolute;
+  top: 0; left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .yt-play {
   position: absolute;
@@ -447,6 +445,7 @@ section#timeline article:hover {
   border-radius: 10px;
   cursor: pointer;
   padding: 0;
+  pointer-events: none;
 }
 .yt-play::after {
   content: "";
@@ -458,6 +457,21 @@ section#timeline article:hover {
 }
 .yt-facade:hover .yt-play {
   background: #ff0000;
+}
+/* 點擊後的 iframe，絕對定位填滿同一容器 */
+.yt-playing {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 56.25%;
+  background: #000;
+}
+.yt-playing iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 /* 響應式手機板型 */
 
