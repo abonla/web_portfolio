@@ -50,10 +50,16 @@ $(function () {
 	$('header').on('click', 'a', function () {
 		var filterValue = $(this).attr('data-filter');
 		$grid.isotope({ filter: filterValue });
-		// 篩選後重新觸發 masonry 排版，避免跑版
+		// 篩選後重新觸發 masonry 排版，並通知 3D iframe resize
 		setTimeout(function () {
 			$('.grid').masonry('layout');
-		}, 50);
+			// 對所有 3D iframe 發送 resize 事件，修正 Three.js 切換分頁後不顯示的問題
+			$('.three iframe').each(function () {
+				try {
+					this.contentWindow.dispatchEvent(new Event('resize'));
+				} catch (e) {}
+			});
+		}, 100);
 	});
 });
 
