@@ -50,16 +50,18 @@ $(function () {
 	$('header').on('click', 'a', function () {
 		var filterValue = $(this).attr('data-filter');
 		$grid.isotope({ filter: filterValue });
-		// 篩選後重新觸發 masonry 排版，並通知 3D iframe resize
-		setTimeout(function () {
+		// 等 Isotope 動畫完成後再重排 masonry，避免跑版
+		$grid.one('arrangeComplete', function () {
 			$('.grid').masonry('layout');
-			// 對所有 3D iframe 發送 resize 事件，修正 Three.js 切換分頁後不顯示的問題
+		});
+		// 3D iframe resize 提早觸發，減少視覺延遲
+		setTimeout(function () {
 			$('.three iframe').each(function () {
 				try {
 					this.contentWindow.dispatchEvent(new Event('resize'));
 				} catch (e) {}
 			});
-		}, 100);
+		}, 50);
 	});
 });
 
