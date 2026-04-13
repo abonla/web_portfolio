@@ -416,9 +416,48 @@ section#timeline article:hover {
 }
 
 /* video */
-.video iframe{
+.video iframe {
   width: 100%;
   height: 220px;
+  border: none;
+}
+
+/* YouTube facade (click-to-play) */
+.yt-facade {
+  position: relative;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  background: #000;
+}
+.yt-facade img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.yt-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 44px;
+  background: rgba(255, 0, 0, 0.85);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0;
+}
+.yt-play::after {
+  content: "";
+  display: block;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #fff;
+  margin: auto;
+}
+.yt-facade:hover .yt-play {
+  background: #ff0000;
 }
 /* 響應式手機板型 */
 

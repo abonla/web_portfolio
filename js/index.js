@@ -402,3 +402,17 @@ $(document).ready(function () {
 		return new bootstrap.Tooltip(tooltipTriggerEl)
 	})
 });
+
+// YouTube 點擊播放（facade -> iframe）
+$(document).on('click', '.yt-facade', function () {
+	var vid = $(this).data('vid');
+	var iframe = $('<iframe>', {
+		src: 'https://www.youtube-nocookie.com/embed/' + vid + '?autoplay=1',
+		frameborder: 0,
+		allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
+		allowfullscreen: true
+	});
+	$(this).replaceWith(iframe);
+	// 通知 masonry 重新排版
+	$('.grid').masonry('layout');
+});
