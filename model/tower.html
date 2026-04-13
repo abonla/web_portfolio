@@ -76,19 +76,19 @@ function main() {
 
     // 環境光
   {
-    const light = new THREE.AmbientLight(0xffffff, 1.5);
+    const light = new THREE.AmbientLight(0xffffff, 0.6);
     scene.add(light);
   }
 
   // 半球光
   {
-    const light = new THREE.HemisphereLight(0xffffff, 0x888888, 2);
+    const light = new THREE.HemisphereLight(0xffffff, 0x888888, 1);
     scene.add(light);
   }
 
   // 主光（正前方）
   {
-    const light = new THREE.DirectionalLight(0xffffff, 2);
+    const light = new THREE.DirectionalLight(0xffffff, 1.2)
     light.position.set(5, 10, 8);
     scene.add(light);
   }
