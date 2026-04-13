@@ -415,6 +415,13 @@ section#timeline article:hover {
   border: none;
 }
 
+/* 手機版：iframe 不攔截觸控，讓頁面可以正常滾動 */
+@media (max-width: 768px) {
+  .three > iframe {
+    pointer-events: none;
+  }
+}
+
 /* YouTube facade (click-to-play) — 16:9 比例固定，換 iframe 不跑版 */
 .yt-facade {
   position: relative;
