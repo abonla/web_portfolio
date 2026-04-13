@@ -49,9 +49,11 @@ $(function () {
 	// filter items on button click
 	$('header').on('click', 'a', function () {
 		var filterValue = $(this).attr('data-filter');
-		$grid.isotope({
-			filter: filterValue
-		});
+		$grid.isotope({ filter: filterValue });
+		// 篩選後重新觸發 masonry 排版，避免跑版
+		setTimeout(function () {
+			$('.grid').masonry('layout');
+		}, 50);
 	});
 });
 
