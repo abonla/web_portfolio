@@ -56,14 +56,16 @@ $(function () {
 	$('header').on('click', 'a', function () {
 		var filterValue = $(this).attr('data-filter');
 		$grid.isotope({ filter: filterValue });
-		// 3D iframe resize：讓 Three.js 重新計算 canvas 尺寸
-		setTimeout(function () {
-			$('.three iframe').each(function () {
-				try {
-					this.contentWindow.dispatchEvent(new Event('resize'));
-				} catch (e) {}
-			});
-		}, 50);
+		// Isotope 動畫完成後再觸發 3D iframe resize，確保 canvas 尺寸已正確
+		$grid.one('arrangeComplete', function () {
+			setTimeout(function () {
+				$('.three iframe').each(function () {
+					try {
+						this.contentWindow.dispatchEvent(new Event('resize'));
+					} catch (e) {}
+				});
+			}, 50);
+		});
 	});
 });
 
