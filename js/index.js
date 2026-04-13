@@ -42,19 +42,21 @@ $(function () {
 //選單過濾
 
 $(function () {
-	// init Isotope
+	// init Isotope — 與 Masonry 使用相同欄寬設定，避免切換分頁跑版
 	var $grid = $('.grid').isotope({
-		// options
+		layoutMode: 'masonry',
+		masonry: {
+			columnWidth: '.grid-sizer',
+			gutter: '.gutter-sizer'
+		},
+		itemSelector: '.grid-item',
+		percentPosition: true
 	});
 	// filter items on button click
 	$('header').on('click', 'a', function () {
 		var filterValue = $(this).attr('data-filter');
 		$grid.isotope({ filter: filterValue });
-		// 等 Isotope 動畫完成後再重排 masonry，避免跑版
-		$grid.one('arrangeComplete', function () {
-			$('.grid').masonry('layout');
-		});
-		// 3D iframe resize 提早觸發，減少視覺延遲
+		// 3D iframe resize：讓 Three.js 重新計算 canvas 尺寸
 		setTimeout(function () {
 			$('.three iframe').each(function () {
 				try {
