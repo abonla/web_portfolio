@@ -30,6 +30,7 @@ router.post('/image', upload.single('file'), async function(req, res) {
       src: result.originalSrc,
       thumb: result.thumbSrc,
       caption: req.body.caption || '',
+      captionEn: req.body.captionEn || '',
       categories: JSON.parse(req.body.categories || '[]'),
       fancyboxGroup: req.body.fancyboxGroup || '',
     };

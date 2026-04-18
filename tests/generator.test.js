@@ -58,6 +58,24 @@ describe('buildWorksHTML', () => {
     const html = buildWorksHTML(works);
     expect(html.indexOf('data-vid="a"')).toBeLessThan(html.indexOf('data-vid="b"'));
   });
+
+  test('includes data-caption-en attribute', () => {
+    const works = [
+      {
+        id: '1',
+        type: 'image',
+        src: 'images/a.jpg',
+        thumb: 'images/am.jpg',
+        caption: 'Test',
+        captionEn: 'Test EN',
+        categories: ['painter'],
+        fancyboxGroup: 'g',
+        order: 0,
+      },
+    ];
+    const html = buildWorksHTML(works);
+    expect(html).toContain('data-caption-en="Test EN"');
+  });
 });
 
 describe('buildAboutHTML', () => {
