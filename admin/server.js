@@ -37,6 +37,32 @@ function writeData(data) {
   fs.writeFileSync(OUTPUT_PATH, html, 'utf8');
 }
 
+const worksRoute = require('./routes/works');
+worksRoute.init({ readData, writeData, ROOT });
+app.use('/api/works', worksRoute.router);
+
+const uploadRoute = require('./routes/upload');
+uploadRoute.init({ readData, writeData, ROOT });
+app.use('/api/upload', uploadRoute.router);
+
+const youtubeRoute = require('./routes/youtube');
+app.use('/api/youtube', youtubeRoute.router);
+
+const threeRoute = require('./routes/three');
+threeRoute.init({ readData, writeData, ROOT });
+app.use('/api/upload', threeRoute.router);
+
+const aboutRoute = require('./routes/about');
+aboutRoute.init({ readData, writeData });
+app.use('/api/about', aboutRoute.router);
+
+const settingsRoute = require('./routes/settings');
+settingsRoute.init({ readData, writeData });
+app.use('/api/settings', settingsRoute.router);
+
+const publishRoute = require('./routes/publish');
+app.use('/api/publish', publishRoute.router);
+
 // Export for route files (Plan 2) and tests
 module.exports = { app, readData, writeData, ROOT, DATA_PATH, TEMPLATE_PATH, OUTPUT_PATH };
 
