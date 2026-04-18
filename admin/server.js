@@ -3,14 +3,14 @@ const path = require('path');
 const fs = require('fs');
 const { generateHTML } = require('./lib/generator');
 
-const ROOT = path.env && process.env.ROOT_PATH ? process.env.ROOT_PATH : path.join(__dirname, '..');
+const ROOT = process.env.ROOT_PATH || path.join(__dirname, '..');
 const DATA_PATH = process.env.DATA_PATH || path.join(ROOT, 'data.json');
 const TEMPLATE_PATH = process.env.TEMPLATE_PATH || path.join(__dirname, 'template.html');
 const OUTPUT_PATH = process.env.OUTPUT_PATH || path.join(ROOT, 'index.html');
 const PORT = process.env.PORT || 3001;
 
 const app = express();
-app.use(express.json());
+app.use(express.json({ limit: '20mb' }));
 app.use(express.urlencoded({ extended: true }));
 
 // Serve admin UI static files
@@ -62,6 +62,10 @@ app.use('/api/settings', settingsRoute.router);
 
 const publishRoute = require('./routes/publish');
 app.use('/api/publish', publishRoute.router);
+
+const aiRoute = require('./routes/ai');
+aiRoute.init({ ROOT });
+app.use('/api/ai', aiRoute.router);
 
 // Export for route files (Plan 2) and tests
 module.exports = { app, readData, writeData, ROOT, DATA_PATH, TEMPLATE_PATH, OUTPUT_PATH };
