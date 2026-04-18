@@ -1,0 +1,4526 @@
+{
+  "works": [
+    {
+      "id": "2871481f-bfee-419d-8c98-bdd51f16693e",
+      "type": "image",
+      "src": "images/20200919_202642.jpg",
+      "thumb": "images/20200919_202642m.jpg",
+      "caption": "台啤手繪海報",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 0
+    },
+    {
+      "id": "80fc3bcc-9e44-43a4-bc0c-6026b9a9514a",
+      "type": "image",
+      "src": "images/145181.jpg",
+      "thumb": "images/145181m.jpg",
+      "caption": "東石漁港活動海報",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 1
+    },
+    {
+      "id": "cf5ad64d-c80d-4d8b-99fe-5b5b1e6979f7",
+      "type": "image",
+      "src": "images/媽祖.jpg",
+      "thumb": "images/媽祖m.jpg",
+      "caption": "媽祖是守護海洋的女神，將大甲鎮瀾宮至於海底，馬祖隨興坐屋頂，象徵海女出身的她不拘小節，環顧海面保護漁民一帆風順大豐收。",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 2
+    },
+    {
+      "id": "40b33ef8-58b1-449a-bc98-0e92f3616983",
+      "type": "image",
+      "src": "images/春蟬.jpg",
+      "thumb": "images/春蟬m.jpg",
+      "caption": "兒時蟬鳴讀書聲，是我們共同的回憶，藉由青面姬蟬爬上腦門，象徵蟬叫不絕於耳，雖然小男孩在書堆中寫功課，卻被蟬鳴喚起玩性，思緒像脫了線的風箏和從高空滑水般，早已神遊到九霄雲外。",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 3
+    },
+    {
+      "id": "d654821e-4919-495c-9b89-056b1165c2db",
+      "type": "image",
+      "src": "images/樹蛙.jpg",
+      "thumb": "images/樹蛙m.jpg",
+      "caption": "征服太空一直是人類的夢想，雖然月球表面寸草不生，但科學家卻發現月亮岩石裡含有少量水分子的存在，如果月球地底下有水的話，先被發現的生物，也許不是玉兔，比較可能是青蛙。",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 4
+    },
+    {
+      "id": "34663a54-1ecd-4cc9-9fc6-efc2acbf4f91",
+      "type": "image",
+      "src": "images/櫻鮭.jpg",
+      "thumb": "images/櫻鮭m.jpg",
+      "caption": "鮭魚具有洄游性，會溯河而上回到牠出生的上游交配產卵。故以櫻花下的少女，表現期待愛情的愁緒，藉由奔流的溪水，象徵雌雄魚逆流而上交配談情的意境。",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 5
+    },
+    {
+      "id": "e6c324f4-9e5d-4534-b244-77067655e7c1",
+      "type": "image",
+      "src": "images/蟒蛇.jpg",
+      "thumb": "images/蟒蛇m.jpg",
+      "caption": "台灣特有種",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter"
+      ],
+      "order": 6
+    },
+    {
+      "id": "bfd7c58f-04a7-4845-b1cb-271244a2fc6d",
+      "type": "image",
+      "src": "images/長耳蝙.jpg",
+      "thumb": "images/長耳蝙m.jpg",
+      "caption": "2020年新冠病毒疫情嚴峻，研究發現跟蝙蝠的病毒基因相似。故本插畫在展翅飛翔的蝙蝠身上，畫上漂浮的病毒，象徵蝙蝠散播病毒，連蝙蝠俠都得戴上MIT（台灣製造）的口罩防疫。下方人群剪影則代表病毒藉由群聚感染擴散。",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 7
+    },
+    {
+      "id": "dc29e077-2261-4469-94e2-7644e0b1ccbf",
+      "type": "image",
+      "src": "images/鳳蝶.jpg",
+      "thumb": "images/鳳蝶m.jpg",
+      "caption": "翩翩飛舞的蝴蝶，與長袖善舞的京劇花旦有異曲同工之妙，畫中女子捧著鮮花，驀然回首，一臉冷豔，彷彿鳳凰的化身，透過「莊周夢蝶」的故事，隱喻虛實讓人難以捉摸。",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 8
+    },
+    {
+      "id": "92a38f94-a2f4-4e6d-ab80-1378e214c2d9",
+      "type": "image",
+      "src": "images/黏土人海報.jpg",
+      "thumb": "images/黏土人海報m.jpg",
+      "caption": "黏土人",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 9
+    },
+    {
+      "id": "5326fbf9-a391-423e-9839-af12abb2544d",
+      "type": "image",
+      "src": "images/黏土人騎士_阿邦.jpg",
+      "thumb": "images/黏土人騎士_阿邦m.jpg",
+      "caption": "黏土人",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 10
+    },
+    {
+      "id": "4d76b23e-896e-47e9-94da-4711875d0d05",
+      "type": "image",
+      "src": "images/01.jpg",
+      "thumb": "images/01m.jpg",
+      "caption": "三隻小貓",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 11
+    },
+    {
+      "id": "03640f9d-3230-4a46-97ed-b51ced5683f0",
+      "type": "image",
+      "src": "images/03.jpg",
+      "thumb": "images/03m.jpg",
+      "caption": "黏土人",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 12
+    },
+    {
+      "id": "9a4e495a-9143-44b4-986e-29fb743a1331",
+      "type": "image",
+      "src": "images/05.jpg",
+      "thumb": "images/05m.jpg",
+      "caption": "日系卡通",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 13
+    },
+    {
+      "id": "ff82e92f-8942-4ae5-b923-31d954f6cdcd",
+      "type": "image",
+      "src": "images/類寫實.jpg",
+      "thumb": "images/類寫實m.jpg",
+      "caption": "類寫實",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 14
+    },
+    {
+      "id": "38b898b0-39fc-4e5c-9a13-c6b0a215a8c2",
+      "type": "image",
+      "src": "images/星爵油畫final.jpg",
+      "thumb": "images/星爵油畫finalm.jpg",
+      "caption": "類寫實",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 15
+    },
+    {
+      "id": "28370edc-ecd1-4571-8c6b-7f71274ea146",
+      "type": "image",
+      "src": "images/draw.png",
+      "thumb": "images/drawm.png",
+      "caption": "類寫實",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 16
+    },
+    {
+      "id": "abd03555-e418-448b-9758-236f0be9446f",
+      "type": "image",
+      "src": "images/復興作業00.jpg",
+      "thumb": "images/復興作業00_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "water"
+      ],
+      "order": 17
+    },
+    {
+      "id": "9f5f823b-c485-4a9c-9653-168474edd282",
+      "type": "image",
+      "src": "images/復興作業01.jpg",
+      "thumb": "images/復興作業01_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 18
+    },
+    {
+      "id": "ff9a3ca8-b5ac-40f6-9a1f-2528e763a8e9",
+      "type": "image",
+      "src": "images/復興作業02.jpg",
+      "thumb": "images/復興作業02_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 19
+    },
+    {
+      "id": "16eebc65-71d7-4f1f-ba76-2b641553b6a9",
+      "type": "image",
+      "src": "images/復興作業03.jpg",
+      "thumb": "images/復興作業03_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 20
+    },
+    {
+      "id": "3864c361-cc78-48a2-ad1f-bd3f4bf8e129",
+      "type": "image",
+      "src": "images/復興作業04.jpg",
+      "thumb": "images/復興作業04_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 21
+    },
+    {
+      "id": "f71e537c-c164-4d9e-80d8-a6a3a292e0bf",
+      "type": "image",
+      "src": "images/復興作業05.jpg",
+      "thumb": "images/復興作業05_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 22
+    },
+    {
+      "id": "153058dd-b461-4a85-a4df-aa45fe9d2cd5",
+      "type": "image",
+      "src": "images/復興作業06.jpg",
+      "thumb": "images/復興作業06_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 23
+    },
+    {
+      "id": "49f6babe-2721-45c8-96ab-d264678c9073",
+      "type": "image",
+      "src": "images/復興作業07.jpg",
+      "thumb": "images/復興作業07_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 24
+    },
+    {
+      "id": "2e906906-ac13-41cc-a11e-470f929dc318",
+      "type": "image",
+      "src": "images/復興作業08.jpg",
+      "thumb": "images/復興作業08_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 25
+    },
+    {
+      "id": "1df5ec9a-3755-4df4-ad91-97b3cf0092d2",
+      "type": "image",
+      "src": "images/復興作業09.jpg",
+      "thumb": "images/復興作業09_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 26
+    },
+    {
+      "id": "bbc61d7c-3548-4325-b75f-614620f0d126",
+      "type": "image",
+      "src": "images/復興作業10.jpg",
+      "thumb": "images/復興作業10_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 27
+    },
+    {
+      "id": "6246d1d9-24d7-43d5-8e9b-58233a31c437",
+      "type": "image",
+      "src": "images/復興作業11.jpg",
+      "thumb": "images/復興作業11_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 28
+    },
+    {
+      "id": "3a582de8-d885-4d3a-8810-d16811cc8efd",
+      "type": "image",
+      "src": "images/復興作業12.jpg",
+      "thumb": "images/復興作業12_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 29
+    },
+    {
+      "id": "e8966c69-432f-4f17-9baa-c938ca08659e",
+      "type": "image",
+      "src": "images/復興作業13.jpg",
+      "thumb": "images/復興作業13_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 30
+    },
+    {
+      "id": "de8473ed-59a0-403d-9a0d-e2ff4dc6ee9f",
+      "type": "image",
+      "src": "images/復興作業14.jpg",
+      "thumb": "images/復興作業14_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 31
+    },
+    {
+      "id": "76757ed6-570d-4905-bdba-326bd653276c",
+      "type": "image",
+      "src": "images/復興作業15.jpg",
+      "thumb": "images/復興作業15_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "water"
+      ],
+      "order": 32
+    },
+    {
+      "id": "9d1be788-930b-4c05-b934-88643eeb1fba",
+      "type": "image",
+      "src": "images/復興作業16.jpg",
+      "thumb": "images/復興作業16_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 33
+    },
+    {
+      "id": "b85f031c-e263-457c-8d84-44348398107f",
+      "type": "image",
+      "src": "images/復興作業17.jpg",
+      "thumb": "images/復興作業17_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "water"
+      ],
+      "order": 34
+    },
+    {
+      "id": "bfea8f37-951a-4f38-bf1f-f3c60c0333d5",
+      "type": "image",
+      "src": "images/復興作業18.jpg",
+      "thumb": "images/復興作業18_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 35
+    },
+    {
+      "id": "549b5593-8374-4d24-a04f-2e7a7d8a9969",
+      "type": "image",
+      "src": "images/復興作業19.jpg",
+      "thumb": "images/復興作業19_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "water"
+      ],
+      "order": 36
+    },
+    {
+      "id": "d5c9a717-266e-45a3-b89f-ff2f4aeffb6d",
+      "type": "image",
+      "src": "images/復興作業20.jpg",
+      "thumb": "images/復興作業20_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        ""
+      ],
+      "order": 37
+    },
+    {
+      "id": "d1a99bcb-9911-4f8d-9db1-6643f92612e1",
+      "type": "image",
+      "src": "images/復興作業21.jpg",
+      "thumb": "images/復興作業21_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 38
+    },
+    {
+      "id": "fe55a845-9a3e-4aa0-b241-0a5e0720c37b",
+      "type": "image",
+      "src": "images/復興作業22.jpg",
+      "thumb": "images/復興作業22_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "water"
+      ],
+      "order": 39
+    },
+    {
+      "id": "6431fb20-48a6-42d2-825a-004c36bdbabd",
+      "type": "image",
+      "src": "images/復興作業23.jpg",
+      "thumb": "images/復興作業23_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 40
+    },
+    {
+      "id": "3c6a9893-9a78-4d7e-a409-a184c9202633",
+      "type": "image",
+      "src": "images/復興作業24.jpg",
+      "thumb": "images/復興作業24_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 41
+    },
+    {
+      "id": "0e884956-fa75-4118-bf76-da08b377990b",
+      "type": "image",
+      "src": "images/復興作業25.jpg",
+      "thumb": "images/復興作業25_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "oil",
+        ""
+      ],
+      "order": 42
+    },
+    {
+      "id": "1dbe96af-52ab-4de8-bb09-3df0803e4529",
+      "type": "image",
+      "src": "images/復興作業26.jpg",
+      "thumb": "images/復興作業26_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter"
+      ],
+      "order": 43
+    },
+    {
+      "id": "7ecb58e2-15ef-4959-afb2-32670d676723",
+      "type": "image",
+      "src": "images/復興作業27.jpg",
+      "thumb": "images/復興作業27_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 44
+    },
+    {
+      "id": "10cd900d-e09f-4c32-b276-3206ade0f5c0",
+      "type": "image",
+      "src": "images/復興作業28.jpg",
+      "thumb": "images/復興作業28_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 45
+    },
+    {
+      "id": "6bdc9d76-f5ed-40dd-8343-3e3043e483d9",
+      "type": "image",
+      "src": "images/復興作業29.jpg",
+      "thumb": "images/復興作業29_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 46
+    },
+    {
+      "id": "ee08eff8-6fa2-4a06-8fec-c123493557e8",
+      "type": "image",
+      "src": "images/復興作業30.jpg",
+      "thumb": "images/復興作業30_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 47
+    },
+    {
+      "id": "0fccec4a-5848-4222-a02f-d5783e1683ed",
+      "type": "image",
+      "src": "images/復興作業31.jpg",
+      "thumb": "images/復興作業31_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 48
+    },
+    {
+      "id": "9df7e795-f85f-450e-907b-b9e26b78ac50",
+      "type": "image",
+      "src": "images/復興作業32.jpg",
+      "thumb": "images/復興作業32_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "oil"
+      ],
+      "order": 49
+    },
+    {
+      "id": "bd06c0bf-6669-4c88-958d-55cc6c8ded80",
+      "type": "image",
+      "src": "images/復興作業33.jpg",
+      "thumb": "images/復興作業33_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "oil"
+      ],
+      "order": 50
+    },
+    {
+      "id": "383627e2-ef3a-4900-9a70-6ce20b888e67",
+      "type": "image",
+      "src": "images/復興作業34.jpg",
+      "thumb": "images/復興作業34_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 51
+    },
+    {
+      "id": "698343de-c4bf-4b5e-9fe9-b9225c52bee5",
+      "type": "image",
+      "src": "images/復興作業35.jpg",
+      "thumb": "images/復興作業35_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 52
+    },
+    {
+      "id": "8155056e-bfec-434f-86de-d32cb000e294",
+      "type": "image",
+      "src": "images/復興作業36.jpg",
+      "thumb": "images/復興作業36_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 53
+    },
+    {
+      "id": "9f3b2f42-1b36-4ba5-94f9-b34ed0e6d49a",
+      "type": "image",
+      "src": "images/復興作業37.jpg",
+      "thumb": "images/復興作業37_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 54
+    },
+    {
+      "id": "f03972bb-0819-44f7-a3c1-89e7b23b20ff",
+      "type": "image",
+      "src": "images/復興作業38.jpg",
+      "thumb": "images/復興作業38_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 55
+    },
+    {
+      "id": "8d32157d-73c0-4fdf-b5fe-064664cad1bc",
+      "type": "image",
+      "src": "images/復興作業39.jpg",
+      "thumb": "images/復興作業39_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 56
+    },
+    {
+      "id": "aec52810-7602-4daf-9dbc-3bd7fa5a57ac",
+      "type": "image",
+      "src": "images/復興作業40.jpg",
+      "thumb": "images/復興作業40_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 57
+    },
+    {
+      "id": "d80c74a3-d2a7-47d2-8b67-10ef6983204c",
+      "type": "image",
+      "src": "images/復興作業41.jpg",
+      "thumb": "images/復興作業41_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 58
+    },
+    {
+      "id": "109f8450-f18a-4b6c-8a9b-85a9abbb3162",
+      "type": "image",
+      "src": "images/復興作業42.jpg",
+      "thumb": "images/復興作業42_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 59
+    },
+    {
+      "id": "cd5c1681-952c-4c0b-af31-91aa4814a2b3",
+      "type": "image",
+      "src": "images/復興作業43.jpg",
+      "thumb": "images/復興作業43_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "water"
+      ],
+      "order": 60
+    },
+    {
+      "id": "5b79051d-e105-4bd7-a831-a202ead8a472",
+      "type": "image",
+      "src": "images/復興作業44.jpg",
+      "thumb": "images/復興作業44_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "oil"
+      ],
+      "order": 61
+    },
+    {
+      "id": "2f58e1af-6c14-4d81-a61a-7411219c18b5",
+      "type": "image",
+      "src": "images/復興作業45.jpg",
+      "thumb": "images/復興作業45_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 62
+    },
+    {
+      "id": "f9ae3a9f-d393-4ea6-addb-304203eb45bd",
+      "type": "image",
+      "src": "images/復興作業46.jpg",
+      "thumb": "images/復興作業46_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 63
+    },
+    {
+      "id": "80beb812-f424-45fb-9d44-801c218a3495",
+      "type": "image",
+      "src": "images/復興作業47.jpg",
+      "thumb": "images/復興作業47_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 64
+    },
+    {
+      "id": "08695f1c-d578-4a69-bbf6-b571d28d036d",
+      "type": "image",
+      "src": "images/復興作業48.jpg",
+      "thumb": "images/復興作業48_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 65
+    },
+    {
+      "id": "9ede2bc9-f22f-45e7-8954-f37278d6e1b2",
+      "type": "image",
+      "src": "images/復興作業49.jpg",
+      "thumb": "images/復興作業49_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 66
+    },
+    {
+      "id": "2e5ca8ee-c599-47a7-a2a0-ee59eb1913a6",
+      "type": "image",
+      "src": "images/復興作業50.jpg",
+      "thumb": "images/復興作業50_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 67
+    },
+    {
+      "id": "0a55e157-4c3c-460e-a710-f7ea1887c204",
+      "type": "image",
+      "src": "images/復興作業51.jpg",
+      "thumb": "images/復興作業51_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 68
+    },
+    {
+      "id": "a973ad3a-a7e1-4076-bff8-bb09254c704d",
+      "type": "image",
+      "src": "images/復興作業52.jpg",
+      "thumb": "images/復興作業52_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 69
+    },
+    {
+      "id": "221b7820-9898-4a88-aff2-94b468207cd3",
+      "type": "image",
+      "src": "images/復興作業53.jpg",
+      "thumb": "images/復興作業53_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "oil"
+      ],
+      "order": 70
+    },
+    {
+      "id": "c22792f7-e3d2-4047-bfb3-d1af5e068d07",
+      "type": "image",
+      "src": "images/復興作業54.jpg",
+      "thumb": "images/復興作業54_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 71
+    },
+    {
+      "id": "d3abe33b-5f7f-4a7c-81b7-db8e99aec508",
+      "type": "image",
+      "src": "images/復興作業55.jpg",
+      "thumb": "images/復興作業55_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 72
+    },
+    {
+      "id": "036875f5-7da3-42ba-b025-c5a4e296f28f",
+      "type": "image",
+      "src": "images/復興作業56.jpg",
+      "thumb": "images/復興作業56_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 73
+    },
+    {
+      "id": "5ace0647-2899-4fd0-a261-42a2051c6a26",
+      "type": "image",
+      "src": "images/復興作業57.jpg",
+      "thumb": "images/復興作業57_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 74
+    },
+    {
+      "id": "3558a5ea-7b53-42f3-9bd7-ab7705dcbe31",
+      "type": "image",
+      "src": "images/復興作業58.jpg",
+      "thumb": "images/復興作業58_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 75
+    },
+    {
+      "id": "8de33ab8-0f25-4a0a-a57e-5e14d05495d2",
+      "type": "image",
+      "src": "images/復興作業59.jpg",
+      "thumb": "images/復興作業59_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 76
+    },
+    {
+      "id": "6a760f95-d6ee-4f36-8f5a-cadf250574fd",
+      "type": "image",
+      "src": "images/復興作業60.jpg",
+      "thumb": "images/復興作業60_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 77
+    },
+    {
+      "id": "77c44092-b8c2-4187-8a0c-33819fc7817b",
+      "type": "image",
+      "src": "images/復興作業61.jpg",
+      "thumb": "images/復興作業61_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 78
+    },
+    {
+      "id": "866c57b3-d972-41ac-b319-f4f690c2cc6a",
+      "type": "image",
+      "src": "images/復興作業62.jpg",
+      "thumb": "images/復興作業62_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 79
+    },
+    {
+      "id": "db8ba34b-fc2e-45fe-b1d9-e3a06032f785",
+      "type": "image",
+      "src": "images/復興作業63.jpg",
+      "thumb": "images/復興作業63_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 80
+    },
+    {
+      "id": "79871b21-df35-4d0c-973d-9a15ff14436d",
+      "type": "image",
+      "src": "images/復興作業64.jpg",
+      "thumb": "images/復興作業64_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 81
+    },
+    {
+      "id": "b49130f7-74ee-46cc-b20e-636889e45a7d",
+      "type": "image",
+      "src": "images/復興作業65.jpg",
+      "thumb": "images/復興作業65_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 82
+    },
+    {
+      "id": "edce5d08-30a0-4521-933d-7a2d89f079b0",
+      "type": "image",
+      "src": "images/復興作業66.jpg",
+      "thumb": "images/復興作業66_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "water"
+      ],
+      "order": 83
+    },
+    {
+      "id": "f36712b9-2e64-46e7-9c82-dea33dcb6c3a",
+      "type": "image",
+      "src": "images/復興作業67.jpg",
+      "thumb": "images/復興作業67_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 84
+    },
+    {
+      "id": "fcf7a461-3d7c-4203-a458-85db91809ab9",
+      "type": "image",
+      "src": "images/復興作業68.jpg",
+      "thumb": "images/復興作業68_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 85
+    },
+    {
+      "id": "1fb6c13e-5b3b-426d-afbc-a888d4eeca2a",
+      "type": "image",
+      "src": "images/復興作業69.jpg",
+      "thumb": "images/復興作業69_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 86
+    },
+    {
+      "id": "ea2bd1c2-d69f-4203-99b4-da7634a829dd",
+      "type": "image",
+      "src": "images/復興作業70.jpg",
+      "thumb": "images/復興作業70_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 87
+    },
+    {
+      "id": "65d0b958-47f2-437a-9d53-0fc7a9fd591a",
+      "type": "image",
+      "src": "images/復興作業71.jpg",
+      "thumb": "images/復興作業71_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 88
+    },
+    {
+      "id": "32236266-bbb9-4fd2-b6c3-90c612c47c50",
+      "type": "image",
+      "src": "images/復興作業72.jpg",
+      "thumb": "images/復興作業72_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 89
+    },
+    {
+      "id": "ec7ff943-9682-4bee-af90-390cf535b0c8",
+      "type": "image",
+      "src": "images/復興作業73.jpg",
+      "thumb": "images/復興作業73_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 90
+    },
+    {
+      "id": "3e96d7d6-c723-457f-9055-3b7ae3f96743",
+      "type": "image",
+      "src": "images/復興作業74.jpg",
+      "thumb": "images/復興作業74_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 91
+    },
+    {
+      "id": "46a850c2-63d5-463f-8d50-f909fe01e7ca",
+      "type": "image",
+      "src": "images/復興作業75.jpg",
+      "thumb": "images/復興作業75_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 92
+    },
+    {
+      "id": "c58f3acb-cfef-4c7f-95d5-c2f1dae81589",
+      "type": "image",
+      "src": "images/復興作業76.jpg",
+      "thumb": "images/復興作業76_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "water"
+      ],
+      "order": 93
+    },
+    {
+      "id": "77d38dbb-551e-4a89-8f81-bc6fa3960cc1",
+      "type": "image",
+      "src": "images/復興作業77.jpg",
+      "thumb": "images/復興作業77_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 94
+    },
+    {
+      "id": "d28dab72-9d2b-4a33-a10d-b20a4da84b73",
+      "type": "image",
+      "src": "images/復興作業78.jpg",
+      "thumb": "images/復興作業78_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 95
+    },
+    {
+      "id": "5cdde91a-3f4f-468c-b3f6-e4af58852ff5",
+      "type": "image",
+      "src": "images/復興作業79.jpg",
+      "thumb": "images/復興作業79_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "water"
+      ],
+      "order": 96
+    },
+    {
+      "id": "24d8ab7b-7e26-40ed-9039-33cd88b93916",
+      "type": "image",
+      "src": "images/復興作業80.jpg",
+      "thumb": "images/復興作業80_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "oil"
+      ],
+      "order": 97
+    },
+    {
+      "id": "5b8f9f3f-6d56-44e3-b945-89340253a943",
+      "type": "image",
+      "src": "images/復興作業81.jpg",
+      "thumb": "images/復興作業81_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 98
+    },
+    {
+      "id": "1923eafc-419e-4740-85e8-3c736df6ffaf",
+      "type": "image",
+      "src": "images/復興作業82.jpg",
+      "thumb": "images/復興作業82_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "oil"
+      ],
+      "order": 99
+    },
+    {
+      "id": "1f99f9c9-3066-4774-b9fc-5d3be335a111",
+      "type": "image",
+      "src": "images/復興作業83.jpg",
+      "thumb": "images/復興作業83_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 100
+    },
+    {
+      "id": "96e67557-34a6-4868-93a4-c06f0df61e8d",
+      "type": "image",
+      "src": "images/復興作業84.jpg",
+      "thumb": "images/復興作業84_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 101
+    },
+    {
+      "id": "71c0e034-f5fb-49dd-b0e5-ad4082ad05a0",
+      "type": "image",
+      "src": "images/復興作業85.jpg",
+      "thumb": "images/復興作業85_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "digital"
+      ],
+      "order": 102
+    },
+    {
+      "id": "53063186-af5d-42c5-a887-406071d5fa06",
+      "type": "image",
+      "src": "images/復興作業86.jpg",
+      "thumb": "images/復興作業86_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "order": 103
+    },
+    {
+      "id": "9a606aef-968c-451a-9d03-9def5e690c12",
+      "type": "image",
+      "src": "images/復興作業87.jpg",
+      "thumb": "images/復興作業87_m.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 104
+    },
+    {
+      "id": "5ba166ec-2fc0-414b-86a0-8ab4ced81e85",
+      "type": "image",
+      "src": "images/LINE_ALBUM_23 程正邦_250109_5.jpg",
+      "thumb": "images/LINE_ALBUM_23 程正邦_250109_5s.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 105
+    },
+    {
+      "id": "a0328827-b220-42ea-b09a-3647f69e3e45",
+      "type": "image",
+      "src": "images/LINE_ALBUM_23 程正邦_250109_4.jpg",
+      "thumb": "images/LINE_ALBUM_23 程正邦_250109_4s.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 106
+    },
+    {
+      "id": "6675a596-7ba8-46bf-bd54-13706b7f1a9e",
+      "type": "image",
+      "src": "images/LINE_ALBUM_23 程正邦_250109_3.jpg",
+      "thumb": "images/LINE_ALBUM_23 程正邦_250109_3s.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 107
+    },
+    {
+      "id": "2e28ee63-8e1c-4a00-90ae-c86dffee8e03",
+      "type": "image",
+      "src": "images/LINE_ALBUM_23 程正邦_250109_2.jpg",
+      "thumb": "images/LINE_ALBUM_23 程正邦_250109_2s.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 108
+    },
+    {
+      "id": "d540f36e-07bd-49c3-90c9-741c1a957b32",
+      "type": "image",
+      "src": "images/LINE_ALBUM_23 程正邦_250109_1.jpg",
+      "thumb": "images/LINE_ALBUM_23 程正邦_250109_1s.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 109
+    },
+    {
+      "id": "9db6bd96-0528-4005-9ed9-5d03283c7192",
+      "type": "image",
+      "src": "images/2025復興畢展 (6).jpg",
+      "thumb": "images/2025復興畢展 (6)小.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 110
+    },
+    {
+      "id": "ce3cc744-cdc6-4146-89c6-ec888eb527d2",
+      "type": "image",
+      "src": "images/2025復興畢展 (8).jpg",
+      "thumb": "images/2025復興畢展 (8)小.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 111
+    },
+    {
+      "id": "7973bd74-f220-4cab-8f44-677d595b8b27",
+      "type": "image",
+      "src": "images/2025復興畢展 (9).jpg",
+      "thumb": "images/2025復興畢展 (9)小.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 112
+    },
+    {
+      "id": "6a2a4a74-ed3d-4232-9028-b1daf03ebf1f",
+      "type": "image",
+      "src": "images/2025復興畢展 (10).jpg",
+      "thumb": "images/2025復興畢展 (10)小.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 113
+    },
+    {
+      "id": "136e5f13-b225-4692-965f-a111b6e6a527",
+      "type": "image",
+      "src": "images/2025復興畢展 (11).jpg",
+      "thumb": "images/2025復興畢展 (11)小.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 114
+    },
+    {
+      "id": "5f90a769-85ff-4637-bf07-0b4e32c4a413",
+      "type": "image",
+      "src": "images/2025復興畢展 (1).jpg",
+      "thumb": "images/2025復興畢展 (1)小.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "ink"
+      ],
+      "order": 115
+    },
+    {
+      "id": "b19f8ed1-3845-4d76-b870-9aec78a73d58",
+      "type": "image",
+      "src": "images/2025復興畢展 (3).jpg",
+      "thumb": "images/2025復興畢展 (3)小.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "water"
+      ],
+      "order": 116
+    },
+    {
+      "id": "add3206d-9aa4-4412-a7d6-398164b50438",
+      "type": "image",
+      "src": "images/2025復興畢展 (12).jpg",
+      "thumb": "images/2025復興畢展 (12)小.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "oil"
+      ],
+      "order": 117
+    },
+    {
+      "id": "ab49d940-deea-4eb6-b557-4929c145ff36",
+      "type": "image",
+      "src": "images/2025復興畢展 (2).jpg",
+      "thumb": "images/2025復興畢展 (2)小.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "oil"
+      ],
+      "order": 118
+    },
+    {
+      "id": "2dee9adf-6c75-450c-b0bb-f14b461cdee4",
+      "type": "image",
+      "src": "images/2025復興畢展 (4).jpg",
+      "thumb": "images/2025復興畢展 (4)小.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 119
+    },
+    {
+      "id": "f9344b3e-8532-4081-b4cd-dc35461b6e8f",
+      "type": "image",
+      "src": "images/2025復興畢展 (5).jpg",
+      "thumb": "images/2025復興畢展 (5)小.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 120
+    },
+    {
+      "id": "79e04b6c-72e5-4dcc-bb97-0f0f942f0587",
+      "type": "image",
+      "src": "images/2025復興畢展 (7).jpg",
+      "thumb": "images/2025復興畢展 (7)小.jpg",
+      "caption": "復興作業",
+      "fancyboxGroup": "painter",
+      "categories": [
+        "painter",
+        "mark"
+      ],
+      "order": 121
+    },
+    {
+      "id": "37dcb250-97b6-4626-8bf8-e5099aae471c",
+      "type": "image",
+      "src": "images/160488761.jpg",
+      "thumb": "images/160488761m.jpg",
+      "caption": "光影練習",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 122
+    },
+    {
+      "id": "5275c0f3-6184-4364-ab82-d84686217513",
+      "type": "image",
+      "src": "images/160488761.jpg",
+      "thumb": "images/160509088m.jpg",
+      "caption": "光影練習",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 123
+    },
+    {
+      "id": "4442afa3-ad6c-40dd-9b63-09a491d42477",
+      "type": "image",
+      "src": "images/160509090.jpg",
+      "thumb": "images/160509090m.jpg",
+      "caption": "光影練習",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 124
+    },
+    {
+      "id": "6b64a9fa-e1cd-4f0b-8c15-c37a7a2d5583",
+      "type": "image",
+      "src": "images/162187038.jpg",
+      "thumb": "images/162187038m.jpg",
+      "caption": "光影練習",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 125
+    },
+    {
+      "id": "3591ee20-07ff-47e2-981f-e46dbdc4acb7",
+      "type": "image",
+      "src": "images/162187094.jpg",
+      "thumb": "images/162187094m.jpg",
+      "caption": "光影練習",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 126
+    },
+    {
+      "id": "a8eee215-b497-493d-8461-a19a51d8f890",
+      "type": "image",
+      "src": "images/20160215_135135.jpg",
+      "thumb": "images/20160215_135135m.jpg",
+      "caption": "日本",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 127
+    },
+    {
+      "id": "347ce1be-f372-4f41-ad38-a674bd17a48e",
+      "type": "image",
+      "src": "images/20160217_142352.jpg",
+      "thumb": "images/20160217_142352m.jpg",
+      "caption": "日本",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 128
+    },
+    {
+      "id": "4c02ea35-c1b0-4b04-a786-7fb3919b718e",
+      "type": "image",
+      "src": "images/20160219_160423.jpg",
+      "thumb": "images/20160219_160423m.jpg",
+      "caption": "日本",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 129
+    },
+    {
+      "id": "a6886350-3963-4795-9e92-7fe693b27cba",
+      "type": "image",
+      "src": "images/20171012_160004.jpg",
+      "thumb": "images/20171012_160004m.jpg",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 130
+    },
+    {
+      "id": "a6425446-eacb-4326-a913-28c0374ab9cb",
+      "type": "image",
+      "src": "images/20171013_134737.jpg",
+      "thumb": "images/20171013_134737m.jpg",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 131
+    },
+    {
+      "id": "ba220e3c-86bb-4dc4-8683-86aa54c31b34",
+      "type": "image",
+      "src": "images/20171015_190312.jpg",
+      "thumb": "images/20171015_190312m.jpg",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 132
+    },
+    {
+      "id": "69ef3cc9-b676-4124-87ab-496fa788aed3",
+      "type": "image",
+      "src": "images/20171016_212243.jpg",
+      "thumb": "images/20171016_212243m.jpg",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 133
+    },
+    {
+      "id": "5a41f388-e1c1-4176-8a3b-81932b752205",
+      "type": "image",
+      "src": "images/20180226_160834.jpg",
+      "thumb": "images/20180226_160834m.jpg",
+      "caption": "日本",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 134
+    },
+    {
+      "id": "b0aceb48-a75a-48f3-9bb1-a273aeb22367",
+      "type": "image",
+      "src": "images/20180301_111332.jpg",
+      "thumb": "images/20180301_111332m.jpg",
+      "caption": "日本",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 135
+    },
+    {
+      "id": "1b23a2fb-e1f9-4fca-9ee7-2bf183d067ee",
+      "type": "image",
+      "src": "images/20190212_142109.jpg",
+      "thumb": "images/20190212_142109m.jpg",
+      "caption": "吳哥窟",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 136
+    },
+    {
+      "id": "0b8d4bd9-0435-4853-976c-7dbf39564d82",
+      "type": "image",
+      "src": "images/20190213_095119.jpg",
+      "thumb": "images/20190213_095119m.jpg",
+      "caption": "吳哥窟",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 137
+    },
+    {
+      "id": "267f7c51-19ff-432b-a8c8-343368ec828e",
+      "type": "image",
+      "src": "images/IMG_0177.JPG",
+      "thumb": "images/IMG_0177m.JPG",
+      "caption": "日本",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 138
+    },
+    {
+      "id": "7946f44b-7d70-47ba-a2b4-72a4651ee66c",
+      "type": "image",
+      "src": "images/IMG_0216.JPG",
+      "thumb": "images/IMG_0216m.JPG",
+      "caption": "日本",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 139
+    },
+    {
+      "id": "1494a364-6694-402c-911e-0c97089feb6e",
+      "type": "image",
+      "src": "images/IMG_0389.JPG",
+      "thumb": "images/IMG_0389m.JPG",
+      "caption": "日本",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 140
+    },
+    {
+      "id": "3f1cfa07-588e-4867-8291-8c70cc1db579",
+      "type": "image",
+      "src": "images/IMG_1482.JPG",
+      "thumb": "images/IMG_1482m.JPG",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 141
+    },
+    {
+      "id": "3ea8183b-94ae-4739-957a-30f0c7da65e5",
+      "type": "image",
+      "src": "images/IMG_1515.JPG",
+      "thumb": "images/IMG_1515m.JPG",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 142
+    },
+    {
+      "id": "f8693973-6d37-4a8b-88dd-b7e7ecb03587",
+      "type": "image",
+      "src": "images/IMG_1657.JPG",
+      "thumb": "images/IMG_1657m.JPG",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 143
+    },
+    {
+      "id": "e2f9b790-aec7-48c4-8845-53ed2a903e4f",
+      "type": "image",
+      "src": "images/IMG_1974.JPG",
+      "thumb": "images/IMG_1974m.JPG",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 144
+    },
+    {
+      "id": "4b1a2be2-6494-48eb-a73c-ef643d8a9bf3",
+      "type": "image",
+      "src": "images/IMG_2003.JPG",
+      "thumb": "images/IMG_2003m.JPG",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 145
+    },
+    {
+      "id": "71d9cffb-ff94-4ce6-b880-98dcb6d4339e",
+      "type": "image",
+      "src": "images/IMG_2028.JPG",
+      "thumb": "images/IMG_2028m.JPG",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 146
+    },
+    {
+      "id": "4bb189aa-02fb-4c2d-8f04-a0fdb8e19806",
+      "type": "image",
+      "src": "images/IMG_2059.JPG",
+      "thumb": "images/IMG_2059m.JPG",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 147
+    },
+    {
+      "id": "31e42367-e452-4db5-b16d-be6d58547c55",
+      "type": "image",
+      "src": "images/IMG_3006.JPG",
+      "thumb": "images/IMG_3006m.JPG",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 148
+    },
+    {
+      "id": "0dc70535-cdba-4d2e-9e0c-11eb1b0b4012",
+      "type": "image",
+      "src": "images/IMG_3051.JPG",
+      "thumb": "images/IMG_3051m.JPG",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 149
+    },
+    {
+      "id": "db25f57f-ef1e-45a2-8448-2a78ea7b867d",
+      "type": "image",
+      "src": "images/IMG_3105.JPG",
+      "thumb": "images/IMG_3105m.JPG",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 150
+    },
+    {
+      "id": "ac11269f-4f39-4a9d-bebc-28a29b658cc7",
+      "type": "image",
+      "src": "images/IMG_3122.JPG",
+      "thumb": "images/IMG_3122m.JPG",
+      "caption": "義大利",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 151
+    },
+    {
+      "id": "8c82f835-4eae-4a32-8a84-fd0e85ab244a",
+      "type": "image",
+      "src": "images/IMG_3742.JPG",
+      "thumb": "images/IMG_3742m.JPG",
+      "caption": "吳哥窟",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 152
+    },
+    {
+      "id": "c57b4149-4eba-42ba-a701-7d22b5ad3fbf",
+      "type": "image",
+      "src": "images/IMG_4187.JPG",
+      "thumb": "images/IMG_4187m.JPG",
+      "caption": "吳哥窟",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 153
+    },
+    {
+      "id": "ec1b5db5-4ad7-4257-9197-ef6a3c248b55",
+      "type": "image",
+      "src": "images/263f24ceb4b75b332b227825a4033f77.jpg",
+      "thumb": "images/263f24ceb4b75b332b227825a4033f77m.jpg",
+      "caption": "人像攝影",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 154
+    },
+    {
+      "id": "cf8de790-0189-4cc6-ba87-66d1ec885267",
+      "type": "image",
+      "src": "images/normal_8df75fcdfed346219c91ee5e8d4b6f34.jpg",
+      "thumb": "images/normal_8df75fcdfed346219c91ee5e8d4b6f34m.jpg",
+      "caption": "人像攝影",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 155
+    },
+    {
+      "id": "dcaffc1b-5c53-44f5-9326-d81c01219f50",
+      "type": "image",
+      "src": "images/normal_45802dff7ea3a95a529c312a8a2e30a2.jpg",
+      "thumb": "images/normal_45802dff7ea3a95a529c312a8a2e30a2m.jpg",
+      "caption": "人像攝影",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 156
+    },
+    {
+      "id": "dd8fcc4f-5d97-4322-8dbe-68c1ee3f3a0c",
+      "type": "image",
+      "src": "images/normal_ba311f2226e176ccb5f871dac9adbd56.jpg",
+      "thumb": "images/normal_ba311f2226e176ccb5f871dac9adbd56m.jpg",
+      "caption": "人像攝影",
+      "fancyboxGroup": "photo",
+      "categories": [
+        "photo"
+      ],
+      "order": 157
+    },
+    {
+      "id": "28e594f9-d485-485a-86bf-b545d0eeaaab",
+      "type": "image",
+      "src": "images/資產 95@4x.png",
+      "thumb": "images/資產 95@4x.png",
+      "caption": "小阿姨在超市賣起司，三不五時會做蛋糕請大家吃，為了報答她的口腹之恩，幫她設計蛋糕Logo和購物網站。由於我媽娘家姓闕，取諧音「雀」以紅色書法大字，喚起消費者注意。小鳥翅膀以女人頭剪影代表雀姐，鳥的身體則是雀姐的頭髮，背景圖案以黃色基底加上大小白點，代表超濃郁起司蛋糕。",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis1"
+      ],
+      "order": 158
+    },
+    {
+      "id": "f9234894-52be-4f79-9aad-35c310daa0f3",
+      "type": "image",
+      "src": "images/資產 77@2x.png",
+      "thumb": "images/資產 77@2x.png",
+      "caption": "雀姊蛋糕",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis1"
+      ],
+      "order": 159
+    },
+    {
+      "id": "4c98dd51-4cb8-4b27-bde5-6b54ff336545",
+      "type": "image",
+      "src": "images/資產 69@2x.png",
+      "thumb": "images/資產 69@2x.png",
+      "caption": "雀姊蛋糕",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis1"
+      ],
+      "order": 160
+    },
+    {
+      "id": "e0a104f0-3e37-48c4-87aa-f96d09721688",
+      "type": "image",
+      "src": "images/資產 52.png",
+      "thumb": "images/資產 52.png",
+      "caption": "雀姊蛋糕",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis1"
+      ],
+      "order": 161
+    },
+    {
+      "id": "61e706de-f214-4730-9096-e5559a25d59f",
+      "type": "image",
+      "src": "images/資產 51.png",
+      "thumb": "images/資產 51.png",
+      "caption": "雀姊蛋糕",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis1"
+      ],
+      "order": 162
+    },
+    {
+      "id": "5ccbe1cd-0e68-4fda-958a-815a90306bb1",
+      "type": "image",
+      "src": "images/資產 54.png",
+      "thumb": "images/資產 54.png",
+      "caption": "雀姊蛋糕",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis1"
+      ],
+      "order": 163
+    },
+    {
+      "id": "d93bde94-e758-49b7-b596-cfd1dbc13e5b",
+      "type": "image",
+      "src": "images/資產 46.png",
+      "thumb": "images/資產 46.png",
+      "caption": "雀姊蛋糕",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis1"
+      ],
+      "order": 164
+    },
+    {
+      "id": "594ef9fe-1e81-486b-8c76-819b6cae7dcb",
+      "type": "image",
+      "src": "images/資產 47.png",
+      "thumb": "images/資產 47.png",
+      "caption": "雀姊蛋糕",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis1"
+      ],
+      "order": 165
+    },
+    {
+      "id": "1c1c2aa8-376b-43c6-817f-97f52ae96b7f",
+      "type": "image",
+      "src": "images/資產 31.png",
+      "thumb": "images/資產 31.png",
+      "caption": "雀姊蛋糕",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis1"
+      ],
+      "order": 166
+    },
+    {
+      "id": "321bd1f2-182f-4814-9cd4-233ac8446e07",
+      "type": "image",
+      "src": "images/資產 26.png",
+      "thumb": "images/資產 26.png",
+      "caption": "雀姊蛋糕",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis1"
+      ],
+      "order": 167
+    },
+    {
+      "id": "50ea9e58-85ba-494e-9506-27cfd4e26dbd",
+      "type": "image",
+      "src": "images/資產 22.png",
+      "thumb": "images/資產 22.png",
+      "caption": "雀姊蛋糕",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis1"
+      ],
+      "order": 168
+    },
+    {
+      "id": "d1dc6038-8d03-4356-b9b6-d72c3efa8372",
+      "type": "image",
+      "src": "images/資產 20_1.png",
+      "thumb": "images/資產 20_1.png",
+      "caption": "雀姊蛋糕",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis1"
+      ],
+      "order": 169
+    },
+    {
+      "id": "ed0c91b7-86f9-4a99-9e62-38513b51d3fa",
+      "type": "image",
+      "src": "images/14_宣傳海報一.jpg",
+      "thumb": "images/14_宣傳海報一m.jpg",
+      "caption": "雀姊蛋糕",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis1"
+      ],
+      "order": 170
+    },
+    {
+      "id": "6fb20875-20f3-4777-84db-f003800f55c5",
+      "type": "image",
+      "src": "images/15_宣傳海報二.jpg",
+      "thumb": "images/15_宣傳海報二m.jpg",
+      "caption": "雀姊蛋糕",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis1"
+      ],
+      "order": 171
+    },
+    {
+      "id": "57a310b7-5a3e-413a-9341-7af0ad03f0ad",
+      "type": "image",
+      "src": "images/資產 17@4x.png",
+      "thumb": "images/資產 17@4x.png",
+      "caption": "業主從事新聞攝影多年，想將攝工作室結合寵物餐廳， 故LOGO設計融合狗和相機，將相機用線條呈現，狗則和鏡頭結合，用黑色區塊形成一體。狗仔「PAPARAZZI」字樣放在鏡頭中間，壓縮成圓形凸起，讓鏡頭和狗身體更有立體感。狗尾巴貌似舔舌狀，代表這裡除了可以拍照、有小狗，也有美食。",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 172
+    },
+    {
+      "id": "4b1facbc-bec2-4a71-ba71-fd47a2e6244f",
+      "type": "image",
+      "src": "images/資產 18@4x_1.png",
+      "thumb": "images/資產 18@4x_1.png",
+      "caption": "狗日攝影",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 173
+    },
+    {
+      "id": "9bb4e469-8bfc-4f2e-a7b1-c946fd670a2f",
+      "type": "image",
+      "src": "images/資產 21@4x.png",
+      "thumb": "images/資產 21@4x.png",
+      "caption": "狗日攝影",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 174
+    },
+    {
+      "id": "5893fe4d-dc23-4582-8760-958300524e7b",
+      "type": "image",
+      "src": "images/資產 23@4x.png",
+      "thumb": "images/資產 23@4x.png",
+      "caption": "狗日攝影",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 175
+    },
+    {
+      "id": "171136b2-e942-4177-9332-23b887280730",
+      "type": "image",
+      "src": "images/資產 23.png",
+      "thumb": "images/資產 23.png",
+      "caption": "狗日攝影",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 176
+    },
+    {
+      "id": "2d79e91b-c339-45d5-993c-56429ca7bbd0",
+      "type": "image",
+      "src": "images/資產 76.png",
+      "thumb": "images/資產 76.png",
+      "caption": "狗日攝影",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 177
+    },
+    {
+      "id": "113e0c97-83ab-48c5-9b12-8561da214ed3",
+      "type": "image",
+      "src": "images/資產 18.png",
+      "thumb": "images/資產 18.png",
+      "caption": "狗日攝影",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 178
+    },
+    {
+      "id": "a81c2582-24d8-447e-bedf-1c2612d9f967",
+      "type": "image",
+      "src": "images/工作區域 3.png",
+      "thumb": "images/工作區域 3.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 179
+    },
+    {
+      "id": "f92643c3-e0bc-4f3b-aa56-024cfcda9098",
+      "type": "image",
+      "src": "images/工作區域 1.png",
+      "thumb": "images/工作區域 1.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 180
+    },
+    {
+      "id": "b95b709f-1860-4cfc-be7a-d4b225d88d9a",
+      "type": "image",
+      "src": "images/工作區域 21.png",
+      "thumb": "images/工作區域 21.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 181
+    },
+    {
+      "id": "cd6c887c-2978-45c0-b1c7-c1c62088b045",
+      "type": "image",
+      "src": "images/工作區域 23.png",
+      "thumb": "images/工作區域 23.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 182
+    },
+    {
+      "id": "8ec47f88-68d5-4773-af07-b89c3ce28c0c",
+      "type": "image",
+      "src": "images/工作區域 25.png",
+      "thumb": "images/工作區域 25.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 183
+    },
+    {
+      "id": "4c7e7d93-4d96-448a-b11f-42d753f870a2",
+      "type": "image",
+      "src": "images/工作區域 26.png",
+      "thumb": "images/工作區域 26.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 184
+    },
+    {
+      "id": "b43d1689-29ab-45e2-be86-29a5c8fcbd21",
+      "type": "image",
+      "src": "images/工作區域 27.png",
+      "thumb": "images/工作區域 27.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 185
+    },
+    {
+      "id": "51564466-791a-4832-b1d7-b0108066cc09",
+      "type": "image",
+      "src": "images/工作區域 28.png",
+      "thumb": "images/工作區域 28.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 186
+    },
+    {
+      "id": "3ef88903-c9c1-4025-8716-14189b0ae817",
+      "type": "image",
+      "src": "images/工作區域 29.png",
+      "thumb": "images/工作區域 29.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 187
+    },
+    {
+      "id": "2d48f4f9-1dd1-4cbf-9ec7-269c2fc8d51e",
+      "type": "image",
+      "src": "images/工作區域 31.png",
+      "thumb": "images/工作區域 31.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 188
+    },
+    {
+      "id": "ee9c7d86-1e09-4219-aa57-26a6681eda55",
+      "type": "image",
+      "src": "images/工作區域 32.png",
+      "thumb": "images/工作區域 32.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 189
+    },
+    {
+      "id": "80c9d68a-9bab-4388-8429-187c0c1c13eb",
+      "type": "image",
+      "src": "images/工作區域 2.png",
+      "thumb": "images/工作區域 2.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 190
+    },
+    {
+      "id": "a0a965e3-bb5f-428f-93c9-2f4bc946c9c4",
+      "type": "image",
+      "src": "images/工作區域 11.png",
+      "thumb": "images/工作區域 11.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 191
+    },
+    {
+      "id": "b3dd24ed-578b-4b62-a114-3d90dbc17a02",
+      "type": "image",
+      "src": "images/工作區域 4.png",
+      "thumb": "images/工作區域 4.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 192
+    },
+    {
+      "id": "fc1bf164-2cac-4996-a6d8-0f8cdca153a3",
+      "type": "image",
+      "src": "images/工作區域 9.png",
+      "thumb": "images/工作區域 9.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 193
+    },
+    {
+      "id": "f1752e17-0412-4c14-8e8e-1aca0bfbb7d4",
+      "type": "image",
+      "src": "images/工作區域 6.png",
+      "thumb": "images/工作區域 6.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 194
+    },
+    {
+      "id": "a19db38e-23ed-4a57-94a0-0cd78709ce79",
+      "type": "image",
+      "src": "images/工作區域 7.png",
+      "thumb": "images/工作區域 7.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 195
+    },
+    {
+      "id": "719f0a84-ba82-4929-ada4-9f75e267de3d",
+      "type": "image",
+      "src": "images/工作區域 8.png",
+      "thumb": "images/工作區域 8.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 196
+    },
+    {
+      "id": "7d2a3fd3-bbdd-4adf-947e-8d7377f59840",
+      "type": "image",
+      "src": "images/工作區域 12.png",
+      "thumb": "images/工作區域 12.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 197
+    },
+    {
+      "id": "3a8a84d8-a3a0-4fcc-8e7e-cbf3d9a4c349",
+      "type": "image",
+      "src": "images/工作區域 13.png",
+      "thumb": "images/工作區域 13.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 198
+    },
+    {
+      "id": "f1a883fe-6746-440b-a0f0-baa80cfc690a",
+      "type": "image",
+      "src": "images/工作區域 14.png",
+      "thumb": "images/工作區域 14.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 199
+    },
+    {
+      "id": "065cd113-30cf-40b2-8fe7-90df1e77e804",
+      "type": "image",
+      "src": "images/工作區域 15.png",
+      "thumb": "images/工作區域 15.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 200
+    },
+    {
+      "id": "f6e0b5e0-31aa-45b1-b7e8-9adfacd63064",
+      "type": "image",
+      "src": "images/工作區域 17.png",
+      "thumb": "images/工作區域 17.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 201
+    },
+    {
+      "id": "ad6e2431-165e-4bf2-824e-f36747ab9240",
+      "type": "image",
+      "src": "images/工作區域 19.png",
+      "thumb": "images/工作區域 19.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 202
+    },
+    {
+      "id": "4bd958ce-6d8c-41e1-81d7-05bf7e5380d9",
+      "type": "image",
+      "src": "images/工作區域 20.png",
+      "thumb": "images/工作區域 20.png",
+      "caption": "LINE貼圖",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis2"
+      ],
+      "order": 203
+    },
+    {
+      "id": "8aafd37d-360b-4586-b555-4ae67650c49c",
+      "type": "image",
+      "src": "images/武台開打0.png",
+      "thumb": "images/武台開打0m.png",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 204
+    },
+    {
+      "id": "ba26669e-79a4-405b-8f3e-16d55b23ea87",
+      "type": "image",
+      "src": "images/武台開打7.png",
+      "thumb": "images/武台開打7m.png",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 205
+    },
+    {
+      "id": "da2d58f1-77b3-44c4-a413-772594c291e7",
+      "type": "image",
+      "src": "images/武台開打8.png",
+      "thumb": "images/武台開打8m.png",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 206
+    },
+    {
+      "id": "a2c92fcb-497e-4fac-82c7-11674776e274",
+      "type": "image",
+      "src": "images/武台開打.png",
+      "thumb": "images/武台開打m.png",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 207
+    },
+    {
+      "id": "4ed9ac5e-1e12-4fa9-9d7a-e6ad25cca645",
+      "type": "image",
+      "src": "images/武台開打2.png",
+      "thumb": "images/武台開打2.png",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 208
+    },
+    {
+      "id": "dc6cbb75-7772-46ef-8f7e-29bcc7da0abc",
+      "type": "image",
+      "src": "images/武台開打3.png",
+      "thumb": "images/武台開打3m.png",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 209
+    },
+    {
+      "id": "b68eb029-6cc5-4846-982f-ce3f0e1abea4",
+      "type": "image",
+      "src": "images/武台開打4.png",
+      "thumb": "images/武台開打4m.png",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 210
+    },
+    {
+      "id": "c86bedb6-15f4-4672-8841-92905dcba50c",
+      "type": "image",
+      "src": "images/武台開打6.png",
+      "thumb": "images/武台開打6m.png",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 211
+    },
+    {
+      "id": "373758d9-436e-496b-9983-3706a50fd2d8",
+      "type": "image",
+      "src": "images/武台開打9.png",
+      "thumb": "images/武台開打9m.png",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 212
+    },
+    {
+      "id": "31a4747d-cf9b-47be-8614-1e19698d9349",
+      "type": "image",
+      "src": "images/武台開打5.jpg",
+      "thumb": "images/武台開打5m.jpg",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 213
+    },
+    {
+      "id": "4b05f22e-05de-4dfb-b11b-4514143196b7",
+      "type": "image",
+      "src": "images/武台開打4.jpg",
+      "thumb": "images/武台開打4m.jpg",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 214
+    },
+    {
+      "id": "37a56637-e387-4252-98a6-6fa8a45dbbf1",
+      "type": "image",
+      "src": "images/武台開打0.jpg",
+      "thumb": "images/武台開打0m.jpg",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 215
+    },
+    {
+      "id": "b2dd11d8-660f-4623-b6fc-89a0486f46ef",
+      "type": "image",
+      "src": "images/武台開打1.jpg",
+      "thumb": "images/武台開打1m.jpg",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 216
+    },
+    {
+      "id": "ef834d36-4f5f-464b-88e0-a33eb05fa267",
+      "type": "image",
+      "src": "images/武台開打2.jpg",
+      "thumb": "images/武台開打2.jpg",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 217
+    },
+    {
+      "id": "985a994a-e028-484d-89db-09130f010796",
+      "type": "image",
+      "src": "images/武台開打3.jpg",
+      "thumb": "images/武台開打3m.jpg",
+      "caption": "武台開打",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis4"
+      ],
+      "order": 218
+    },
+    {
+      "id": "0e8c7317-ba9f-4bec-9ec5-c053bdefe691",
+      "type": "image",
+      "src": "images/資產 3.png",
+      "thumb": "images/資產 3.png",
+      "caption": "許多人都夢想退休後開間咖啡廳，我也不例外，既然是彰顯個人特色的LOGO，主視覺以大頭造形置入，由於我拍照愛做鬼臉，所以選了一張吐舌搞怪的表情，圓圈將頭框住，裡面以咖啡色為底色，象徵咖啡杯俯視圖，並在橘色邊框，以我的英文名字和個人網址環繞，感興趣的人可以透過網站，更深入了解我這個人。",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 219
+    },
+    {
+      "id": "ead31857-881a-49a6-81e7-374ee2ce235c",
+      "type": "image",
+      "src": "images/資產 2@4x.png",
+      "thumb": "images/資產 2@4x.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 220
+    },
+    {
+      "id": "0754c532-2ae9-4d58-b493-f9305de822df",
+      "type": "image",
+      "src": "images/資產 2.png",
+      "thumb": "images/資產 2.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 221
+    },
+    {
+      "id": "6dd0a87f-b4ab-41da-9276-784794ac3d3d",
+      "type": "image",
+      "src": "images/資產 4.png",
+      "thumb": "images/資產 4.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 222
+    },
+    {
+      "id": "bf065dd3-75b6-4614-a14a-73c99cf0b3e2",
+      "type": "image",
+      "src": "images/資產 5.png",
+      "thumb": "images/資產 5.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 223
+    },
+    {
+      "id": "938b1219-6579-4b1e-b7e3-dcde3b1936de",
+      "type": "image",
+      "src": "images/資產 7.png",
+      "thumb": "images/資產 7.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 224
+    },
+    {
+      "id": "a1035b11-2309-4508-ae13-e2e27296cc69",
+      "type": "image",
+      "src": "images/資產 8.png",
+      "thumb": "images/資產 8.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 225
+    },
+    {
+      "id": "cb90b98d-0431-4268-8a5f-a965573614e6",
+      "type": "image",
+      "src": "images/資產 9.png",
+      "thumb": "images/資產 9.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 226
+    },
+    {
+      "id": "27e6a145-1fba-42bf-9205-782a4ad0254b",
+      "type": "image",
+      "src": "images/資產 10.png",
+      "thumb": "images/資產 10.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 227
+    },
+    {
+      "id": "4c53cdf2-af1d-4289-bb89-646b2f597840",
+      "type": "image",
+      "src": "images/資產 11.png",
+      "thumb": "images/資產 11.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 228
+    },
+    {
+      "id": "147e7a59-6e93-428b-bf71-eda2a699ce87",
+      "type": "image",
+      "src": "images/資產 12.png",
+      "thumb": "images/資產 12.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 229
+    },
+    {
+      "id": "ef23fdc8-0cf4-4179-b5e1-a5952c033107",
+      "type": "image",
+      "src": "images/資產 13.png",
+      "thumb": "images/資產 13.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 230
+    },
+    {
+      "id": "d596b07f-d5c8-4c31-b9ab-41b833f57cad",
+      "type": "image",
+      "src": "images/資產 14.png",
+      "thumb": "images/資產 14.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 231
+    },
+    {
+      "id": "549141ae-022a-4ffd-aa86-28372497b0b6",
+      "type": "image",
+      "src": "images/資產 15.png",
+      "thumb": "images/資產 15.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 232
+    },
+    {
+      "id": "3a4dc8a8-db15-4a0a-bd36-b153690da4e5",
+      "type": "image",
+      "src": "images/資產 16.png",
+      "thumb": "images/資產 16.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 233
+    },
+    {
+      "id": "f3bb46fa-be5c-497d-8cfc-85c9b978b60e",
+      "type": "image",
+      "src": "images/資產 17.png",
+      "thumb": "images/資產 17.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 234
+    },
+    {
+      "id": "2c359fa8-2802-452c-b395-311910a094e0",
+      "type": "image",
+      "src": "images/資產 21.png",
+      "thumb": "images/資產 21.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 235
+    },
+    {
+      "id": "65152881-8cc3-46a3-beae-ccd2504d0fd2",
+      "type": "image",
+      "src": "images/資產 20.png",
+      "thumb": "images/資產 20.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 236
+    },
+    {
+      "id": "1ca0c3c6-42e3-4e19-a9f7-bac33c21fcab",
+      "type": "image",
+      "src": "images/資產 19.png",
+      "thumb": "images/資產 19.png",
+      "caption": "大叔咖啡",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis3"
+      ],
+      "order": 237
+    },
+    {
+      "id": "db9a6ba5-0957-4a67-aa86-93078e8e3b83",
+      "type": "image",
+      "src": "images/捷運燈箱_劇院.png",
+      "thumb": "images/捷運燈箱_劇院m.png",
+      "caption": "台北捷運_燈箱廣告",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 238
+    },
+    {
+      "id": "6fa9dcb3-27c5-427a-8c7b-b86c1867734d",
+      "type": "image",
+      "src": "images/捷運燈箱_劇院實景.jpg",
+      "thumb": "images/捷運燈箱_劇院實景m.jpg",
+      "caption": "台北捷運_燈箱廣告",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 239
+    },
+    {
+      "id": "63ccf138-c242-4477-af20-c8e35ee6d332",
+      "type": "image",
+      "src": "images/捷運燈箱_販賣機.jpg",
+      "thumb": "images/捷運燈箱_販賣機m.jpg",
+      "caption": "台北捷運_燈箱廣告",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 240
+    },
+    {
+      "id": "43846942-67c9-4dd5-b53f-7fd9c7d996a2",
+      "type": "image",
+      "src": "images/捷運燈箱_販賣機實景.jpg",
+      "thumb": "images/捷運燈箱_販賣機實景m.jpg",
+      "caption": "台北捷運_燈箱廣告",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 241
+    },
+    {
+      "id": "61f18d08-3fba-47a0-bc89-c6c7b703ba5f",
+      "type": "image",
+      "src": "images/捷運燈箱_南京復興1.png",
+      "thumb": "images/捷運燈箱_南京復興1m.png",
+      "caption": "台北捷運_燈箱廣告",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 242
+    },
+    {
+      "id": "d48f4bd7-19ee-45a8-b685-24454b04043e",
+      "type": "image",
+      "src": "images/捷運燈箱_南京復興2.png",
+      "thumb": "images/捷運燈箱_南京復興2m.png",
+      "caption": "台北捷運_燈箱廣告",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 243
+    },
+    {
+      "id": "bf03a8bb-1d4f-47f0-bcd2-e9e6a6f11313",
+      "type": "image",
+      "src": "images/捷運燈箱_南京復興3.jpg",
+      "thumb": "images/捷運燈箱_南京復興3m.jpg",
+      "caption": "台北捷運_燈箱廣告",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 244
+    },
+    {
+      "id": "1b37e550-f25c-4ffb-93cc-b7a80feb4ed3",
+      "type": "image",
+      "src": "images/捷運燈箱_南京復興.png",
+      "thumb": "images/捷運燈箱_南京復興m.png",
+      "caption": "台北捷運_燈箱廣告",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 245
+    },
+    {
+      "id": "13392064-81f8-45ed-bbfa-1f8ab76fa7bc",
+      "type": "image",
+      "src": "images/捷運燈箱_招牌.png",
+      "thumb": "images/捷運燈箱_招牌m.png",
+      "caption": "台北捷運_燈箱廣告",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 246
+    },
+    {
+      "id": "67e02a64-93b7-46ae-aca5-0074a669ac10",
+      "type": "image",
+      "src": "images/捷運燈箱_南京復興模擬圖.jpg",
+      "thumb": "images/捷運燈箱_南京復興模擬圖m.jpg",
+      "caption": "台北捷運_燈箱廣告",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 247
+    },
+    {
+      "id": "005d78ed-5139-46eb-8a1d-3a9f2f9d5601",
+      "type": "image",
+      "src": "images/159974.jpg",
+      "thumb": "images/159974m.jpg",
+      "caption": "台北捷運_燈箱廣告",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 248
+    },
+    {
+      "id": "face1d29-db01-423d-a787-3ac142d0fb4a",
+      "type": "image",
+      "src": "images/159976.jpg",
+      "thumb": "images/159976m.jpg",
+      "caption": "台北捷運_燈箱廣告",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 249
+    },
+    {
+      "id": "83f2d34a-7735-4f59-8690-e094d5960f0f",
+      "type": "image",
+      "src": "images/159586.jpg",
+      "thumb": "images/159586m.jpg",
+      "caption": "台北捷運_燈箱廣告",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 250
+    },
+    {
+      "id": "a2e9e16d-008e-4ae1-abb9-f4a391711a8a",
+      "type": "image",
+      "src": "images/159588.jpg",
+      "thumb": "images/159588m.jpg",
+      "caption": "台北捷運_燈箱廣告",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 251
+    },
+    {
+      "id": "a7e4cd7a-baa4-4440-8d6b-4f4dbce3e903",
+      "type": "image",
+      "src": "images/捷運_圖文選單.png",
+      "thumb": "images/捷運_圖文選單m.png",
+      "caption": "台北捷運_振興心雙連集點抽獎活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 252
+    },
+    {
+      "id": "5b1282bc-be26-45c2-881a-46bf6a588a6f",
+      "type": "image",
+      "src": "images/捷運_集章據點地圖.png",
+      "thumb": "images/捷運_集章據點地圖m.png",
+      "caption": "台北捷運_振興心雙連集點抽獎活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 253
+    },
+    {
+      "id": "efe818bf-39e9-4bda-8cf4-2298c7e14190",
+      "type": "image",
+      "src": "images/捷運_掃描成功網頁.png",
+      "thumb": "images/捷運_掃描成功網頁m.png",
+      "caption": "台北捷運_振興心雙連集點抽獎活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 254
+    },
+    {
+      "id": "b61285ed-c7b9-4fdc-9244-bd1f8b48ecc4",
+      "type": "image",
+      "src": "images/捷運_掃描失敗網頁.png",
+      "thumb": "images/捷運_掃描失敗網頁m.png",
+      "caption": "台北捷運_振興心雙連集點抽獎活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 255
+    },
+    {
+      "id": "4ccdedd2-ced0-4121-8b60-69d7f30e13c5",
+      "type": "image",
+      "src": "images/捷運_獎品內容清單.png",
+      "thumb": "images/捷運_獎品內容清單m.png",
+      "caption": "台北捷運_振興心雙連集點抽獎活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 256
+    },
+    {
+      "id": "83ca2b3d-d39b-4d8f-96c6-c029b060a916",
+      "type": "image",
+      "src": "images/捷運_集點說明立牌.png",
+      "thumb": "images/捷運_集點說明立牌m.png",
+      "caption": "台北捷運_振興心雙連集點抽獎活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 257
+    },
+    {
+      "id": "b3358f1e-b73d-46a9-b618-661eb0296bf2",
+      "type": "image",
+      "src": "images/雙連_圖片1.jpg",
+      "thumb": "images/雙連_圖片1m.jpg",
+      "caption": "台北捷運_振興心雙連集點抽獎活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 258
+    },
+    {
+      "id": "066da7c1-4ad8-4b21-a715-7e90b7b5b669",
+      "type": "image",
+      "src": "images/雙連_圖片3.jpg",
+      "thumb": "images/雙連_圖片3m.jpg",
+      "caption": "台北捷運_振興心雙連集點抽獎活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 259
+    },
+    {
+      "id": "a443549e-2af6-4dd3-8c76-ef03bde01a59",
+      "type": "image",
+      "src": "images/雙連_圖片4.jpg",
+      "thumb": "images/雙連_圖片4m.jpg",
+      "caption": "台北捷運_振興心雙連集點抽獎活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 260
+    },
+    {
+      "id": "7012c17d-59ea-4fed-b114-aad3c058cf8b",
+      "type": "image",
+      "src": "images/雙連_圖片5.jpg",
+      "thumb": "images/雙連_圖片5m.jpg",
+      "caption": "台北捷運_振興心雙連集點抽獎活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 261
+    },
+    {
+      "id": "8b87f443-1918-4b48-b072-ce3e33887902",
+      "type": "image",
+      "src": "images/雙連_圖片6.jpg",
+      "thumb": "images/雙連_圖片6m.jpg",
+      "caption": "台北捷運_振興心雙連集點抽獎活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 262
+    },
+    {
+      "id": "ce1ac048-296e-4d72-b4f5-ad5eec2058c6",
+      "type": "image",
+      "src": "images/雙連掃code圖_1014.jpg",
+      "thumb": "images/雙連掃code圖_1014m.jpg",
+      "caption": "台北捷運",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis5"
+      ],
+      "order": 263
+    },
+    {
+      "id": "d4bd8ab6-0ef5-4718-8129-47ab19903514",
+      "type": "image",
+      "src": "images/宜蘭1.png",
+      "thumb": "images/宜蘭1m.png",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 264
+    },
+    {
+      "id": "bec1707e-aa06-4a7a-a8f8-69c075727832",
+      "type": "image",
+      "src": "images/宜蘭2.png",
+      "thumb": "images/宜蘭2m.png",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 265
+    },
+    {
+      "id": "3b80d52d-2df8-4961-9dec-f3861997ff60",
+      "type": "image",
+      "src": "images/宜蘭3.png",
+      "thumb": "images/宜蘭3m.png",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 266
+    },
+    {
+      "id": "e4152373-e353-47f4-8fed-d424d98716e0",
+      "type": "image",
+      "src": "images/宜蘭_公布欄.jpg",
+      "thumb": "images/宜蘭_公布欄m.jpg",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 267
+    },
+    {
+      "id": "9da391fe-d01e-4b86-bfae-339425ae425b",
+      "type": "image",
+      "src": "images/宜蘭_公車.jpg",
+      "thumb": "images/宜蘭_公車m.jpg",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 268
+    },
+    {
+      "id": "837ad862-2a34-4cdf-be55-7a0cc4919f57",
+      "type": "image",
+      "src": "images/宜蘭_合照模擬.jpg",
+      "thumb": "images/宜蘭_合照模擬m.jpg",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 269
+    },
+    {
+      "id": "2191689d-059b-4d75-a8d4-9d41c146198f",
+      "type": "image",
+      "src": "images/宜蘭_地圖.jpg",
+      "thumb": "images/宜蘭_地圖m.jpg",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 270
+    },
+    {
+      "id": "3c262b4d-d6df-488e-8c10-338620c84d19",
+      "type": "image",
+      "src": "images/宜蘭_報到處模擬.jpg",
+      "thumb": "images/宜蘭_報到處模擬m.jpg",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 271
+    },
+    {
+      "id": "f55aabb0-f55f-472d-bee4-cb27b292685a",
+      "type": "image",
+      "src": "images/宜蘭_工作證模擬.jpg",
+      "thumb": "images/宜蘭_工作證模擬m.jpg",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 272
+    },
+    {
+      "id": "e6e4672d-a7b1-4cf9-82e8-f2d379fdbe71",
+      "type": "image",
+      "src": "images/宜蘭_掛旗.jpg",
+      "thumb": "images/宜蘭_掛旗m.jpg",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 273
+    },
+    {
+      "id": "ea860c4d-8879-4a50-bdff-59e169f44c8e",
+      "type": "image",
+      "src": "images/宜蘭_掛旗模擬.jpg",
+      "thumb": "images/宜蘭_掛旗模擬m.jpg",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 274
+    },
+    {
+      "id": "960a91e1-c2d8-4823-93a2-b6a681dfd39f",
+      "type": "image",
+      "src": "images/宜蘭_獎盃.jpg",
+      "thumb": "images/宜蘭_獎盃m.jpg",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 275
+    },
+    {
+      "id": "82fbbb98-59ea-4868-883a-51eac1199048",
+      "type": "image",
+      "src": "images/宜蘭_網站.jpg",
+      "thumb": "images/宜蘭_網站m.jpg",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 276
+    },
+    {
+      "id": "4c363cbe-8654-4ae5-9049-c4b20fc51e31",
+      "type": "image",
+      "src": "images/宜蘭_舞台模擬.jpg",
+      "thumb": "images/宜蘭_舞台模擬m.jpg",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 277
+    },
+    {
+      "id": "9c1212d5-ab05-4b7e-a250-ecb484282e9a",
+      "type": "image",
+      "src": "images/宜蘭_集點app.png",
+      "thumb": "images/宜蘭_集點appm.png",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 278
+    },
+    {
+      "id": "b8d6beea-2e10-4ad8-b4af-cec5a63f5608",
+      "type": "image",
+      "src": "images/宜蘭_集點卡反.png",
+      "thumb": "images/宜蘭_集點卡反m.png",
+      "caption": "宜蘭十大好羹票選活動",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis6"
+      ],
+      "order": 279
+    },
+    {
+      "id": "5c54f7da-e2da-48ea-a4e2-3eaa056423c5",
+      "type": "image",
+      "src": "images/渡商_海報1.jpg",
+      "thumb": "images/渡商_海報1m.jpg",
+      "caption": "渡商共讀會",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis7"
+      ],
+      "order": 280
+    },
+    {
+      "id": "4c862b96-ab40-4ffb-8bbf-0a3a5ec5784c",
+      "type": "image",
+      "src": "images/渡商_海報11.jpg",
+      "thumb": "images/渡商_海報11m.jpg",
+      "caption": "渡商共讀會",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis7"
+      ],
+      "order": 281
+    },
+    {
+      "id": "79eb1235-f188-4e1b-a7b2-9e4915e5960e",
+      "type": "image",
+      "src": "images/渡商_海報2.jpg",
+      "thumb": "images/渡商_海報2m.jpg",
+      "caption": "渡商共讀會",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis7"
+      ],
+      "order": 282
+    },
+    {
+      "id": "28f652be-e726-48f6-a794-2c42341558fe",
+      "type": "image",
+      "src": "images/渡商_海報22.jpg",
+      "thumb": "images/渡商_海報22m.jpg",
+      "caption": "渡商共讀會",
+      "fancyboxGroup": "CIS",
+      "categories": [
+        "cis7"
+      ],
+      "order": 283
+    },
+    {
+      "id": "2ef83bf2-2d99-4225-a34c-f7dbf95596ba",
+      "type": "video",
+      "videoId": "g53iDkd2XT4",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 284
+    },
+    {
+      "id": "0eaba59a-75b2-4685-bbf5-eea22aae62eb",
+      "type": "video",
+      "videoId": "RVWkpp14Vew",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 285
+    },
+    {
+      "id": "06fa9fdf-d3da-4d9a-bd08-7bbb41ec7b0d",
+      "type": "video",
+      "videoId": "jTL6z2FbwuY",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 286
+    },
+    {
+      "id": "807630cb-d802-406a-bac8-9f439b721fa6",
+      "type": "video",
+      "videoId": "M-PUCrw4GK4",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 287
+    },
+    {
+      "id": "824d53de-23b1-4c67-8d47-76bbc2907fc7",
+      "type": "video",
+      "videoId": "7Oz-4EobWDE",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 288
+    },
+    {
+      "id": "5bcbf697-ece0-4c1b-8a5c-0ae2afe0c3ca",
+      "type": "video",
+      "videoId": "ozWFct_5plc",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 289
+    },
+    {
+      "id": "d6813126-2883-4df1-a230-b3644b6527e3",
+      "type": "video",
+      "videoId": "NwuTSDr_O-A",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 290
+    },
+    {
+      "id": "b4c4c36b-f9c9-4b7a-af55-cc366d7be42d",
+      "type": "video",
+      "videoId": "M7ZZksaB7xU",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 291
+    },
+    {
+      "id": "5889ff44-2186-4f13-9b2b-a27dea2c680a",
+      "type": "video",
+      "videoId": "qT6b0kXLpu4",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 292
+    },
+    {
+      "id": "4e55275b-a8f4-4a9c-81f2-eba66a204e1b",
+      "type": "video",
+      "videoId": "zStYb1VNfdg",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 293
+    },
+    {
+      "id": "b7313b99-62f4-4306-b51b-f754688ee72b",
+      "type": "video",
+      "videoId": "IeT3exC0I4s",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 294
+    },
+    {
+      "id": "7e422a70-9ee4-4416-8caf-3dbcf45c54af",
+      "type": "video",
+      "videoId": "6daJKOdlGBU",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 295
+    },
+    {
+      "id": "45d8ba9c-2ed5-4520-aa02-9bad9bccdfa7",
+      "type": "video",
+      "videoId": "u_bJd2ezqdE",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 296
+    },
+    {
+      "id": "da4a8a52-891f-4b14-85b2-6386caac9a50",
+      "type": "video",
+      "videoId": "YSKXRck8Z7s",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 297
+    },
+    {
+      "id": "963730d0-b913-4610-90d5-f345bbf64942",
+      "type": "video",
+      "videoId": "NDybBGu_rPo",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 298
+    },
+    {
+      "id": "6de73f98-158c-4341-8073-b58be0b499b0",
+      "type": "video",
+      "videoId": "skIlc68x97M",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 299
+    },
+    {
+      "id": "b86c821e-c863-4e90-9a87-cc66aa8f265a",
+      "type": "video",
+      "videoId": "0F6tyGh-5Gc",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 300
+    },
+    {
+      "id": "cab976c9-54d9-494f-b6d2-a837f1c29aa7",
+      "type": "video",
+      "videoId": "uOcdC9Gbw5o",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 301
+    },
+    {
+      "id": "22790e60-128b-456d-a49e-f59afa92b809",
+      "type": "video",
+      "videoId": "Zx-A230atEU",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 302
+    },
+    {
+      "id": "91d2e60e-71bd-4cc8-afb2-66fa56420962",
+      "type": "video",
+      "videoId": "Xqr5ACxCb5s",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 303
+    },
+    {
+      "id": "4d6c784a-6734-42bb-86c8-f8c7f40c07dd",
+      "type": "video",
+      "videoId": "0yvyIA_Bk1o",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 304
+    },
+    {
+      "id": "182f7596-f87c-416c-a526-36b49e6802d8",
+      "type": "video",
+      "videoId": "p25axJAM9-8",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 305
+    },
+    {
+      "id": "7a4dcb30-0a20-488b-bf8c-c79ee1dea12a",
+      "type": "video",
+      "videoId": "hBYL79TVI_c",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 306
+    },
+    {
+      "id": "f838dd88-1694-4ee5-9151-00dfedf1cb3f",
+      "type": "video",
+      "videoId": "O0N8t0FCEX4",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 307
+    },
+    {
+      "id": "ecadb8c8-0fb3-4547-9354-5637b998f9ac",
+      "type": "video",
+      "videoId": "8EI7HUFQU18",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 308
+    },
+    {
+      "id": "dbc5d0c9-14b2-4f20-910e-2f8f082fff36",
+      "type": "video",
+      "videoId": "t_KnQVkK0eE",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 309
+    },
+    {
+      "id": "fbc7ecfd-743d-41aa-a249-2e2dfb0b2dc6",
+      "type": "video",
+      "videoId": "wYBzfp8qAq8",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 310
+    },
+    {
+      "id": "3739f747-866b-4741-bee8-bb6356690346",
+      "type": "video",
+      "videoId": "hhWUqFY6-ls",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 311
+    },
+    {
+      "id": "a7af89c0-34ba-47fe-a725-799ddc7dc2c1",
+      "type": "video",
+      "videoId": "m3JeZ3tPKg8",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 312
+    },
+    {
+      "id": "6ef1df1b-43ba-43ff-9da6-ecd2a8c0c8f5",
+      "type": "video",
+      "videoId": "yRxvvfBmsFE",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 313
+    },
+    {
+      "id": "cbd135d2-5868-4ee9-b2ab-9413a92a3aea",
+      "type": "video",
+      "videoId": "BtquEQUHk2w",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 314
+    },
+    {
+      "id": "69c7e80c-6d3f-4462-ad52-a8db1a7e405d",
+      "type": "video",
+      "videoId": "1F-YEccXh4w",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 315
+    },
+    {
+      "id": "55db606c-0eb5-4b8b-b728-e35cf09868d2",
+      "type": "video",
+      "videoId": "0k-_Kx_-nHk",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 316
+    },
+    {
+      "id": "04552bd4-a679-43fd-ab10-4dfde5d0e02d",
+      "type": "video",
+      "videoId": "2ZMCNlTlfrg",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 317
+    },
+    {
+      "id": "7c0ff889-a0c0-4887-9078-dcf19a2513a2",
+      "type": "video",
+      "videoId": "-jjPyziuzSU",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 318
+    },
+    {
+      "id": "81a1987a-caad-4719-952a-32529da76d59",
+      "type": "video",
+      "videoId": "fFlqdmp9bG0",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 319
+    },
+    {
+      "id": "b7d2d1d5-7066-4bc7-94ea-17d9f13cc9aa",
+      "type": "video",
+      "videoId": "3sJse0OTl78",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 320
+    },
+    {
+      "id": "5f1679f1-9968-4569-b0a1-0dd8d994c9f0",
+      "type": "video",
+      "videoId": "DjvY981WMmE",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 321
+    },
+    {
+      "id": "7a398637-d5b4-4b68-8f94-b19f9c8aa4c8",
+      "type": "video",
+      "videoId": "YdpFJhS5EjY",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 322
+    },
+    {
+      "id": "19a456ef-c759-45f8-952c-718f0ac58df3",
+      "type": "video",
+      "videoId": "kZ2G0Lz-B5E",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 323
+    },
+    {
+      "id": "8b9ddaa9-2eb6-4693-aaf9-0a6a25e7a7f2",
+      "type": "video",
+      "videoId": "AysEScpTIzU",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 324
+    },
+    {
+      "id": "1b5001c8-97ca-4e1b-bed4-7b24321a6569",
+      "type": "video",
+      "videoId": "niluJxRqtQE",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 325
+    },
+    {
+      "id": "f613eccb-0847-4f3f-ace3-4ca20e60d12f",
+      "type": "video",
+      "videoId": "NSkAke4SSj0",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 326
+    },
+    {
+      "id": "226e26c9-c3cb-42b9-b6c9-485b87beaa81",
+      "type": "video",
+      "videoId": "E_JQgy6kuNo",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 327
+    },
+    {
+      "id": "a6fb4316-bf8e-465f-a363-723355b3b399",
+      "type": "video",
+      "videoId": "2DIcYBkEwck",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 328
+    },
+    {
+      "id": "4ec8b45e-5771-4dae-ae26-b008a7092eeb",
+      "type": "video",
+      "videoId": "jviaCzwBLA0",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 329
+    },
+    {
+      "id": "5998ad63-27b4-478a-a17c-7bcf45c87998",
+      "type": "video",
+      "videoId": "MpXitEdcHNc",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 330
+    },
+    {
+      "id": "91fc9672-c014-4408-bfb0-1200cf64e072",
+      "type": "video",
+      "videoId": "yHDTUgMLWg4",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 331
+    },
+    {
+      "id": "fe2f4fa9-477b-4b26-9341-ffcbc606df17",
+      "type": "video",
+      "videoId": "AxOTB7jjsCs",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 332
+    },
+    {
+      "id": "01d8b523-d890-4ac7-90fd-8b843d1f6dcf",
+      "type": "video",
+      "videoId": "7v3CBIyLj1A",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 333
+    },
+    {
+      "id": "bd873710-5c1e-436a-bbe5-750cc0c07092",
+      "type": "video",
+      "videoId": "YFCglHEhf2c",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 334
+    },
+    {
+      "id": "2e3fae36-1da5-474b-b399-c5ad173b1bd3",
+      "type": "video",
+      "videoId": "KWlRigeGyh4",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 335
+    },
+    {
+      "id": "4522b3f3-b2fe-4337-826f-cf7ea5e04b19",
+      "type": "video",
+      "videoId": "hdOvKPcQyq4",
+      "caption": "",
+      "categories": [
+        "video"
+      ],
+      "order": 336
+    },
+    {
+      "id": "387b1207-1060-4708-be17-215e1c00da6f",
+      "type": "image",
+      "src": "images/1.jpg",
+      "thumb": "images/1m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 337
+    },
+    {
+      "id": "95bee65e-8ab4-4dc6-a86d-b423f2f10bc6",
+      "type": "image",
+      "src": "images/696.jpg",
+      "thumb": "images/696m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 338
+    },
+    {
+      "id": "fedb1835-e3c7-461e-8ebd-f31d40728088",
+      "type": "image",
+      "src": "images/663.jpg",
+      "thumb": "images/663m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 339
+    },
+    {
+      "id": "80a7e250-2fe5-440c-809d-e167a80b5f15",
+      "type": "image",
+      "src": "images/512.jpg",
+      "thumb": "images/512m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 340
+    },
+    {
+      "id": "16d40b06-9336-4ff0-8eab-3d0614608c7f",
+      "type": "image",
+      "src": "images/64_1.jpg",
+      "thumb": "images/64_1m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 341
+    },
+    {
+      "id": "5f098958-1a0e-40c8-8621-b1117ec642a2",
+      "type": "image",
+      "src": "images/102.jpg",
+      "thumb": "images/102m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 342
+    },
+    {
+      "id": "66acd922-9d44-48f3-9ec1-f760342595b9",
+      "type": "image",
+      "src": "images/341_1.jpg",
+      "thumb": "images/341_1m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 343
+    },
+    {
+      "id": "1e94c6ea-b015-4ba3-95ae-742fe05594da",
+      "type": "image",
+      "src": "images/431_1.jpg",
+      "thumb": "images/431_1m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 344
+    },
+    {
+      "id": "0d2cd51e-ae36-4f6b-bd0f-c8a6fcba8a33",
+      "type": "image",
+      "src": "images/171.jpg",
+      "thumb": "images/171m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 345
+    },
+    {
+      "id": "576ab1a7-0130-4041-bd99-60fdaf98e97e",
+      "type": "image",
+      "src": "images/162.jpg",
+      "thumb": "images/162m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 346
+    },
+    {
+      "id": "256f9efa-5cd8-4a63-893f-f0e3e1e8614c",
+      "type": "image",
+      "src": "images/116.jpg",
+      "thumb": "images/116m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 347
+    },
+    {
+      "id": "4f2f77cf-1d50-4b61-96e5-759e6ee4464f",
+      "type": "image",
+      "src": "images/76.jpg",
+      "thumb": "images/76m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 348
+    },
+    {
+      "id": "7106e67b-b2fb-423d-8846-21f29e051c65",
+      "type": "image",
+      "src": "images/96.jpg",
+      "thumb": "images/96m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 349
+    },
+    {
+      "id": "20c4a5a1-a5b2-45ba-81b2-67a122ce5b61",
+      "type": "image",
+      "src": "images/29.jpg",
+      "thumb": "images/29m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 350
+    },
+    {
+      "id": "ad463ed0-c03a-403d-ad49-e9ad3350f467",
+      "type": "image",
+      "src": "images/4.jpg",
+      "thumb": "images/4m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 351
+    },
+    {
+      "id": "7e0b7975-094d-49bc-ad9c-4be1b6bab065",
+      "type": "image",
+      "src": "images/2.jpg",
+      "thumb": "images/2m.jpg",
+      "caption": "新聞剪報",
+      "fancyboxGroup": "news",
+      "categories": [
+        "news"
+      ],
+      "order": 352
+    },
+    {
+      "id": "d80454ed-e5ff-4a88-a0e6-514ae036a653",
+      "type": "three",
+      "src": "model/doll.html",
+      "label": "doll",
+      "categories": [
+        "three"
+      ],
+      "order": 353
+    },
+    {
+      "id": "815814c5-3b7a-4273-93e0-9a8038e94d04",
+      "type": "three",
+      "src": "model/island.html",
+      "label": "island",
+      "categories": [
+        "three"
+      ],
+      "order": 354
+    },
+    {
+      "id": "a18c52f2-b8f2-4b91-98e9-6ff6708fcbf5",
+      "type": "three",
+      "src": "model/tower.html",
+      "label": "tower",
+      "categories": [
+        "three"
+      ],
+      "order": 355
+    },
+    {
+      "id": "33ed5958-841e-49be-af1a-ec69a31d5da8",
+      "type": "three",
+      "src": "model/girl.html",
+      "label": "girl",
+      "categories": [
+        "three"
+      ],
+      "order": 356
+    },
+    {
+      "id": "7fb6eaa5-8772-4bb7-a67a-aea697936331",
+      "type": "three",
+      "src": "model/soldier.html",
+      "label": "soldier",
+      "categories": [
+        "three"
+      ],
+      "order": 357
+    },
+    {
+      "id": "3f861094-5c05-4ccb-936f-e342fe30ee82",
+      "type": "three",
+      "src": "model/wall.html",
+      "label": "wall",
+      "categories": [
+        "three"
+      ],
+      "order": 358
+    }
+  ],
+  "about": {
+    "photo": "images/獨照.jpg",
+    "name": "程正邦&nbsp;（Tony）",
+    "currentTitle": "&nbsp;輔仁大學大傳所、銘傳大學大傳系、復興商工美工科",
+    "education": "&nbsp;&nbsp;&nbsp;0905579995",
+    "phone": "abon8820@gmail.com",
+    "email": "",
+    "facebook": "https://www.facebook.com/chengpang.cheng",
+    "instagram": "https://www.instagram.com/abonla/",
+    "bio": "遺傳愛畫畫媽媽的天賦，自幼美術課常拿高分，國中畢業曾報考復興美工，因自認缺乏創意沒去就讀，但我對影像熱情不減，專科畢業後，插大考取銘傳大學大眾傳播系，大三拍攝的戲劇短片，代表學校參加廣電比賽。\r\n            服役期間，在金門當新聞兵，退伍後當過攝影助理、遊戲編輯，最後在《蘋果日報》生根落腳，從事新聞工作十餘年，《蘋果》易主後曾轉換跑道做美術設計、中天新聞記者，目前是三立新聞網小夜主管。\r\n            面對大眾媒體轉型和自媒體興起，工作之餘持續進修，2020年完成輔大大眾傳播碩士學位，再到復興商工美工科念夜間部，加強手繪能力，復興畢業後，繼續留校旁聽廣告設計、室內設計課程，期望成為理論與實務並重的傳播人。",
+    "skills": [
+      {
+        "name": "採訪寫作",
+        "stars": 0
+      },
+      {
+        "name": "新聞攝影",
+        "stars": 0
+      },
+      {
+        "name": "手繪能力",
+        "stars": 0
+      },
+      {
+        "name": "平面設計",
+        "stars": 0
+      },
+      {
+        "name": "網頁製作",
+        "stars": 0
+      },
+      {
+        "name": "剪接特效",
+        "stars": 0
+      },
+      {
+        "name": "3D動畫",
+        "stars": 0
+      }
+    ],
+    "workExperience": [
+      {
+        "period": "2024/4~",
+        "company": "三立新聞網",
+        "title": "編輯組副組長"
+      },
+      {
+        "period": "2022/2~2024/4",
+        "company": "中天新聞",
+        "title": "文字記者編輯"
+      },
+      {
+        "period": "2021/9~2021/12",
+        "company": "辰紘行銷",
+        "title": "視覺設計"
+      },
+      {
+        "period": "2003/2~2021/8",
+        "company": "蘋果日報",
+        "title": "娛樂記者特勤中心副主任"
+      },
+      {
+        "period": "2002/10~2003/2",
+        "company": "全能製作",
+        "title": "攝影助理"
+      },
+      {
+        "period": "2002/5~2002/10",
+        "company": "華義國際數位娛樂",
+        "title": "出版部編輯"
+      },
+      {
+        "period": "2001/3~2002/5",
+        "company": "正氣中華報",
+        "title": "新聞兵"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "b3ca34da-7aa0-4896-8dc2-231c5cd27502",
+        "date": "1997-06-21",
+        "institution": "東南工專環工科",
+        "heading": "武術啟蒙之路",
+        "body": "嘆服美劇《馬蓋先》的足智多謀，以為化學有趣又實用，沒去念復興美工，選擇念環工科，後來發現自己粗枝大葉，不適合做實驗，倒是挺適合習武，受漫畫《拳兒》啟發，加入國術社，在武壇教練<a href=\"https://www.wutang.moreward.com/?page_id=58\" target=\"_blank\">林仲曦</a>指導下，習練<a href=\"https://www.youtube.com/watch?v=6w9rplNXMM0\" target=\"_blank\">八極拳</a>、<a href=\"https://www.youtube.com/watch?v=6xzqbm42fis\" target=\"_blank\">螳螂拳</a>、<a href=\"https://www.youtube.com/watch?v=yfy7XVSugUU\" target=\"_blank\">太極拳</a>、<a href=\"https://www.youtube.com/watch?v=__u29fI8nqI\" target=\"_blank\">迷蹤拳</a>、<a href=\"https://www.youtube.com/watch?v=MOYyBXmno3k\" target=\"_blank\">劈掛掌</a>，參加全國大專院校國術比賽獲得<a href=\"images/中正盃.jpg\" data-lightbox=\"timeline\" data-title=\"全國大專院校國術比賽\" target=\"_blank\">拳術對練第五名</a>。",
+        "image": "images/拳兒.jpg",
+        "footer": "參加社團：國術社"
+      },
+      {
+        "id": "b6ceb768-bee1-4ef3-8907-ee35a184069c",
+        "date": "2007-06-15",
+        "institution": "",
+        "heading": "練習英文會話",
+        "body": "大學畢業考研究所，由於英文未達低標無法口試，耿耿於懷，加上三不五時出國採訪，深感語言之重要，工作之餘到地球村補英日文，加強聽說能力。",
+        "image": "images/地球村.jpg",
+        "footer": ""
+      },
+      {
+        "id": "a324154a-8fed-4f7e-bd07-5028d05a0481",
+        "date": "2012-10-15",
+        "institution": "",
+        "heading": "學習人像打光",
+        "body": "一名好的攝影記者，不僅要能在新聞現場搶拍到畫面，也被期待在專題報導中，把人物或商品拍得精緻完美，而棚拍經驗正是我最缺乏的，一直很想到<a href=\"https://www.fotosoft.com.tw/\" target=\"_blank\">視丘攝影學院</a>接受正統攝影教育，但實在無法放棄工作一年上全修班，只好報名基礎人像攝影班和台北攝影學會的人像外拍課體驗一下。",
+        "image": "images/視丘.jpg",
+        "footer": ""
+      },
+      {
+        "id": "1586431b-d9ba-4919-ae57-e78b9dec434d",
+        "date": "2008-06-15",
+        "institution": "",
+        "heading": "接觸實戰武術",
+        "body": "習練傳統武術多年，沒有實戰經驗，心中始終有點遺憾，在公司附近武館「傳龍會」<a href=\"https://www.youtube.com/user/tstootoo/featured\" target=\"_blank\">陳建宇</a>教練指導下，學習散打、柔術，參加陽明盃散打比賽，獲得<a href=\"images/陽明盃.jpg\" data-lightbox=\"timeline\" data-title=\"陽明盃散打比賽\" target=\"_blank\">男子組超重量級第三名</a>，圖為昔日戰友和教練（背影）。",
+        "image": "images/散打.jpg",
+        "footer": ""
+      },
+      {
+        "id": "95606d1b-4132-4717-bada-edd385f658c8",
+        "date": "2016-04-15",
+        "institution": "",
+        "heading": "學習美工軟體",
+        "body": "鑑於大眾媒體轉型和自媒體的興起，深感所學之不足，到<a href=\"https://www.pcschool.com.tw/\" target=\"_blank\">巨匠電腦</a>學剪接特效、3D動畫、電腦繪圖、平面設計和網頁製作，為了熟練操作，同一門課選擇不同老師重修，幾乎把所有老師的課都上過一輪。",
+        "image": "images/軟體.jpg",
+        "footer": ""
+      },
+      {
+        "id": "d2c4c986-509a-471d-83f9-887d38fb1cb9",
+        "date": "2000-09-20",
+        "institution": "銘傳大學大傳系",
+        "heading": "琴聲飄揚學影視",
+        "body": "插大考取銘傳大學大傳系，選修電視組，在校園媒體<a href=\"https://www.facebook.com/MingChuanMCTV\" target=\"_blank\">銘傳電視台</a>當助理，採訪校園新聞，畢業製作的劇情短片《TOMORROW IS TODAY》，代表學校參加廣電比賽，校慶快報比賽獲得<a href=\"images/快報.jpg\" data-lightbox=\"timeline\" data-title=\"銘傳大學校慶快報比賽\">團體第二名</a>。",
+        "image": "images/銘傳.JPG",
+        "footer": "參加社團：吉他社<a href=\"images/銘傳成績單.jpg\" style=\"float:right; display:block;\" data-lightbox=\"timeline\" data-title=\"銘傳大傳系成績單\" target=\"_blank\">銘傳成績單</a>"
+      },
+      {
+        "id": "02d4a733-618d-420b-a4af-231b08ac1c4d",
+        "date": "2002-09-15",
+        "institution": "",
+        "heading": "金門新聞兵",
+        "body": "大學畢業，自願到外島服役，原本是金門運指部政戰士，服役半年多，被挑選為新聞兵，到金防部支援到退伍，隨著司令視察部隊採訪軍聞，刊登在《<a href=\"https://ttt0920.pixnet.net/blog/post/99711661\" target=\"_blank\">正氣中華報</a>》。",
+        "image": "images/金門.jpg",
+        "footer": ""
+      },
+      {
+        "id": "560639ae-9757-4f1e-a6ec-f838fb05a0d8",
+        "date": "2003-06-02",
+        "institution": "蘋果日報",
+        "heading": "跟拍名人八卦",
+        "body": "退伍後當過攝影助理、遊戲編輯，最後在《<a href=\"https://tw.appledaily.com/home/\" target=\"_blank\">蘋果日報</a>》生根落腳，從特勤記者幹起，中間換線跑過唱片、綜藝新聞，繞了一圈回歸特勤中心擔任主管。",
+        "image": "images/Apple_Daily_logo.png",
+        "footer": "職務：娛樂記者、特勤中心副主任"
+      },
+      {
+        "id": "d5e96c4a-62f8-4cde-8e1b-f7dab52b46d4",
+        "date": "2020-06-06",
+        "institution": "輔仁大學大傳所",
+        "heading": "統計論文拿高分",
+        "body": "充實的兩年，修了60個學分，看了許多paper，沒日沒夜地趕報告，在院長<a href=\"http://www.gsmc.url.tw/teacherdetail.php?url=%E6%B4%AA%E9%9B%85%E6%85%A7\" target=\"_blank\">洪雅慧</a>教授指導下，完成碩士論文《<a href=\"https://hdl.handle.net/11296/afm2jx\" target=\"_blank\">反送中事件的第一人效果和第三人效果－以2020年台灣總統大選為例</a>》。此外，還到大學部旁聽實務課程，加入柔道社和乙組一起練習對摔。",
+        "image": "images/20200606_114903s.jpg",
+        "footer": "參加社團：柔道社 <a href=\"images/輔大成績單.jpg\" style=\"float:right; display:block;\" data-lightbox=\"timeline\" data-title=\"輔大大傳所成績單\" target=\"_blank\">輔大成績單</a>"
+      },
+      {
+        "id": "12a369ec-b562-4017-b5a2-a106df42c517",
+        "date": "2021-01-15",
+        "institution": "",
+        "heading": "正規設計教育",
+        "body": "巨匠電腦讓我學會了軟體操作，卻無法教我創意發想，報考台科、北科設計所失利後，興起到南陽街設計升學教室<a href=\"http://www.idesignmate.com/\" target=\"_blank\">IDM</a>上課的念頭，從設計理論和麥克筆表現技法學起，並到<a href=\"http://www.fhvs.ntpc.edu.tw/\" target=\"_blank\">復興美工</a>念夜間部，一償宿願，開始沒日沒夜趕圖的日子。",
+        "image": "images/idm.jpg",
+        "footer": ""
+      },
+      {
+        "id": "e8e1615f-e528-43ad-b191-fa60845d624f",
+        "date": "2021-10-01",
+        "institution": "辰紘行銷",
+        "heading": "轉換跑道做美術設計",
+        "body": "《蘋果》老闆黎智英被中共抓去關後，易主經營大裁員，我離開待了18年的公司，嘗試轉換跑道做設計相關的工作，在「辰紘行銷」當視覺設計，幫台北捷運設計活動海報、燈箱，還有政府標案提案設計，作品屢獲業主肯定，在比稿中勝出，發標執行。",
+        "image": "images/159974m.jpg",
+        "footer": ""
+      },
+      {
+        "id": "cce2dcf9-76c1-4c6a-9936-c476f42c6029",
+        "date": "2022-02-01",
+        "institution": "中天新聞",
+        "heading": "練口條看畫面說故事",
+        "body": "在行銷公司待半年，想了解電視台運作，到中天電視政論節目當企劃，後來公司覺得我的新聞資歷做節目太可惜，把我調到新聞部做D-Live、發即時新聞，在中天電視當2年文字記者；2023年中天電視成立中天新聞網，缺能拍能寫的突發記者，又被調到網路新聞部門跑社會線。",
+        "image": "images/中天新聞.jpg",
+        "footer": ""
+      },
+      {
+        "id": "4d5be8e6-2770-44b7-a12a-aa5ad929647d",
+        "date": "2024-04-01",
+        "institution": "三立新聞網",
+        "heading": "狂發稿衝流量兼版主",
+        "body": "在中天新聞網跑社會線期間，因為文筆好、工作認真，被三立新聞網挖角去當小夜主管，即使不用在外面跑新聞，仍在公司狂發稿衝流量，彌補小夜人力之不足，並幫政論節目發稿，兼任晚班版主。",
+        "image": "images/三立新聞.png",
+        "footer": ""
+      },
+      {
+        "id": "55a7aad8-dedb-4f58-b719-3e377e7c8c30",
+        "date": "2025-06-04",
+        "institution": "復興商工美工科",
+        "heading": "品學兼優畢業獲表揚",
+        "body": "為了彌補兒時沒念復興美工的遺憾，輔大碩士畢業2年後，又到復興商工美工科夜間部學畫畫，熱心服務的我獲選班代，每學期名列前茅拿獎學金，並通過人像速寫中階檢定，畢業展5幅作品入選，在美麗永安藝文中心展出，獲局長獎和教師會表揚。",
+        "image": "images/復興美工畢業展.jpg",
+        "footer": ""
+      }
+    ]
+  },
+  "meta": {
+    "siteTitle": "程正邦作品集",
+    "description": "一個熱愛學習的中年大叔，從事新聞工作十餘年，興趣是武術、音樂和影像創作，這是我的作品集網站，包括平面設計、3D動畫、攝影剪接、插畫，和過去採訪的新聞剪報。",
+    "ogImage": "images/web02.png"
+  }
+}
