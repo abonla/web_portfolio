@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{MODEL_LABEL}}</title>
+  <style>html,body{margin:0;height:100%;}#c{width:100%;height:100%;display:block;}</style>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <script type="module">
+    import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/build/three.module.js';
+    import {OrbitControls} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/controls/OrbitControls.js';
+    import {OBJLoader2} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/loaders/OBJLoader2.js';
+    import {MTLLoader} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/loaders/MTLLoader.js';
+    import {MtlObjBridge} from 'https://threejsfundamentals.org/threejs/resources/threejs/r122/examples/jsm/loaders/obj2/bridge/MtlObjBridge.js';
+
+    function main() {
+      const canvas = document.querySelector('#c');
+      const renderer = new THREE.WebGLRenderer({canvas});
+      const fov = 45, aspect = 2, near = 0.1, far = 100;
+      const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+      camera.position.set(0, 10, 20);
+      const controls = new OrbitControls(camera, canvas);
+      controls.target.set(0, 5, 0);
+      controls.update();
+      const scene = new THREE.Scene();
+      scene.background = new THREE.Color('black');
+      scene.add(new THREE.AmbientLight(0xffffff, 1.8));
+      scene.add(new THREE.HemisphereLight(0xffffff, 0x888888, 2));
+      const dLight = new THREE.DirectionalLight(0xffffff, 1.2);
+      dLight.position.set(5, 10, 8); scene.add(dLight);
+      const dLight2 = new THREE.DirectionalLight(0xffffff, 1);
+      dLight2.position.set(-8, 6, -5); scene.add(dLight2);
+
+      function frameArea(size, boxSize, boxCenter, cam) {
+        const half = size * 0.5;
+        const halfFov = THREE.MathUtils.degToRad(cam.fov * 0.5);
+        const dist = half / Math.tan(halfFov);
+        const dir = new THREE.Vector3().subVectors(cam.position, boxCenter)
+          .multiply(new THREE.Vector3(1, 0, 1)).normalize();
+        cam.position.copy(dir.multiplyScalar(dist).add(boxCenter));
+        cam.near = boxSize / 100; cam.far = boxSize * 100;
+        cam.updateProjectionMatrix();
+        cam.lookAt(boxCenter.x, boxCenter.y, boxCenter.z);
+      }
+
+      const mtlLoader = new MTLLoader();
+      mtlLoader.load('{{MODEL_NAME}}.mtl', (mtlResult) => {
+        const objLoader = new OBJLoader2();
+        objLoader.addMaterials(MtlObjBridge.addMaterialsFromMtlLoader(mtlResult));
+        objLoader.load('{{MODEL_NAME}}.obj', (root) => {
+          scene.add(root);
+          const box = new THREE.Box3().setFromObject(root);
+          const boxSize = box.getSize(new THREE.Vector3()).length();
+          const boxCenter = box.getCenter(new THREE.Vector3());
+          frameArea(boxSize * 1.2, boxSize, boxCenter, camera);
+          controls.maxDistance = boxSize * 10;
+          controls.target.copy(boxCenter);
+          controls.update();
+        });
+      });
+
+      function resizeRendererToDisplaySize(r) {
+        const c = r.domElement;
+        const needResize = c.width !== c.clientWidth || c.height !== c.clientHeight;
+        if (needResize) r.setSize(c.clientWidth, c.clientHeight, false);
+        return needResize;
+      }
+
+      (function render() {
+        if (resizeRendererToDisplaySize(renderer)) {
+          camera.aspect = canvas.clientWidth / canvas.clientHeight;
+          camera.updateProjectionMatrix();
+        }
+        renderer.render(scene, camera);
+        requestAnimationFrame(render);
+      })();
+    }
+    main();
+  </script>
+</body>
+</html>
