@@ -728,3 +728,24 @@ h1.abs {
   overflow: hidden;
   color: #f60d54;
 }
+
+/* Language toggle — hide all .lang-en spans by default */
+.lang-en { display: none; }
+/* When html has lang-en class, swap visibility */
+html.lang-en .lang-zh { display: none; }
+html.lang-en .lang-en { display: inline; }
+
+/* Lang toggle button in header */
+#lang-toggle {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  color: white;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 12px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+#lang-toggle:hover { background: rgba(255,255,255,0.15); }
