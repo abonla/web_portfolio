@@ -14,6 +14,7 @@ app.pages['works'] = async function (container) {
       '<button id="add-image-btn" class="btn-primary">＋ 圖片</button>' +
       '<button id="add-video-btn" class="btn-secondary">＋ YouTube</button>' +
       '<button id="add-model-btn" class="btn-secondary">＋ 3D</button>' +
+      '<button id="batch-ai-btn" class="btn-secondary">✨ 批次英文說明</button>' +
       '<div class="filter-tabs">' +
         FILTER_TABS.map(function (f, i) {
           return '<button class="filter-tab ' + (f === '*' ? 'active' : '') + '" data-filter="' + f + '">' + FILTER_NAMES[i] + '</button>';
@@ -32,6 +33,17 @@ app.pages['works'] = async function (container) {
         '<div class="ai-modal-actions">' +
           '<button class="btn-secondary" id="ai-cancel-btn">取消</button>' +
           '<button class="btn-primary" id="ai-apply-btn">套用</button>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="batch-modal-overlay" id="batch-modal-overlay">' +
+      '<div class="batch-modal">' +
+        '<h3>✨ 批次 AI 生成英文說明</h3>' +
+        '<div class="batch-progress-bar"><div class="batch-progress-fill" id="batch-progress-fill"></div></div>' +
+        '<p id="batch-progress-text" class="text-muted" style="margin-top:8px;">準備中…</p>' +
+        '<div class="batch-log" id="batch-log"></div>' +
+        '<div class="batch-modal-actions" id="batch-modal-actions" style="display:none;margin-top:12px;">' +
+          '<button class="btn-primary" id="batch-close-btn">關閉</button>' +
         '</div>' +
       '</div>' +
     '</div>';
@@ -59,6 +71,54 @@ app.pages['works'] = async function (container) {
   }
 
   document.getElementById('ai-cancel-btn').addEventListener('click', closeModal);
+
+  document.getElementById('batch-ai-btn').addEventListener('click', function () {
+    var overlay = document.getElementById('batch-modal-overlay');
+    overlay.classList.add('open');
+    document.getElementById('batch-progress-fill').style.width = '0%';
+    document.getElementById('batch-progress-text').textContent = '連線中…';
+    document.getElementById('batch-log').innerHTML = '';
+    document.getElementById('batch-modal-actions').style.display = 'none';
+
+    var es = new EventSource('/api/ai/batch-caption');
+    es.onmessage = function (e) {
+      var msg = JSON.parse(e.data);
+      var log = document.getElementById('batch-log');
+      if (msg.type === 'progress') {
+        var pct = Math.round(msg.current / msg.total * 100);
+        document.getElementById('batch-progress-fill').style.width = pct + '%';
+        document.getElementById('batch-progress-text').textContent =
+          msg.current + ' / ' + msg.total + ' — ' + msg.src;
+        var li = document.createElement('div');
+        li.className = 'batch-log-item';
+        li.textContent = msg.src + ': ' + (msg.captionEn || '（無）');
+        log.appendChild(li);
+        while (log.children.length > 5) { log.removeChild(log.firstChild); }
+      } else if (msg.type === 'done') {
+        document.getElementById('batch-progress-fill').style.width = '100%';
+        document.getElementById('batch-progress-text').textContent =
+          '完成！已處理 ' + msg.processed + ' 件，跳過 ' + msg.skipped + ' 件';
+        document.getElementById('batch-modal-actions').style.display = '';
+        es.close();
+        app.GET('/works').then(function (w) { works = w; renderGrid(); });
+      } else if (msg.type === 'error') {
+        var li = document.createElement('div');
+        li.className = 'batch-log-item batch-log-error';
+        li.textContent = '✗ ' + msg.id + ': ' + msg.message;
+        log.appendChild(li);
+        while (log.children.length > 5) { log.removeChild(log.firstChild); }
+      }
+    };
+    es.onerror = function () {
+      document.getElementById('batch-progress-text').textContent = '連線中斷';
+      document.getElementById('batch-modal-actions').style.display = '';
+      es.close();
+    };
+  });
+
+  document.getElementById('batch-close-btn').addEventListener('click', function () {
+    document.getElementById('batch-modal-overlay').classList.remove('open');
+  });
 
   document.getElementById('ai-apply-btn').addEventListener('click', async function () {
     if (!pendingAiResult || !aiTarget) return;

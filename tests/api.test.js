@@ -66,3 +66,14 @@ describe('extractVideoId', () => {
     expect(extractVideoId('not-a-url')).toBeNull();
   });
 });
+
+describe('PUT /api/about/info EN fields', () => {
+  test('saves nameEn and bioEn fields', async () => {
+    const res = await request(app)
+      .put('/api/about/info')
+      .send({ nameEn: 'Tony Cheng', bioEn: 'Bio in English' });
+    expect(res.status).toBe(200);
+    expect(res.body.nameEn).toBe('Tony Cheng');
+    expect(res.body.bioEn).toBe('Bio in English');
+  });
+});

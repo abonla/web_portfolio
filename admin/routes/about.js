@@ -8,7 +8,7 @@ router.get('/', function(req, res) { res.json(readData().about); });
 
 router.put('/info', function(req, res) {
   const data = readData();
-  const allowed = ['name','currentTitle','education','phone','email','facebook','instagram','bio','photo'];
+  const allowed = ['name','nameEn','currentTitle','currentTitleEn','education','educationEn','phone','email','facebook','instagram','bio','bioEn','photo'];
   allowed.forEach(function(k) { if (req.body[k] !== undefined) data.about[k] = req.body[k]; });
   writeData(data);
   res.json(data.about);
