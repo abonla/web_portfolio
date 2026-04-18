@@ -1,0 +1,41 @@
+{
+  "name": "web_portfolio",
+  "version": "1.0.0",
+  "description": "Tony Cheng portfolio",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node admin/server.js",
+    "migrate": "node admin/migrate.js",
+    "test": "jest --testPathPattern=tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abonla/web_portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abonla/web_portfolio/issues"
+  },
+  "homepage": "https://github.com/abonla/web_portfolio#readme",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "express": "^5.2.1",
+    "multer": "^2.1.1",
+    "sharp": "^0.34.5",
+    "simple-git": "^3.36.0",
+    "unzipper": "^0.12.3",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0",
+    "supertest": "^7.2.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
