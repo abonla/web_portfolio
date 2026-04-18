@@ -378,3 +378,27 @@ body {
 
 .batch-log-item { padding: 2px 0; }
 .batch-log-error { color: #f87171; }
+
+/* Inline AI translate button rows */
+.input-ai-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.input-ai-row .form-input,
+.input-ai-row .form-textarea {
+  flex: 1;
+}
+.btn-ai-sm {
+  background: transparent;
+  border: 1px solid #7c64d5;
+  color: #a78bfa;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.btn-ai-sm:hover { background: rgba(124,100,213,0.15); }
+.btn-ai-sm:disabled { opacity: 0.5; cursor: default; }

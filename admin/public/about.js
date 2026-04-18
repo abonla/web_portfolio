@@ -8,6 +8,10 @@ app.pages['about'] = async function(container) {
   const about = await app.GET('/about');
   let activeTab = 'info';
 
+  async function aiTranslate(zhValue, context) {
+    return app.POST('/ai/translate', { text: zhValue, context: context }).then(function(r) { return r.en; });
+  }
+
   container.innerHTML =
     '<h2 style="margin-bottom:16px;color:#f1f5f9;">關於我</h2>' +
     '<div class="about-tabs">' +
@@ -33,32 +37,55 @@ app.pages['about'] = async function(container) {
     tabContent.innerHTML =
       '<div class="section-box"><h3>聯絡資訊</h3>' +
       '<div class="form-grid">' +
-        '<div class="form-field"><label class="form-label">姓名</label><input class="form-input" id="f-name" value="' + esc(about.name) + '"></div>' +
-        '<div class="form-field"><label class="form-label">現職職稱</label><input class="form-input" id="f-title" value="' + esc(about.currentTitle) + '"></div>' +
-        '<div class="form-field"><label class="form-label">學歷</label><input class="form-input" id="f-edu" value="' + esc(about.education) + '"></div>' +
+        '<div class="form-field"><label class="form-label">姓名（中）</label><input class="form-input" id="f-name" value="' + esc(about.name) + '"></div>' +
+        '<div class="form-field"><label class="form-label">姓名（英）</label><div class="input-ai-row"><input class="form-input" id="f-name-en" value="' + esc(about.nameEn || '') + '"><button class="btn-ai-sm" data-src="f-name" data-target="f-name-en" data-ctx="person full name">✨</button></div></div>' +
+        '<div class="form-field"><label class="form-label">現職職稱（中）</label><input class="form-input" id="f-title" value="' + esc(about.currentTitle) + '"></div>' +
+        '<div class="form-field"><label class="form-label">現職職稱（英）</label><div class="input-ai-row"><input class="form-input" id="f-title-en" value="' + esc(about.currentTitleEn || '') + '"><button class="btn-ai-sm" data-src="f-title" data-target="f-title-en" data-ctx="job title">✨</button></div></div>' +
+        '<div class="form-field"><label class="form-label">學歷（中）</label><input class="form-input" id="f-edu" value="' + esc(about.education) + '"></div>' +
+        '<div class="form-field"><label class="form-label">學歷（英）</label><div class="input-ai-row"><input class="form-input" id="f-edu-en" value="' + esc(about.educationEn || '') + '"><button class="btn-ai-sm" data-src="f-edu" data-target="f-edu-en" data-ctx="education history">✨</button></div></div>' +
         '<div class="form-field"><label class="form-label">電話</label><input class="form-input" id="f-phone" value="' + esc(about.phone) + '"></div>' +
         '<div class="form-field"><label class="form-label">Email</label><input class="form-input" id="f-email" value="' + esc(about.email) + '"></div>' +
         '<div class="form-field"><label class="form-label">Facebook</label><input class="form-input" id="f-fb" value="' + esc(about.facebook) + '"></div>' +
         '<div class="form-field"><label class="form-label">Instagram</label><input class="form-input" id="f-ig" value="' + esc(about.instagram) + '"></div>' +
-        '</div>' +
-      '<div class="form-field"><label class="form-label">自我介紹</label><textarea class="form-textarea" id="f-bio" style="height:140px">' + esc(about.bio) + '</textarea></div>' +
+      '</div>' +
+      '<div class="form-field"><label class="form-label">自我介紹（中）</label><textarea class="form-textarea" id="f-bio" style="height:140px">' + esc(about.bio) + '</textarea></div>' +
+      '<div class="form-field"><label class="form-label">自我介紹（英）</label><div class="input-ai-row" style="align-items:flex-start"><textarea class="form-textarea" id="f-bio-en" style="height:140px">' + esc(about.bioEn || '') + '</textarea><button class="btn-ai-sm" data-src="f-bio" data-target="f-bio-en" data-ctx="personal biography" style="margin-top:4px">✨</button></div></div>' +
       '<div class="btn-row"><button class="btn-primary" id="save-info">儲存基本資料</button></div>' +
       '<p id="info-status" class="text-muted" style="margin-top:8px;"></p></div>';
 
+    tabContent.querySelectorAll('.btn-ai-sm[data-src]').forEach(function(btn) {
+      btn.addEventListener('click', async function() {
+        var srcEl = document.getElementById(btn.dataset.src);
+        var targetEl = document.getElementById(btn.dataset.target);
+        if (!srcEl || !srcEl.value.trim()) return;
+        btn.disabled = true; btn.textContent = '…';
+        try {
+          var en = await aiTranslate(srcEl.value, btn.dataset.ctx);
+          targetEl.value = en;
+        } catch(e) { /* silent */ }
+        btn.textContent = '✨'; btn.disabled = false;
+      });
+    });
+
     document.getElementById('save-info').addEventListener('click', async function() {
-      const statusEl = document.getElementById('info-status');
+      var statusEl = document.getElementById('info-status');
       statusEl.textContent = '儲存中…';
       try {
-        await app.PUT('/about/info', {
-          name: document.getElementById('f-name').value,
-          currentTitle: document.getElementById('f-title').value,
-          education: document.getElementById('f-edu').value,
-          phone: document.getElementById('f-phone').value,
-          email: document.getElementById('f-email').value,
-          facebook: document.getElementById('f-fb').value,
-          instagram: document.getElementById('f-ig').value,
-          bio: document.getElementById('f-bio').value,
+        var saved = await app.PUT('/about/info', {
+          name:           document.getElementById('f-name').value,
+          nameEn:         document.getElementById('f-name-en').value,
+          currentTitle:   document.getElementById('f-title').value,
+          currentTitleEn: document.getElementById('f-title-en').value,
+          education:      document.getElementById('f-edu').value,
+          educationEn:    document.getElementById('f-edu-en').value,
+          phone:          document.getElementById('f-phone').value,
+          email:          document.getElementById('f-email').value,
+          facebook:       document.getElementById('f-fb').value,
+          instagram:      document.getElementById('f-ig').value,
+          bio:            document.getElementById('f-bio').value,
+          bioEn:          document.getElementById('f-bio-en').value,
         });
+        Object.assign(about, saved);
         statusEl.textContent = '✓ 已儲存';
         await app.refreshPendingCount();
       } catch(err) { statusEl.textContent = '✗ ' + err.message; }
@@ -76,7 +103,9 @@ app.pages['about'] = async function(container) {
     function renderRows() {
       document.getElementById('skills-list').innerHTML = skills.map(function(s, i) {
         return '<div class="skill-row" data-i="' + i + '">' +
-          '<input class="form-input skill-name-input" value="' + esc(s.name) + '" placeholder="技能名稱">' +
+          '<input class="form-input skill-name-input" value="' + esc(s.name) + '" placeholder="技能名稱（中）" style="flex:1">' +
+          '<input class="form-input skill-name-en-input" value="' + esc(s.nameEn || '') + '" placeholder="Skill (English)" style="flex:1">' +
+          '<button class="btn-ai-sm skill-ai-btn" data-i="' + i + '" title="AI 翻譯">✨</button>' +
           '<div class="star-editor" id="stars-' + i + '"></div>' +
           '<button class="btn-danger" data-del="' + i + '">✕</button>' +
         '</div>';
@@ -85,16 +114,31 @@ app.pages['about'] = async function(container) {
       document.querySelectorAll('[data-del]').forEach(function(btn) {
         btn.addEventListener('click', function() { skills.splice(parseInt(btn.dataset.del), 1); renderRows(); });
       });
+      document.querySelectorAll('.skill-ai-btn').forEach(function(btn) {
+        btn.addEventListener('click', async function() {
+          var i = btn.dataset.i;
+          var zhInput = document.querySelector('.skill-row[data-i="' + i + '"] .skill-name-input');
+          var enInput = document.querySelector('.skill-row[data-i="' + i + '"] .skill-name-en-input');
+          if (!zhInput.value.trim()) return;
+          btn.disabled = true; btn.textContent = '…';
+          try {
+            var en = await aiTranslate(zhInput.value, 'job skill name');
+            enInput.value = en;
+          } catch(e) { /* silent */ }
+          btn.textContent = '✨'; btn.disabled = false;
+        });
+      });
     }
 
     renderRows();
-    document.getElementById('add-skill').addEventListener('click', function() { skills.push({ name: '', stars: 3 }); renderRows(); });
+    document.getElementById('add-skill').addEventListener('click', function() { skills.push({ name: '', nameEn: '', stars: 3 }); renderRows(); });
     document.getElementById('save-skills').addEventListener('click', async function() {
       const statusEl = document.getElementById('skills-status');
       const saved = skills.map(function(_, i) {
         return {
-          name: document.querySelector('.skill-row[data-i="' + i + '"] .skill-name-input').value,
-          stars: app.getStarValue(document.getElementById('stars-' + i)),
+          name:   document.querySelector('.skill-row[data-i="' + i + '"] .skill-name-input').value,
+          nameEn: document.querySelector('.skill-row[data-i="' + i + '"] .skill-name-en-input').value,
+          stars:  app.getStarValue(document.getElementById('stars-' + i)),
         };
       });
       try {
@@ -117,28 +161,54 @@ app.pages['about'] = async function(container) {
     function renderRows() {
       document.getElementById('exp-list').innerHTML =
         '<table class="exp-table" style="width:100%;margin-bottom:8px;">' +
-        '<thead><tr><th style="width:140px">期間</th><th>公司/單位</th><th>職稱</th><th style="width:40px"></th></tr></thead>' +
+        '<thead><tr>' +
+          '<th style="width:110px">期間</th>' +
+          '<th>公司（中）</th><th>公司（英）</th>' +
+          '<th>職稱（中）</th><th>職稱（英）</th>' +
+          '<th style="width:36px">✨</th><th style="width:36px"></th>' +
+        '</tr></thead>' +
         '<tbody>' + exp.map(function(e, i) {
           return '<tr data-i="' + i + '">' +
             '<td><input class="exp-input" data-field="period" value="' + esc(e.period) + '"></td>' +
             '<td><input class="exp-input" data-field="company" value="' + esc(e.company) + '"></td>' +
+            '<td><input class="exp-input" data-field="companyEn" value="' + esc(e.companyEn || '') + '"></td>' +
             '<td><input class="exp-input" data-field="title" value="' + esc(e.title) + '"></td>' +
+            '<td><input class="exp-input" data-field="titleEn" value="' + esc(e.titleEn || '') + '"></td>' +
+            '<td><button class="btn-ai-sm exp-ai-btn" data-i="' + i + '">✨</button></td>' +
             '<td><button class="btn-danger" data-del="' + i + '" style="padding:4px 8px;">✕</button></td>' +
           '</tr>';
         }).join('') + '</tbody></table>';
       document.querySelectorAll('[data-del]').forEach(function(btn) {
         btn.addEventListener('click', function() { exp.splice(parseInt(btn.dataset.del), 1); renderRows(); });
       });
+      document.querySelectorAll('.exp-ai-btn').forEach(function(btn) {
+        btn.addEventListener('click', async function() {
+          var i = btn.dataset.i;
+          var tr = document.querySelector('tr[data-i="' + i + '"]');
+          var company = tr.querySelector('[data-field="company"]').value;
+          var title = tr.querySelector('[data-field="title"]').value;
+          btn.disabled = true; btn.textContent = '…';
+          try {
+            var r1 = await aiTranslate(company, 'company name');
+            tr.querySelector('[data-field="companyEn"]').value = r1;
+            var r2 = await aiTranslate(title, 'job title');
+            tr.querySelector('[data-field="titleEn"]').value = r2;
+          } catch(e) { /* silent */ }
+          btn.textContent = '✨'; btn.disabled = false;
+        });
+      });
     }
 
     renderRows();
-    document.getElementById('add-exp').addEventListener('click', function() { exp.unshift({ period: '', company: '', title: '' }); renderRows(); });
+    document.getElementById('add-exp').addEventListener('click', function() { exp.unshift({ period: '', company: '', companyEn: '', title: '', titleEn: '' }); renderRows(); });
     document.getElementById('save-exp').addEventListener('click', async function() {
       const saved = Array.from(document.querySelectorAll('#exp-list tr[data-i]')).map(function(tr) {
         return {
-          period:  tr.querySelector('[data-field="period"]').value,
-          company: tr.querySelector('[data-field="company"]').value,
-          title:   tr.querySelector('[data-field="title"]').value,
+          period:    tr.querySelector('[data-field="period"]').value,
+          company:   tr.querySelector('[data-field="company"]').value,
+          companyEn: tr.querySelector('[data-field="companyEn"]').value,
+          title:     tr.querySelector('[data-field="title"]').value,
+          titleEn:   tr.querySelector('[data-field="titleEn"]').value,
         };
       });
       const statusEl = document.getElementById('exp-status');
@@ -175,9 +245,12 @@ app.pages['about'] = async function(container) {
           '<div><div class="timeline-img-preview">' + (t.image ? '<img src="/portfolio/' + t.image + '" alt="">' : '🖼') + '</div></div>' +
           '<div>' +
             '<div class="form-field"><label class="form-label">日期</label><input class="form-input tl-date" value="' + t.date + '"></div>' +
-            '<div class="form-field"><label class="form-label">機構名稱</label><input class="form-input tl-inst" value="' + esc(t.institution) + '"></div>' +
-            '<div class="form-field"><label class="form-label">標題</label><input class="form-input tl-heading" value="' + esc(t.heading) + '"></div>' +
-            '<div class="form-field"><label class="form-label">內文</label><textarea class="form-textarea tl-body" style="height:100px">' + esc(t.body) + '</textarea></div>' +
+            '<div class="form-field"><label class="form-label">機構名稱（中）</label><input class="form-input tl-inst" value="' + esc(t.institution) + '"></div>' +
+            '<div class="form-field"><label class="form-label">機構名稱（英）</label><div class="input-ai-row"><input class="form-input tl-inst-en" value="' + esc(t.institutionEn || '') + '"><button class="btn-ai-sm tl-ai-btn" data-zh="tl-inst" data-en="tl-inst-en" data-ctx="institution name">✨</button></div></div>' +
+            '<div class="form-field"><label class="form-label">標題（中）</label><input class="form-input tl-heading" value="' + esc(t.heading) + '"></div>' +
+            '<div class="form-field"><label class="form-label">標題（英）</label><div class="input-ai-row"><input class="form-input tl-heading-en" value="' + esc(t.headingEn || '') + '"><button class="btn-ai-sm tl-ai-btn" data-zh="tl-heading" data-en="tl-heading-en" data-ctx="section heading">✨</button></div></div>' +
+            '<div class="form-field"><label class="form-label">內文（中）</label><textarea class="form-textarea tl-body" style="height:80px">' + esc(t.body) + '</textarea></div>' +
+            '<div class="form-field"><label class="form-label">內文（英）</label><div class="input-ai-row" style="align-items:flex-start"><textarea class="form-textarea tl-body-en" style="height:80px">' + esc(t.bodyEn || '') + '</textarea><button class="btn-ai-sm tl-ai-btn" data-zh="tl-body" data-en="tl-body-en" data-ctx="biography paragraph" style="margin-top:4px">✨</button></div></div>' +
             '<div class="form-field"><label class="form-label">底部備註</label><input class="form-input tl-footer" value="' + esc(t.footer || '') + '"></div>' +
           '</div>' +
         '</div>' +
@@ -199,17 +272,34 @@ app.pages['about'] = async function(container) {
         hdr.querySelector('.timeline-toggle').textContent = isHidden ? '▼ 收合' : '▶ 展開';
       });
     });
+    document.querySelectorAll('.tl-ai-btn').forEach(function(btn) {
+      btn.addEventListener('click', async function() {
+        var entry = btn.closest('.timeline-entry');
+        var zhEl = entry.querySelector('.' + btn.dataset.zh);
+        var enEl = entry.querySelector('.' + btn.dataset.en);
+        if (!zhEl || !zhEl.value.trim()) return;
+        btn.disabled = true; btn.textContent = '…';
+        try {
+          var en = await aiTranslate(zhEl.value, btn.dataset.ctx);
+          enEl.value = en;
+        } catch(e) { /* silent */ }
+        btn.textContent = '✨'; btn.disabled = false;
+      });
+    });
     document.querySelectorAll('.tl-save-btn').forEach(function(btn) {
       btn.addEventListener('click', async function() {
         const entry = btn.closest('.timeline-entry');
         const id = entry.dataset.id;
         const statusEl = entry.querySelector('.tl-status');
         const payload = {
-          date:        entry.querySelector('.tl-date').value,
-          institution: entry.querySelector('.tl-inst').value,
-          heading:     entry.querySelector('.tl-heading').value,
-          body:        entry.querySelector('.tl-body').value,
-          footer:      entry.querySelector('.tl-footer').value,
+          date:          entry.querySelector('.tl-date').value,
+          institution:   entry.querySelector('.tl-inst').value,
+          institutionEn: entry.querySelector('.tl-inst-en').value,
+          heading:       entry.querySelector('.tl-heading').value,
+          headingEn:     entry.querySelector('.tl-heading-en').value,
+          body:          entry.querySelector('.tl-body').value,
+          bodyEn:        entry.querySelector('.tl-body-en').value,
+          footer:        entry.querySelector('.tl-footer').value,
         };
         try {
           await app.PUT('/about/timeline/' + id, payload);
