@@ -7,6 +7,7 @@ app.pages['works'] = async function (container) {
   let works = await app.GET('/works');
   let activeFilter = '*';
   let aiTarget = null; // { work, btnEl } currently being processed
+  let aiInProgress = false;
 
   container.innerHTML =
     '<div class="works-toolbar">' +
@@ -49,6 +50,7 @@ app.pages['works'] = async function (container) {
   function closeModal() {
     document.getElementById('ai-modal-overlay').classList.remove('open');
     pendingAiResult = null;
+    aiInProgress = false;
     if (aiTarget && aiTarget.btnEl) {
       aiTarget.btnEl.textContent = '✨';
       aiTarget.btnEl.disabled = false;
@@ -77,6 +79,7 @@ app.pages['works'] = async function (container) {
     } catch (err) {
       applyBtn.textContent = '套用';
       applyBtn.disabled = false;
+      alert('套用失敗：' + err.message);
     }
   });
 
@@ -145,16 +148,20 @@ app.pages['works'] = async function (container) {
 
     document.querySelectorAll('.ai-card-btn').forEach(function (btn) {
       btn.addEventListener('click', async function (e) {
+        if (aiInProgress) return;
         const card = e.target.closest('.work-card');
         const work = works.find(function (w) { return w.id === card.dataset.id; });
         if (!work) return;
+        aiInProgress = true;
         aiTarget = { work: work, btnEl: btn };
         btn.textContent = '…';
         btn.disabled = true;
         try {
           const result = await app.POST('/ai/caption', { imagePath: work.src });
+          aiInProgress = false;
           openModal(result);
         } catch (err) {
+          aiInProgress = false;
           btn.textContent = '✨';
           btn.disabled = false;
           alert('AI 生成失敗：' + err.message);
