@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Admin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"></script>
+</head>
+<body>
+  <div class="admin-topbar">
+    <div class="brand">Tony Cheng <span>Admin</span></div>
+    <button id="publish-btn" class="publish-btn">
+      <span class="pending-dot"></span>
+      <span id="pending-count">載入中…</span>
+    </button>
+  </div>
+
+  <div class="admin-layout">
+    <nav class="admin-sidebar">
+      <a href="#works"    class="nav-item" data-page="works">🖼 作品管理</a>
+      <a href="#about"    class="nav-item" data-page="about">👤 關於我</a>
+      <a href="#settings" class="nav-item" data-page="settings">⚙️ 網站設定</a>
+    </nav>
+    <main id="content" class="admin-content">
+      <p class="loading">載入中…</p>
+    </main>
+  </div>
+
+  <div id="publish-modal" class="modal hidden">
+    <div class="modal-box">
+      <h3>發布到 GitHub</h3>
+      <div id="publish-log" class="git-log"></div>
+      <button id="close-publish-modal" class="btn-secondary">關閉</button>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+  <script type="module" src="works.js"></script>
+  <script type="module" src="upload-image.js"></script>
+  <script type="module" src="upload-video.js"></script>
+  <script type="module" src="upload-model.js"></script>
+  <script type="module" src="about.js"></script>
+  <script type="module" src="settings.js"></script>
+</body>
+</html>
