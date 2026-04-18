@@ -300,3 +300,28 @@ body {
 .caption-row textarea {
   flex: 1;
 }
+
+/* AI confirm modal (works list) */
+.ai-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+}
+.ai-modal-overlay.open { display: flex; }
+.ai-modal {
+  background: #1e2330;
+  border: 1px solid #2d3748;
+  border-radius: 12px;
+  padding: 24px;
+  width: 440px;
+  max-width: 90vw;
+}
+.ai-modal h3 { color: #f1f5f9; font-size: 15px; margin-bottom: 16px; }
+.ai-result-row { margin-bottom: 12px; }
+.ai-result-label { font-size: 11px; color: #64748b; margin-bottom: 3px; }
+.ai-result-value { font-size: 13px; color: #e2e8f0; background: #131720; border-radius: 4px; padding: 6px 8px; }
+.ai-modal-actions { display: flex; gap: 10px; margin-top: 20px; justify-content: flex-end; }
