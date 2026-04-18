@@ -110,7 +110,7 @@ app.pages['upload-image'] = function (container) {
       chipGroup.querySelectorAll('.chip').forEach(function (chip) {
         chip.classList.toggle(
           'selected',
-          (result.categories || []).includes(chip.dataset.value)
+          (result.categories || []).includes(chip.dataset.cat)
         );
       });
     } catch (err) {
