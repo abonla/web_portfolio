@@ -7,8 +7,9 @@ const os = require('os');
 // Mock BEFORE requiring server (jest.mock is hoisted automatically)
 jest.mock('../admin/lib/gemini', () => ({
   callGemini: jest.fn(),
+  callGeminiText: jest.fn(),
 }));
-const { callGemini } = require('../admin/lib/gemini');
+const { callGemini, callGeminiText } = require('../admin/lib/gemini');
 
 const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'ai-test-'));
 const tmpDataPath = path.join(tmpDir, 'data.json');
@@ -76,5 +77,41 @@ describe('POST /api/ai/caption', () => {
       .send({ imageBase64: 'ZmFrZQ==', mimeType: 'image/jpeg' });
     expect(res.status).toBe(200);
     expect(res.body.captionZh).toBe('抽象');
+  });
+});
+
+describe('GET /api/ai/batch-caption', () => {
+  test('streams SSE done event when no image works have empty captionEn', async () => {
+    const res = await request(app)
+      .get('/api/ai/batch-caption')
+      .buffer(true)
+      .parse(function(res, callback) {
+        let data = '';
+        res.on('data', function(chunk) { data += chunk; });
+        res.on('end', function() { callback(null, data); });
+      });
+    expect(res.status).toBe(200);
+    expect(res.headers['content-type']).toMatch(/text\/event-stream/);
+    expect(res.body).toContain('"type":"done"');
+    expect(res.body).toContain('"processed":0');
+  });
+});
+
+describe('POST /api/ai/translate', () => {
+  test('returns 400 when text is missing', async () => {
+    const res = await request(app).post('/api/ai/translate').send({});
+    expect(res.status).toBe(400);
+    expect(res.body.error).toMatch(/text/);
+  });
+
+  test('returns translated English text', async () => {
+    callGeminiText.mockResolvedValueOnce({
+      candidates: [{ content: { parts: [{ text: 'Journalism Writing' }] } }],
+    });
+    const res = await request(app)
+      .post('/api/ai/translate')
+      .send({ text: '採訪寫作', context: 'job skill name' });
+    expect(res.status).toBe(200);
+    expect(res.body.en).toBe('Journalism Writing');
   });
 });

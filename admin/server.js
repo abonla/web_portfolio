@@ -64,7 +64,7 @@ const publishRoute = require('./routes/publish');
 app.use('/api/publish', publishRoute.router);
 
 const aiRoute = require('./routes/ai');
-aiRoute.init({ ROOT });
+aiRoute.init({ ROOT, readData, writeData });
 app.use('/api/ai', aiRoute.router);
 
 // Export for route files (Plan 2) and tests
