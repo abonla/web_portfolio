@@ -25,7 +25,9 @@ router.post('/caption', async function (req, res) {
   let base64Data, mimeType;
 
   if (req.body.imagePath) {
-    const absPath = path.join(ROOT, req.body.imagePath);
+    const absPath = path.resolve(ROOT, req.body.imagePath);
+    if (!absPath.startsWith(path.resolve(ROOT) + path.sep))
+      return res.status(400).json({ error: '非法路徑' });
     if (!fs.existsSync(absPath))
       return res
         .status(400)
@@ -44,11 +46,17 @@ router.post('/caption', async function (req, res) {
 
   try {
     const geminiRes = await callGemini(apiKey, base64Data, mimeType);
-    const rawText = geminiRes.candidates[0].content.parts[0].text;
+    if (geminiRes.error) {
+      return res.status(502).json({ error: 'Gemini API 錯誤：' + geminiRes.error.message });
+    }
+    const rawText = geminiRes.candidates?.[0]?.content?.parts?.[0]?.text;
+    if (!rawText) {
+      return res.status(502).json({ error: 'Gemini 回傳空內容' });
+    }
     // Strip markdown code fences Gemini sometimes adds
     const jsonText = rawText
-      .replace(/^```[a-z]*\n?/m, '')
-      .replace(/```$/m, '')
+      .replace(/^```[a-zA-Z]*\r?\n?/m, '')
+      .replace(/```\s*$/m, '')
       .trim();
     const result = JSON.parse(jsonText);
     res.json({

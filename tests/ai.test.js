@@ -66,4 +66,15 @@ describe('POST /api/ai/caption', () => {
     expect(res.status).toBe(200);
     expect(res.body.captionZh).toBe('插畫');
   });
+
+  test('returns AI result from imageBase64', async () => {
+    callGemini.mockResolvedValueOnce({
+      candidates: [{ content: { parts: [{ text: '{"captionZh":"抽象","captionEn":"Abstract","categories":["DRAW"],"fancyboxGroup":"art"}' }] } }],
+    });
+    const res = await request(app)
+      .post('/api/ai/caption')
+      .send({ imageBase64: 'ZmFrZQ==', mimeType: 'image/jpeg' });
+    expect(res.status).toBe(200);
+    expect(res.body.captionZh).toBe('抽象');
+  });
 });
