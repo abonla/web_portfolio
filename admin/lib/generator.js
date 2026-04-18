@@ -35,32 +35,47 @@ function buildThreeItem(w) {
 }
 
 /**
+ * Returns a bilingual span pair. Falls back to zh when en is empty.
+ * Pass block=true to convert newlines to <br> (for paragraph content).
+ */
+function bilingual(zh, en, block) {
+  const zhHtml = block
+    ? esc(zh).replace(/\n/g, '<br>')
+    : esc(zh);
+  const enHtml = block
+    ? esc(en || zh).replace(/\n/g, '<br>')
+    : esc(en || zh);
+  return '<span class="lang-zh">' + zhHtml + '</span>' +
+         '<span class="lang-en">' + enHtml + '</span>';
+}
+
+/**
  * Builds the about/bio section HTML (the .grid-item.bio divs).
  */
 function buildAboutHTML(about) {
   const stars = n => '⭐'.repeat(Math.max(0, Math.min(5, n)));
   const skillRows = about.skills.map(s =>
-    `<tr><td>${esc(s.name)}</td><td>${stars(s.stars)}</td></tr>`
+    `<tr><td>${bilingual(s.name, s.nameEn)}</td><td>${stars(s.stars)}</td></tr>`
   ).join('\n            ');
   const expRows = about.workExperience.map(e =>
-    `<tr><td>${esc(e.period)}</td><th>${esc(e.company)}</th><td>${esc(e.title)}</td></tr>`
+    `<tr><td>${esc(e.period)}</td><th>${bilingual(e.company, e.companyEn)}</th><td>${bilingual(e.title, e.titleEn)}</td></tr>`
   ).join('\n            ');
 
   return `<div class="grid-item me grid-item--width2 bio">
         <div class="info animate__animated animate__tada">
           <img loading="lazy" decoding="async" src="${about.photo}" />
-          <h2>${esc(about.name)}</h2>
+          <h2>${bilingual(about.name, about.nameEn)}</h2>
           <ul>
-            <li><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;${esc(about.currentTitle)}</li>
-            <li><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;${esc(about.education)}</li>
+            <li><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;${bilingual(about.currentTitle, about.currentTitleEn)}</li>
+            <li><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;${bilingual(about.education, about.educationEn)}</li>
             <li>&nbsp;<i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;<a href="tel:+886-${about.phone}">${esc(about.phone)}</a></li>
             <li><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;<a href="mailto:${about.email}">${esc(about.email)}</a></li>
           </ul>
-          <h2>【技能】</h2>
+          <h2>${bilingual('【技能】', 'Skills')}</h2>
           <table>${skillRows}</table>
         </div>
         <article>
-          <p>${esc(about.bio).replace(/\n/g, '<br>')}</p>
+          <p>${bilingual(about.bio, about.bioEn, true)}</p>
           <div id="social">
             <p>
               <a href="${about.facebook}" id="fb" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
@@ -68,36 +83,56 @@ function buildAboutHTML(about) {
             </p>
           </div>
           <hr>
-          <h2>【工作經歷】</h2>
+          <h2>${bilingual('【工作經歷】', 'Work Experience')}</h2>
           <table>${expRows}</table>
         </article>
       </div>
       <div class="grid-item grid-item--width2 bio">
-        <h2>【學習歷程】</h2>
+        <h2>${bilingual('【學習歷程】', 'Learning Journey')}</h2>
         <div id="myTimeline"></div>
       </div>`;
 }
 
 /**
- * Builds the inline <script>var data = [...]</script> for the timeline plugin.
+ * Builds the inline <script> with dataZh, dataEn, and redrawTimeline for the timeline plugin.
  */
 function buildTimelineScript(timeline) {
   const sorted = [...timeline].sort((a, b) => a.date.localeCompare(b.date));
-  const entries = sorted.map(t => {
+
+  function makeEntry(t, lang) {
+    const institution = lang === 'en' ? (t.institutionEn || t.institution) : t.institution;
+    const heading = lang === 'en' ? (t.headingEn || t.heading) : t.heading;
+    const body = lang === 'en' ? (t.bodyEn || t.body) : t.body;
     const bodyParts = [];
     if (t.image) {
       bodyParts.push(`{ tag: 'img', attr: { src: '${t.image}', width: '150px', cssclass: 'img-responsive' } }`);
     }
-    bodyParts.push(`{ tag: 'h2', content: ${JSON.stringify(t.heading)} }`);
-    bodyParts.push(`{ tag: 'p', content: ${JSON.stringify(t.body)} }`);
+    bodyParts.push(`{ tag: 'h2', content: ${JSON.stringify(heading)} }`);
+    bodyParts.push(`{ tag: 'p', content: ${JSON.stringify(body)} }`);
     return `{
     time: ${JSON.stringify(t.date)},
-    header: ${JSON.stringify(t.institution)},
+    header: ${JSON.stringify(institution)},
     body: [${bodyParts.join(', ')}],
     footer: ${JSON.stringify(t.footer || '')}
   }`;
-  });
-  return `<script>\nvar data = [\n  ${entries.join(',\n  ')}\n];\n</script>`;
+  }
+
+  const zhEntries = sorted.map(t => makeEntry(t, 'zh'));
+  const enEntries = sorted.map(t => makeEntry(t, 'en'));
+
+  return `<script>
+var dataZh = [
+  ${zhEntries.join(',\n  ')}
+];
+var dataEn = [
+  ${enEntries.join(',\n  ')}
+];
+function redrawTimeline(lang) {
+  $('#myTimeline').empty();
+  $('#myTimeline').albeTimeline({ data: lang === 'en' ? dataEn : dataZh });
+}
+redrawTimeline('zh');
+</script>`;
 }
 
 /**

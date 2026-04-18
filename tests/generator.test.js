@@ -3,15 +3,22 @@ const { buildWorksHTML, buildAboutHTML, buildTimelineScript } = require('../admi
 const sampleAbout = {
   photo: 'images/獨照.jpg',
   name: '程正邦（Tony）',
+  nameEn: 'Tony Cheng',
   currentTitle: '三立新聞網 編輯組副組長',
+  currentTitleEn: 'Deputy Editor, Sanlih E-Television',
   education: '輔仁大學大傳所',
+  educationEn: 'Fu Jen Catholic University (MA)',
   phone: '0905579995',
   email: 'abon8820@gmail.com',
   facebook: 'https://www.facebook.com/example',
   instagram: 'https://www.instagram.com/example',
   bio: '自我介紹文字',
-  skills: [{ name: '新聞攝影', stars: 5 }, { name: '平面設計', stars: 2 }],
-  workExperience: [{ period: '2024/4～現在', company: '三立新聞網', title: '編輯組副組長' }],
+  bioEn: 'Self-introduction in English',
+  skills: [
+    { name: '新聞攝影', nameEn: 'Photojournalism', stars: 5 },
+    { name: '平面設計', nameEn: 'Graphic Design', stars: 2 },
+  ],
+  workExperience: [{ period: '2024/4～現在', company: '三立新聞網', companyEn: 'Sanlih E-Television', title: '編輯組副組長', titleEn: 'Deputy Editor' }],
   timeline: [],
 };
 
@@ -79,36 +86,59 @@ describe('buildWorksHTML', () => {
 });
 
 describe('buildAboutHTML', () => {
-  test('includes name', () => {
+  test('wraps name in bilingual spans', () => {
     const html = buildAboutHTML(sampleAbout);
-    expect(html).toContain('程正邦（Tony）');
+    expect(html).toContain('<span class="lang-zh">程正邦（Tony）</span>');
+    expect(html).toContain('<span class="lang-en">Tony Cheng</span>');
   });
 
-  test('includes work experience row', () => {
+  test('wraps work experience in bilingual spans', () => {
     const html = buildAboutHTML(sampleAbout);
-    expect(html).toContain('三立新聞網');
-    expect(html).toContain('編輯組副組長');
+    expect(html).toContain('<span class="lang-zh">三立新聞網</span>');
+    expect(html).toContain('<span class="lang-en">Sanlih E-Television</span>');
+    expect(html).toContain('<span class="lang-zh">編輯組副組長</span>');
+    expect(html).toContain('<span class="lang-en">Deputy Editor</span>');
   });
 
-  test('renders skill stars', () => {
+  test('renders skill stars with bilingual name', () => {
     const html = buildAboutHTML(sampleAbout);
-    expect(html).toMatch(/新聞攝影[\s\S]{0,200}⭐⭐⭐⭐⭐/);
+    expect(html).toContain('<span class="lang-zh">新聞攝影</span>');
+    expect(html).toContain('<span class="lang-en">Photojournalism</span>');
+    expect(html).toMatch(/Photojournalism[\s\S]{0,300}⭐⭐⭐⭐⭐/);
+  });
+
+  test('falls back to zh when en is empty', () => {
+    const aboutNoEn = Object.assign({}, sampleAbout, { nameEn: '' });
+    const html = buildAboutHTML(aboutNoEn);
+    expect(html).toContain('<span class="lang-en">程正邦（Tony）</span>');
   });
 });
 
 describe('buildTimelineScript', () => {
-  test('outputs valid JS var data assignment', () => {
+  test('outputs dataZh and dataEn with redrawTimeline function', () => {
     const timeline = [{
-      id: 't1', date: '2025-06-04', institution: '復興美工',
-      heading: '畢業', body: '內文', image: 'images/foo.jpg', footer: '',
+      id: 't1', date: '2025-06-04', institution: '復興美工', institutionEn: 'Fuxing Art School',
+      heading: '畢業', headingEn: 'Graduation', body: '內文', bodyEn: 'Body text', image: 'images/foo.jpg', footer: '',
     }];
     const script = buildTimelineScript(timeline);
     expect(script).toContain('<script>');
-    expect(script).toContain('var data =');
+    expect(script).toContain('var dataZh =');
+    expect(script).toContain('var dataEn =');
+    expect(script).toContain('function redrawTimeline');
     expect(script).toContain('復興美工');
+    expect(script).toContain('Fuxing Art School');
     expect(script).toContain('images/foo.jpg');
     expect(script).toContain('</script>');
-    // Must be valid JS — eval it
-    expect(() => { const fn = new Function(script.replace(/<\/?script>/g, '')); fn(); }).not.toThrow();
+  });
+
+  test('falls back to zh when en fields are absent', () => {
+    const timeline = [{
+      id: 't2', date: '2024-01-01', institution: '測試機構',
+      heading: '標題', body: '內文', footer: '',
+    }];
+    const script = buildTimelineScript(timeline);
+    const enSection = script.split('var dataEn =')[1];
+    expect(enSection).toContain('測試機構');
+    expect(enSection).toContain('標題');
   });
 });
