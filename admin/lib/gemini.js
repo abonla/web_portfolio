@@ -52,4 +52,32 @@ function callGemini(apiKey, base64Data, mimeType) {
   });
 }
 
-module.exports = { callGemini };
+function callGeminiText(apiKey, prompt) {
+  return new Promise(function (resolve, reject) {
+    const body = JSON.stringify({
+      contents: [{ parts: [{ text: prompt }] }],
+      generationConfig: { temperature: 0.2, maxOutputTokens: 512 },
+    });
+    const options = {
+      hostname: 'generativelanguage.googleapis.com',
+      path: '/v1beta/models/gemini-2.0-flash:generateContent?key=' + apiKey,
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': Buffer.byteLength(body),
+      },
+    };
+    const req = https.request(options, function (res) {
+      let data = '';
+      res.on('data', function (chunk) { data += chunk; });
+      res.on('end', function () {
+        try { resolve(JSON.parse(data)); }
+        catch (e) { reject(new Error('Gemini 回傳格式錯誤')); }
+      });
+    });
+    req.on('error', reject);
+    req.write(body);
+    req.end();
+  });
+}
+module.exports = { callGemini, callGeminiText };
