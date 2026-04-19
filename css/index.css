@@ -41,15 +41,14 @@ header h1 {
   font-size: 3em;
   font-weight: 900;
   line-height: 1em;
-  padding: 8px 0;
 }
 
 header h1 .lang-zh {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 header h1 .lang-en {
-  font-size: 0.4em;
+  font-size: 0.55em;
   display: block;
 }
 
@@ -69,11 +68,15 @@ header h1:hover {
 }
 
 header h1 .h1-sub {
-  font-size: 0.35em;
+  font-size: 0.45em;
   font-weight: normal;
   line-height: 1em;
   display: block;
   margin-top: 0.3em;
+}
+
+header {
+  padding: 12px 0;
 }
 
 header nav a {
