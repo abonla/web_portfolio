@@ -1,27 +1,3 @@
-//瀑布流排版
-
-$(function () {
-	// external js: masonry.pkgd.js, imagesloaded.pkgd.js
-
-	// init Masonry
-	var $grid = $('.grid').masonry({
-		itemSelector: '.grid-item',
-		percentPosition: true,
-		columnWidth: '.grid-sizer',
-		gutter: '.gutter-sizer'
-	});
-
-	// Debounce masonry relayout: batch image-load events so we
-	// do at most one layout per 200ms instead of one per image.
-	var layoutTimer;
-	$grid.imagesLoaded().progress(function () {
-		clearTimeout(layoutTimer);
-		layoutTimer = setTimeout(function () {
-			$grid.masonry('layout');
-		}, 200);
-	});
-});
-
 // goTop
 
 $(function () {
@@ -52,6 +28,16 @@ $(function () {
 		itemSelector: '.grid-item',
 		percentPosition: true
 	});
+
+	// Relayout as images load so items get correct heights
+	var layoutTimer;
+	$grid.imagesLoaded().progress(function () {
+		clearTimeout(layoutTimer);
+		layoutTimer = setTimeout(function () {
+			$grid.isotope('layout');
+		}, 200);
+	});
+
 	// filter items on button click
 	$('header').on('click', 'a', function () {
 		var filterValue = $(this).attr('data-filter');

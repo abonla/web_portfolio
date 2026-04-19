@@ -279,7 +279,7 @@ html {
 
 html, body {
   font-family: sans-serif;
-  background: #000;
+  background: #000 !important;
   color: #ffffff;
 }
 
