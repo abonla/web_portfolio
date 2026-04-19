@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100");
+
 header {
   display: flex;
   justify-content: space-evenly;
@@ -277,10 +279,15 @@ html {
   overflow-y: scroll;
 }
 
-body {
+html, body {
   font-family: sans-serif;
   background: #000;
   color: #ffffff;
+}
+
+/* Ensure the custom <content> element renders as block */
+content {
+  display: block;
 }
 
 /* ---- grid ---- */
@@ -676,7 +683,6 @@ section#timeline article:hover {
 }
 
 /* loading page */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100");
 
 .loading-page {
   box-sizing: border-box;
