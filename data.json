@@ -4337,31 +4337,38 @@
     "skills": [
       {
         "name": "採訪寫作",
-        "stars": 0
+        "nameEn": "Interview and writing",
+        "stars": 4
       },
       {
         "name": "新聞攝影",
-        "stars": 0
+        "nameEn": "News photography",
+        "stars": 5
       },
       {
         "name": "手繪能力",
-        "stars": 0
+        "nameEn": "Hand drawing",
+        "stars": 3
       },
       {
         "name": "平面設計",
-        "stars": 0
+        "nameEn": "Graphic design",
+        "stars": 2
       },
       {
         "name": "網頁製作",
-        "stars": 0
+        "nameEn": "Web design",
+        "stars": 2
       },
       {
         "name": "剪接特效",
-        "stars": 0
+        "nameEn": "Video editing and effects",
+        "stars": 3
       },
       {
         "name": "3D動畫",
-        "stars": 0
+        "nameEn": "3D animation",
+        "stars": 1
       }
     ],
     "workExperience": [
