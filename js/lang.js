@@ -2,8 +2,6 @@
 // setLang is exposed globally so the button onclick can call it directly.
 
 (function () {
-  var STORAGE_KEY = 'portfolio-lang';
-
   window.setLang = function (lang) {
     var html = document.documentElement;
     html.classList.remove('lang-zh', 'lang-en');
@@ -26,10 +24,8 @@
       try { redrawTimeline(lang); } catch (e) { /* ignore timeline errors */ }
     }
 
-    localStorage.setItem(STORAGE_KEY, lang);
   };
 
-  // Initialize on load
-  var saved = localStorage.getItem(STORAGE_KEY) || 'zh';
-  window.setLang(saved);
+  // Always start in Chinese on page load
+  window.setLang('zh');
 })();
