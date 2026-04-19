@@ -112,7 +112,7 @@
         <li><a id="me" data-filter=".bio" href="javascript:;">ABOUT</a></li>
       </ul>
     </nav>
-    <button id="lang-toggle" title="Switch language">EN</button>
+    <button id="lang-toggle" onclick="setLang(document.documentElement.classList.contains('lang-en')?'zh':'en')" title="Switch language">EN</button>
   </header>
 
   <content>
@@ -1433,7 +1433,7 @@ function redrawTimeline(lang) {
 }
 redrawTimeline('zh');
 </script>
-  <script src="js/lang.js"></script>
+  <script src="js/lang.js?v=2"></script>
 </body>
 
 </html>
