@@ -129,7 +129,7 @@ var dataEn = [
 ];
 function redrawTimeline(lang) {
   $('#myTimeline').empty();
-  $('#myTimeline').albeTimeline({ data: lang === 'en' ? dataEn : dataZh });
+  $('#myTimeline').albeTimeline(lang === 'en' ? dataEn : dataZh);
 }
 redrawTimeline('zh');
 </script>`;
