@@ -14,11 +14,31 @@ router.get('/', function(req, res) {
 
 router.post('/', function(req, res) {
   const data = readData();
-  const maxOrder = data.works.reduce(function(m, w) { return Math.max(m, w.order || 0); }, -1);
-  const work = Object.assign({ id: uuidv4(), order: maxOrder + 1 }, req.body);
-  data.works.push(work);
+  const newWork = Object.assign({ id: uuidv4() }, req.body);
+  const newCats = newWork.categories || [];
+
+  // Sort by current order so we can find insertion position
+  data.works.sort(function(a, b) { return (a.order || 0) - (b.order || 0); });
+
+  // Find the last work that shares at least one category with the new work
+  let insertIdx = data.works.length; // default: append to end
+  if (newCats.length > 0) {
+    for (let i = data.works.length - 1; i >= 0; i--) {
+      const wCats = data.works[i].categories || [];
+      if (wCats.some(function(c) { return newCats.includes(c); })) {
+        insertIdx = i + 1;
+        break;
+      }
+    }
+  }
+
+  data.works.splice(insertIdx, 0, newWork);
+
+  // Re-assign sequential orders after insertion
+  data.works.forEach(function(w, i) { w.order = i; });
+
   writeData(data);
-  res.status(201).json(work);
+  res.status(201).json(newWork);
 });
 
 router.put('/:id', function(req, res) {

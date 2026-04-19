@@ -40,6 +40,30 @@ describe('Works API', () => {
     expect(res.body.id).toBeDefined();
   });
 
+  test('POST /api/works inserts after last same-category work', async () => {
+    // Reset to known state: painter at order 0, then video at order 1
+    const before = (await request(app).get('/api/works')).body;
+    const painterWork = before.find(function(w) { return (w.categories || []).includes('painter'); });
+    expect(painterWork).toBeDefined();
+
+    // Add a new painter image — should go right after the existing painter, not at the very end
+    const res = await request(app).post('/api/works').send({
+      type: 'image', src: 'images/b.jpg', thumb: 'images/bm.jpg',
+      caption: 'B', categories: ['painter'], order: 999,
+    });
+    expect(res.status).toBe(201);
+
+    const after = (await request(app).get('/api/works')).body;
+    const sorted = after.slice().sort(function(a, b) { return a.order - b.order; });
+    const newIdx   = sorted.findIndex(function(w) { return w.id === res.body.id; });
+    const videoIdx = sorted.findIndex(function(w) { return w.type === 'video'; });
+    // new painter should appear before the video (video has no 'painter' category)
+    expect(newIdx).toBeLessThan(videoIdx);
+
+    // Clean up
+    await request(app).delete('/api/works/' + res.body.id);
+  });
+
   test('DELETE /api/works/:id removes it', async () => {
     const list = (await request(app).get('/api/works')).body;
     const video = list.find(function(w) { return w.type === 'video'; });

@@ -29,15 +29,13 @@
   var saved = localStorage.getItem(STORAGE_KEY) || 'zh';
   setLang(saved);
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var btn = document.getElementById('lang-toggle');
-    if (btn) {
-      // Sync button text (setLang may run before DOMContentLoaded when btn doesn't exist yet)
-      btn.textContent = saved === 'en' ? '中' : 'EN';
-      btn.addEventListener('click', function () {
-        var current = document.documentElement.classList.contains('lang-en') ? 'en' : 'zh';
-        setLang(current === 'en' ? 'zh' : 'en');
-      });
-    }
-  });
+  // Script is at the bottom of <body>, so DOM is already ready — attach directly.
+  var btn = document.getElementById('lang-toggle');
+  if (btn) {
+    btn.textContent = saved === 'en' ? '中' : 'EN';
+    btn.addEventListener('click', function () {
+      var current = document.documentElement.classList.contains('lang-en') ? 'en' : 'zh';
+      setLang(current === 'en' ? 'zh' : 'en');
+    });
+  }
 })();

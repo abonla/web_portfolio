@@ -730,10 +730,10 @@ h1.abs {
 }
 
 /* Language toggle — hide all .lang-en spans by default */
-.lang-en { display: none; }
+.lang-en { display: none !important; }
 /* When html has lang-en class, swap visibility */
-html.lang-en .lang-zh { display: none; }
-html.lang-en .lang-en { display: inline; }
+html.lang-en .lang-zh { display: none !important; }
+html.lang-en .lang-en { display: inline !important; }
 
 /* Lang toggle button in header */
 #lang-toggle {
@@ -747,5 +747,12 @@ html.lang-en .lang-en { display: inline; }
   margin-left: 12px;
   vertical-align: middle;
   flex-shrink: 0;
+  transition: background 0.2s;
 }
 #lang-toggle:hover { background: rgba(255,255,255,0.15); }
+/* Active EN state — button lights up so user knows toggle is ON */
+html.lang-en #lang-toggle {
+  background: rgba(255,255,255,0.25);
+  border-color: #fff;
+  font-weight: bold;
+}
