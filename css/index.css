@@ -729,11 +729,11 @@ h1.abs {
   color: #f60d54;
 }
 
-/* Language toggle — hide all .lang-en spans by default */
-.lang-en { display: none !important; }
+/* Language toggle — hide lang-en spans by default (only targets spans, not html element) */
+span.lang-en { display: none !important; }
 /* When html has lang-en class, swap visibility */
-html.lang-en .lang-zh { display: none !important; }
-html.lang-en .lang-en { display: inline !important; }
+html.lang-en span.lang-zh { display: none !important; }
+html.lang-en span.lang-en { display: inline !important; }
 
 /* Lang toggle button in header */
 #lang-toggle {
