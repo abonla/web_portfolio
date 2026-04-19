@@ -71,9 +71,8 @@ $(function () {
 
 //時間軸data
 
-// 執行timeline加動畫
+// timeline 動畫（初始化由 inline script 的 redrawTimeline 負責）
 $(document).ready(function () {
-	$("#myTimeline").albeTimeline(data);
 	$("#myTimeline article").addClass("animate__animated animate__tada");
 });
 
