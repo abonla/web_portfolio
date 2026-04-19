@@ -4375,37 +4375,51 @@
       {
         "period": "2024/4~",
         "company": "三立新聞網",
-        "title": "編輯組副組長"
+        "companyEn": "SET News",
+        "title": "編輯組副組長",
+        "titleEn": "Deputy Editor"
       },
       {
         "period": "2022/2~2024/4",
         "company": "中天新聞",
-        "title": "文字記者編輯"
+        "companyEn": "",
+        "title": "文字記者編輯",
+        "titleEn": ""
       },
       {
         "period": "2021/9~2021/12",
         "company": "辰紘行銷",
-        "title": "視覺設計"
+        "companyEn": "",
+        "title": "視覺設計",
+        "titleEn": ""
       },
       {
         "period": "2003/2~2021/8",
         "company": "蘋果日報",
-        "title": "娛樂記者特勤中心副主任"
+        "companyEn": "",
+        "title": "娛樂記者特勤中心副主任",
+        "titleEn": ""
       },
       {
         "period": "2002/10~2003/2",
         "company": "全能製作",
-        "title": "攝影助理"
+        "companyEn": "",
+        "title": "攝影助理",
+        "titleEn": ""
       },
       {
         "period": "2002/5~2002/10",
         "company": "華義國際數位娛樂",
-        "title": "出版部編輯"
+        "companyEn": "",
+        "title": "出版部編輯",
+        "titleEn": ""
       },
       {
         "period": "2001/3~2002/5",
         "company": "正氣中華報",
-        "title": "新聞兵"
+        "companyEn": "",
+        "title": "新聞兵",
+        "titleEn": ""
       }
     ],
     "timeline": [
