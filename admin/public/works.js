@@ -51,6 +51,24 @@ app.pages['works'] = async function (container) {
           '<label class="edit-label">說明（英文）</label>' +
           '<input class="edit-input" type="text" id="edit-caption-en" placeholder="English caption">' +
         '</div>' +
+        '<div class="edit-field">' +
+          '<label class="edit-label">分類標籤（點選切換）</label>' +
+          '<div class="edit-cat-group"><span class="edit-cat-heading">設計</span>' +
+            ['cis1','cis2','cis3','cis4','cis5','cis6','cis7'].map(function(c){
+              return '<button type="button" class="cat-toggle" data-cat="'+c+'">'+c+'</button>';
+            }).join('') +
+          '</div>' +
+          '<div class="edit-cat-group"><span class="edit-cat-heading">繪畫</span>' +
+            ['painter','sketch','water','ink','oil','mark','digital'].map(function(c){
+              return '<button type="button" class="cat-toggle" data-cat="'+c+'">'+c+'</button>';
+            }).join('') +
+          '</div>' +
+          '<div class="edit-cat-group"><span class="edit-cat-heading">其他</span>' +
+            ['photo','video','web','three','news'].map(function(c){
+              return '<button type="button" class="cat-toggle" data-cat="'+c+'">'+c+'</button>';
+            }).join('') +
+          '</div>' +
+        '</div>' +
         '<div class="edit-modal-actions">' +
           '<button class="btn-secondary" id="edit-cancel-btn">取消</button>' +
           '<button class="btn-primary" id="edit-save-btn">儲存</button>' +
@@ -124,6 +142,10 @@ app.pages['works'] = async function (container) {
     editTarget = work;
     document.getElementById('edit-caption-zh').value = work.caption || '';
     document.getElementById('edit-caption-en').value = work.captionEn || '';
+    var activeCats = work.categories || [];
+    document.querySelectorAll('.cat-toggle').forEach(function (btn) {
+      btn.classList.toggle('active', activeCats.includes(btn.dataset.cat));
+    });
     document.getElementById('edit-modal-overlay').classList.add('open');
   }
 
@@ -134,15 +156,24 @@ app.pages['works'] = async function (container) {
 
   document.getElementById('edit-cancel-btn').addEventListener('click', closeEditModal);
 
+  document.getElementById('edit-modal-overlay').addEventListener('click', function (e) {
+    if (e.target.classList.contains('cat-toggle')) {
+      e.target.classList.toggle('active');
+    }
+  });
+
   document.getElementById('edit-save-btn').addEventListener('click', async function () {
     if (!editTarget) return;
     const saveBtn = document.getElementById('edit-save-btn');
     saveBtn.disabled = true;
     saveBtn.textContent = '儲存中…';
+    const selectedCats = Array.from(document.querySelectorAll('.cat-toggle.active'))
+      .map(function (b) { return b.dataset.cat; });
     try {
       await app.PUT('/works/' + editTarget.id, {
         caption: document.getElementById('edit-caption-zh').value.trim(),
         captionEn: document.getElementById('edit-caption-en').value.trim(),
+        categories: selectedCats,
       });
       works = await app.GET('/works');
       app.refreshPendingCount();

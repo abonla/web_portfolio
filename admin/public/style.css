@@ -363,6 +363,15 @@ body {
 }
 .edit-input:focus { border-color: #3b82f6; }
 .edit-modal-actions { display: flex; gap: 10px; margin-top: 20px; justify-content: flex-end; }
+.edit-cat-group { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 8px; }
+.edit-cat-heading { font-size: 10px; color: #475569; min-width: 30px; }
+.cat-toggle {
+  font-size: 11px; padding: 3px 8px;
+  border-radius: 12px; border: 1px solid #334155;
+  background: #1e2a3a; color: #94a3b8; cursor: pointer;
+}
+.cat-toggle:hover { border-color: #3b82f6; color: #93c5fd; }
+.cat-toggle.active { background: #1d4ed8; border-color: #3b82f6; color: #fff; }
 
 /* Green dot on card caption when captionEn exists */
 .card-caption.has-en::after {
