@@ -62,7 +62,7 @@ app.pages['works'] = async function (container) {
         '<div class="edit-field">' +
           '<label class="edit-label">分類標籤（點選切換）</label>' +
           '<div class="edit-cat-group"><span class="edit-cat-heading">設計</span>' +
-            ['cis1','cis2','cis3','cis4','cis5','cis6','cis7'].map(function(c){
+            ['cis1','cis2','cis3','cis4','cis5','cis6','cis7','cis8'].map(function(c){
               return '<button type="button" class="cat-toggle" data-cat="'+c+'">'+c+'</button>';
             }).join('') +
           '</div>' +
