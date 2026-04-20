@@ -1691,14 +1691,14 @@
       "caption": "輔大應美系的設計基礎作業。我以近年日本頻傳的「熊攻擊事件」為靈感，設計了這款生存對抗桌遊。玩家從右下角的營帳區出發，前往果園採集蘋果以獲取積分；然而，潛伏在左下角深山洞穴裡的熊會隨機出沒覓食，一旦遇到人類便會發起攻擊。玩家必須前往地圖中央的鐘樓，透過搖鈴警告村民，方能化解危機。此外，地圖中還隱藏了隨機尋寶的趣味要素，將真實社會議題轉化為具備冒險感與策略深度的遊戲體驗。",
       "captionEn": "This is a design fundamentals assignment from the Department of Applied Arts at Fu Jen Catholic University. Inspired by the frequent bear attacks in Japan in recent years, I designed this survival-themed board game. Players start from the camp area in the lower right corner and head to an orchard to collect apples and earn points. However, bears lurking in the deep mountain caves in the lower left corner will randomly appear to hunt, attacking any humans they encounter. Players must reach the clock tower in the center of the map and ring the bell to warn the villagers and avert the crisis. Furthermore, the map also hides elements of random treasure hunts, transforming real-world social issues into a game experience with both adventure and strategic depth.",
       "categories": [
+        "cis8",
         "painter",
-        "digital",
-        "cis8"
+        "digital"
       ],
       "fancyboxGroup": "",
       "order": 129,
-      "titleZh": "",
-      "titleEn": ""
+      "titleZh": "生存桌遊《熊出沒》",
+      "titleEn": "Survival board game \"Boonie Bears\""
     },
     {
       "id": "8935648c-78ad-4402-953a-66dae70119e3",
