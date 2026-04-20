@@ -241,7 +241,12 @@ app.pages['works'] = async function (container) {
         var fd = new FormData();
         fd.append('file', replaceFile);
         var replaceRes = await fetch('/api/upload/replace/' + editTarget.id, { method: 'POST', body: fd });
-        if (!replaceRes.ok) { var e = await replaceRes.json(); throw new Error(e.error || '換圖失敗'); }
+        if (!replaceRes.ok) {
+          var txt = await replaceRes.text();
+          var msg = '換圖失敗（' + replaceRes.status + '）';
+          try { msg = JSON.parse(txt).error || msg; } catch(e) {}
+          throw new Error(msg);
+        }
       }
       await app.PUT('/works/' + editTarget.id, {
         titleZh: document.getElementById('edit-title-zh').value.trim(),
