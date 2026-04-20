@@ -32,7 +32,7 @@ const NAV_ITEMS = [
 app.pages['settings'] = async function(container) {
   const [meta, navLabels] = await Promise.all([
     app.GET('/settings'),
-    app.GET('/nav'),
+    app.GET('/nav').catch(function() { return {}; }),
   ]);
 
   const navRows = NAV_ITEMS.map(function(item) {
