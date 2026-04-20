@@ -42,7 +42,15 @@ app.pages['works'] = async function (container) {
     // Edit caption modal
     '<div class="edit-modal-overlay" id="edit-modal-overlay">' +
       '<div class="edit-modal">' +
-        '<h3>✏️ 編輯說明</h3>' +
+        '<h3>✏️ 編輯作品</h3>' +
+        '<div class="edit-field">' +
+          '<label class="edit-label">標題（中文）</label>' +
+          '<input class="edit-input" type="text" id="edit-title-zh" placeholder="中文標題">' +
+        '</div>' +
+        '<div class="edit-field">' +
+          '<label class="edit-label">標題（英文）</label>' +
+          '<input class="edit-input" type="text" id="edit-title-en" placeholder="English title">' +
+        '</div>' +
         '<div class="edit-field">' +
           '<label class="edit-label">說明（中文）</label>' +
           '<input class="edit-input" type="text" id="edit-caption-zh" placeholder="中文說明">' +
@@ -67,6 +75,11 @@ app.pages['works'] = async function (container) {
             ['photo','video','web','three','news'].map(function(c){
               return '<button type="button" class="cat-toggle" data-cat="'+c+'">'+c+'</button>';
             }).join('') +
+          '</div>' +
+          '<div class="edit-cat-group edit-cat-custom">' +
+            '<span class="edit-cat-heading">新增</span>' +
+            '<input class="edit-input edit-tag-input" type="text" id="edit-new-tag" placeholder="自訂標籤名稱">' +
+            '<button type="button" class="btn-secondary edit-tag-add-btn" id="edit-add-tag-btn">＋</button>' +
           '</div>' +
         '</div>' +
         '<div class="edit-modal-actions">' +
@@ -140,13 +153,34 @@ app.pages['works'] = async function (container) {
   // --- Edit caption modal ---
   function openEditModal(work) {
     editTarget = work;
+    document.getElementById('edit-title-zh').value = work.titleZh || '';
+    document.getElementById('edit-title-en').value = work.titleEn || '';
     document.getElementById('edit-caption-zh').value = work.caption || '';
     document.getElementById('edit-caption-en').value = work.captionEn || '';
+    document.getElementById('edit-new-tag').value = '';
+    // 移除上次新增的自訂標籤按鈕
+    document.querySelectorAll('.cat-toggle.custom').forEach(function (b) { b.remove(); });
     var activeCats = work.categories || [];
+    // 若 work 有不在預設清單的 cat，也要顯示
+    var preset = ['cis1','cis2','cis3','cis4','cis5','cis6','cis7',
+      'painter','sketch','water','ink','oil','mark','digital',
+      'photo','video','web','three','news'];
+    activeCats.filter(function (c) { return c && !preset.includes(c); }).forEach(function (c) {
+      addTagButton(c);
+    });
     document.querySelectorAll('.cat-toggle').forEach(function (btn) {
       btn.classList.toggle('active', activeCats.includes(btn.dataset.cat));
     });
     document.getElementById('edit-modal-overlay').classList.add('open');
+  }
+
+  function addTagButton(cat) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'cat-toggle custom active';
+    btn.dataset.cat = cat;
+    btn.textContent = cat;
+    document.getElementById('edit-add-tag-btn').before(btn);
   }
 
   function closeEditModal() {
@@ -162,6 +196,19 @@ app.pages['works'] = async function (container) {
     }
   });
 
+  document.getElementById('edit-add-tag-btn').addEventListener('click', function () {
+    var val = document.getElementById('edit-new-tag').value.trim().toLowerCase().replace(/\s+/g, '-');
+    if (!val) return;
+    var existing = document.querySelector('.cat-toggle[data-cat="' + val + '"]');
+    if (existing) { existing.classList.add('active'); }
+    else { addTagButton(val); }
+    document.getElementById('edit-new-tag').value = '';
+  });
+
+  document.getElementById('edit-new-tag').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { e.preventDefault(); document.getElementById('edit-add-tag-btn').click(); }
+  });
+
   document.getElementById('edit-save-btn').addEventListener('click', async function () {
     if (!editTarget) return;
     const saveBtn = document.getElementById('edit-save-btn');
@@ -171,6 +218,8 @@ app.pages['works'] = async function (container) {
       .map(function (b) { return b.dataset.cat; });
     try {
       await app.PUT('/works/' + editTarget.id, {
+        titleZh: document.getElementById('edit-title-zh').value.trim(),
+        titleEn: document.getElementById('edit-title-en').value.trim(),
         caption: document.getElementById('edit-caption-zh').value.trim(),
         captionEn: document.getElementById('edit-caption-en').value.trim(),
         categories: selectedCats,

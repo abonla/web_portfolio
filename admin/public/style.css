@@ -372,6 +372,9 @@ body {
 }
 .cat-toggle:hover { border-color: #3b82f6; color: #93c5fd; }
 .cat-toggle.active { background: #1d4ed8; border-color: #3b82f6; color: #fff; }
+.edit-cat-custom { align-items: center; gap: 6px; }
+.edit-tag-input { flex: 1; min-width: 0; padding: 3px 8px; font-size: 12px; }
+.edit-tag-add-btn { padding: 3px 10px; font-size: 13px; flex-shrink: 0; }
 
 /* Green dot on card caption when captionEn exists */
 .card-caption.has-en::after {

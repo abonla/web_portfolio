@@ -16,8 +16,10 @@ function buildImageItem(w) {
   const classes = ['grid-item', ...w.categories].join(' ');
   const caption = escapeAttr(w.caption);
   const captionEn = escapeAttr(w.captionEn || '');
+  const titleZh = escapeAttr(w.titleZh || '');
+  const titleEn = escapeAttr(w.titleEn || '');
   return `<div class="${classes}">
-        <a href="${w.src}" data-fancybox="${w.fancyboxGroup}" data-caption="${caption}" data-caption-en="${captionEn}"><img loading="lazy" decoding="async" src="${w.thumb}" /></a>
+        <a href="${w.src}" data-fancybox="${w.fancyboxGroup}" data-caption="${caption}" data-caption-en="${captionEn}" data-title-zh="${titleZh}" data-title-en="${titleEn}"><img loading="lazy" decoding="async" src="${w.thumb}" /></a>
       </div>`;
 }
 

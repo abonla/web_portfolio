@@ -142,11 +142,14 @@ $.fancybox.defaults.caption = function (instance, item) {
 	var desc = isEn
 		? (el.dataset.captionEn || el.dataset.captionZhBackup || el.dataset.caption || '')
 		: (el.dataset.captionZhBackup || el.dataset.caption || '');
-	// 從 href 取出檔名（去掉路徑和副檔名）
+	// 標題：優先用 titleZh/titleEn，否則用檔名
 	var href = el.getAttribute('href') || '';
 	var filename = href.split('/').pop().replace(/\.[^.]+$/, '') || '';
-	if (filename) {
-		return '<strong class="fb-caption-title">' + filename + '</strong>' +
+	var title = isEn
+		? (el.dataset.titleEn || el.dataset.titleZh || filename)
+		: (el.dataset.titleZh || filename);
+	if (title) {
+		return '<strong class="fb-caption-title">' + title + '</strong>' +
 			(desc ? '<br><span class="fb-caption-desc">' + desc + '</span>' : '');
 	}
 	return desc;
