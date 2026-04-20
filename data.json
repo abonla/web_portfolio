@@ -1708,14 +1708,15 @@
       "caption": "以日本首相高市早苗為圓形，搭配小紅帽的童話故事造型，提著籃子去果園採蘋果，遇到熊攻擊，如何提防摘蘋果的大人爾虞我詐並合作抗熊，考驗著小紅帽的智慧。",
       "captionEn": "The illustration features Japanese Prime Minister Sanae Takaichi in a circular shape, paired with a fairytale costume of Little Red Riding Hood. She is carrying a basket to pick apples in an orchard when she encounters a bear attack. How can she avoid the adults picking apples and cooperate to fight off the bear? This tests Little Red Riding Hood's wisdom.",
       "categories": [
+        "cis8",
         "painter",
         "digital",
         "cis8"
       ],
       "fancyboxGroup": "",
       "order": 130,
-      "titleZh": "",
-      "titleEn": ""
+      "titleZh": "《熊出沒》遊戲角色_小紅帽",
+      "titleEn": "Little Red Riding Hood, a character from the \"Boonie Bears\" game."
     },
     {
       "id": "720196f3-e346-4fd9-820a-16e13d4e6261",
@@ -1725,11 +1726,16 @@
       "caption": "由於都市過度開發，威脅到深山中熊的生存範圍，紛紛下山覓食，對人類極不友善，隨著熊攻擊人的事件頻傳，日本甚至出動軍隊殺熊，停屍間堆滿熊屍，商人大發熊肉利市。",
       "captionEn": "Overdevelopment in cities has threatened the habitat of bears in the deep mountains, causing them to come down from the mountains in search of food. They are extremely unfriendly to humans. As bear attacks on people have become more frequent, Japan has even deployed its army to kill bears. Morgues are filled with bear carcasses, and merchants are making a fortune from bear meat.",
       "categories": [
+        "cis8",
         "painter",
-        "digital"
+        "digital",
+        "cis8",
+        "cis8"
       ],
       "fancyboxGroup": "",
-      "order": 131
+      "order": 131,
+      "titleZh": "《熊出沒》遊戲角色_日本黑熊",
+      "titleEn": "The Japanese Black Bear, a character from the \"Boonie Bears\" game."
     },
     {
       "id": "4bf9c00f-ba47-4564-9988-8c45bd3c513d",
@@ -1739,11 +1745,15 @@
       "caption": "以美國總統川普為原型，頭戴皇冠、手中聖經變成貿易教材，象徵他的重商主義和霸權心態，身上藍色衣服和紅色披肩，也以美國國旗配色。",
       "captionEn": "Modeled after US President Trump, the figure wears a crown and holds a Bible that serves as a trade textbook, symbolizing his mercantilism and hegemonic mentality. The blue clothes and red shawl are also in the colors of the American flag.",
       "categories": [
+        "cis8",
         "painter",
-        "digital"
+        "digital",
+        "cis8"
       ],
       "fancyboxGroup": "",
-      "order": 132
+      "order": 132,
+      "titleZh": "《熊出沒》遊戲角色_川皇",
+      "titleEn": "Trump, a character from the \"Boonie Bears\" game."
     },
     {
       "id": "37dcb250-97b6-4626-8bf8-e5099aae471c",
