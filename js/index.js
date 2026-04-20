@@ -134,6 +134,17 @@ $(document).ready(function () {
 	});
 });
 
+// Fancybox 雙語 caption：每次開啟時依當前語言讀取，不用快取值
+$.fancybox.defaults.caption = function (instance, item) {
+	var el = item.opts.$orig && item.opts.$orig[0];
+	if (!el) return '';
+	var isEn = document.documentElement.classList.contains('lang-en');
+	if (isEn) {
+		return el.dataset.captionEn || el.dataset.captionZhBackup || el.dataset.caption || '';
+	}
+	return el.dataset.captionZhBackup || el.dataset.caption || '';
+};
+
 // YouTube 點擊播放（facade 容器原地換成 iframe，高度不變不跑版）
 $(document).on('click', '.yt-facade', function () {
 	var vid = $(this).data('vid');

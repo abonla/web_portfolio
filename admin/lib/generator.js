@@ -154,7 +154,7 @@ function esc(str) {
 }
 
 function escapeAttr(str) {
-  return String(str || '').replace(/"/g, '&quot;').replace(/&/g, '&amp;');
+  return String(str || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;');
 }
 
 module.exports = { buildWorksHTML, buildAboutHTML, buildTimelineScript, generateHTML };
