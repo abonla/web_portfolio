@@ -61,6 +61,10 @@ const settingsRoute = require('./routes/settings');
 settingsRoute.init({ readData, writeData });
 app.use('/api/settings', settingsRoute.router);
 
+const navRoute = require('./routes/nav');
+navRoute.init({ readData, writeData });
+app.use('/api/nav', navRoute.router);
+
 const publishRoute = require('./routes/publish');
 app.use('/api/publish', publishRoute.router);
 
