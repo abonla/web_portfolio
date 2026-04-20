@@ -13,8 +13,16 @@ async function processUpload({ inputPath, outputDir, baseName, crop }) {
     .jpeg({ quality: 85 })
     .toFile(originalPath);
 
+  const meta = await sharp(inputPath).metadata();
+  const imgW = meta.width || 9999;
+  const imgH = meta.height || 9999;
+  const cx = Math.max(0, Math.round(crop.x));
+  const cy = Math.max(0, Math.round(crop.y));
+  const cw = Math.min(Math.round(crop.width), imgW - cx);
+  const ch = Math.min(Math.round(crop.height), imgH - cy);
+
   await sharp(inputPath)
-    .extract({ left: Math.round(crop.x), top: Math.round(crop.y), width: Math.round(crop.width), height: Math.round(crop.height) })
+    .extract({ left: cx, top: cy, width: cw, height: ch })
     .resize({ width: 600, withoutEnlargement: true })
     .jpeg({ quality: 80 })
     .toFile(thumbPath);

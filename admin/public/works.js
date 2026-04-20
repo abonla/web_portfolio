@@ -172,7 +172,7 @@ app.pages['works'] = async function (container) {
     document.querySelectorAll('.cat-toggle.custom').forEach(function (b) { b.remove(); });
     var activeCats = work.categories || [];
     // 若 work 有不在預設清單的 cat，也要顯示
-    var preset = ['cis1','cis2','cis3','cis4','cis5','cis6','cis7',
+    var preset = ['cis1','cis2','cis3','cis4','cis5','cis6','cis7','cis8',
       'painter','sketch','water','ink','oil','mark','digital',
       'photo','video','web','three','news'];
     activeCats.filter(function (c) { return c && !preset.includes(c); }).forEach(function (c) {
