@@ -41,7 +41,7 @@ async function refreshPendingCount() {
 
 // ── Chip helpers ──
 const ALL_CATEGORIES = ['painter','digital','sketch','water','ink','oil','mark',
-  'cis1','cis2','cis3','cis4','cis5','cis6','cis7','photo','web','three','news'];
+  'cis1','cis2','cis3','cis4','cis5','cis6','cis7','cis8','photo','web','three','news'];
 
 function buildChips(container, selected) {
   if (!selected) selected = [];
