@@ -3469,9 +3469,11 @@
       "caption": "宜蘭十大好羹票選活動",
       "fancyboxGroup": "CIS",
       "categories": [
-        "cis6"
+        "cis6",
+        "web"
       ],
-      "order": 278
+      "order": 278,
+      "captionEn": ""
     },
     {
       "id": "4c363cbe-8654-4ae5-9049-c4b20fc51e31",
