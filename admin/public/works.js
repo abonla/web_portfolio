@@ -43,6 +43,13 @@ app.pages['works'] = async function (container) {
     '<div class="edit-modal-overlay" id="edit-modal-overlay">' +
       '<div class="edit-modal">' +
         '<h3>✏️ 編輯作品</h3>' +
+        '<div class="edit-field" id="edit-replace-field">' +
+          '<label class="edit-label">換圖</label>' +
+          '<input type="file" class="edit-input" id="edit-replace-file" accept="image/*">' +
+          '<div id="edit-replace-preview" style="margin-top:6px;display:none;">' +
+            '<img id="edit-replace-img" style="max-width:100%;max-height:120px;border-radius:4px;">' +
+          '</div>' +
+        '</div>' +
         '<div class="edit-field">' +
           '<label class="edit-label">標題（中文）</label>' +
           '<input class="edit-input" type="text" id="edit-title-zh" placeholder="中文標題">' +
@@ -157,6 +164,9 @@ app.pages['works'] = async function (container) {
     document.getElementById('edit-title-en').value = work.titleEn || '';
     document.getElementById('edit-caption-zh').value = work.caption || '';
     document.getElementById('edit-caption-en').value = work.captionEn || '';
+    document.getElementById('edit-replace-file').value = '';
+    document.getElementById('edit-replace-preview').style.display = 'none';
+    document.getElementById('edit-replace-field').style.display = work.type === 'image' ? '' : 'none';
     document.getElementById('edit-new-tag').value = '';
     // 移除上次新增的自訂標籤按鈕
     document.querySelectorAll('.cat-toggle.custom').forEach(function (b) { b.remove(); });
@@ -190,6 +200,14 @@ app.pages['works'] = async function (container) {
 
   document.getElementById('edit-cancel-btn').addEventListener('click', closeEditModal);
 
+  document.getElementById('edit-replace-file').addEventListener('change', function () {
+    var file = this.files[0];
+    if (!file) { document.getElementById('edit-replace-preview').style.display = 'none'; return; }
+    var url = URL.createObjectURL(file);
+    document.getElementById('edit-replace-img').src = url;
+    document.getElementById('edit-replace-preview').style.display = '';
+  });
+
   document.getElementById('edit-modal-overlay').addEventListener('click', function (e) {
     if (e.target.classList.contains('cat-toggle')) {
       e.target.classList.toggle('active');
@@ -217,6 +235,14 @@ app.pages['works'] = async function (container) {
     const selectedCats = Array.from(document.querySelectorAll('.cat-toggle.active'))
       .map(function (b) { return b.dataset.cat; });
     try {
+      // 若有選新圖，先上傳換圖
+      var replaceFile = document.getElementById('edit-replace-file').files[0];
+      if (replaceFile) {
+        var fd = new FormData();
+        fd.append('file', replaceFile);
+        var replaceRes = await fetch('/api/upload/replace/' + editTarget.id, { method: 'POST', body: fd });
+        if (!replaceRes.ok) { var e = await replaceRes.json(); throw new Error(e.error || '換圖失敗'); }
+      }
       await app.PUT('/works/' + editTarget.id, {
         titleZh: document.getElementById('edit-title-zh').value.trim(),
         titleEn: document.getElementById('edit-title-en').value.trim(),
