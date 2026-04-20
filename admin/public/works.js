@@ -6,8 +6,9 @@ const FILTER_NAMES = ['全部', 'DRAW', 'DESIGN', 'PHOTO', 'VIDEO', 'WEB', '3D',
 app.pages['works'] = async function (container) {
   let works = await app.GET('/works');
   let activeFilter = '*';
-  let aiTarget = null; // { work, btnEl } currently being processed
+  let aiTarget = null;
   let aiInProgress = false;
+  let editTarget = null;
 
   container.innerHTML =
     '<div class="works-toolbar">' +
@@ -22,12 +23,13 @@ app.pages['works'] = async function (container) {
       '</div>' +
     '</div>' +
     '<div id="works-grid" class="works-grid"></div>' +
-    // AI confirm modal
+
+    // AI confirm modal (editable fields)
     '<div class="ai-modal-overlay" id="ai-modal-overlay">' +
       '<div class="ai-modal">' +
         '<h3>✨ AI 建議內容</h3>' +
-        '<div class="ai-result-row"><div class="ai-result-label">說明（中文）</div><div class="ai-result-value" id="ai-zh"></div></div>' +
-        '<div class="ai-result-row"><div class="ai-result-label">說明（英文）</div><div class="ai-result-value" id="ai-en"></div></div>' +
+        '<div class="ai-result-row"><div class="ai-result-label">說明（中文）</div><input class="ai-result-input" id="ai-zh" type="text" placeholder="中文說明"></div>' +
+        '<div class="ai-result-row"><div class="ai-result-label">說明（英文）</div><input class="ai-result-input" id="ai-en" type="text" placeholder="English caption"></div>' +
         '<div class="ai-result-row"><div class="ai-result-label">分類</div><div class="ai-result-value" id="ai-cats"></div></div>' +
         '<div class="ai-result-row"><div class="ai-result-label">Fancybox 群組</div><div class="ai-result-value" id="ai-group"></div></div>' +
         '<div class="ai-modal-actions">' +
@@ -36,6 +38,27 @@ app.pages['works'] = async function (container) {
         '</div>' +
       '</div>' +
     '</div>' +
+
+    // Edit caption modal
+    '<div class="edit-modal-overlay" id="edit-modal-overlay">' +
+      '<div class="edit-modal">' +
+        '<h3>✏️ 編輯說明</h3>' +
+        '<div class="edit-field">' +
+          '<label class="edit-label">說明（中文）</label>' +
+          '<input class="edit-input" type="text" id="edit-caption-zh" placeholder="中文說明">' +
+        '</div>' +
+        '<div class="edit-field">' +
+          '<label class="edit-label">說明（英文）</label>' +
+          '<input class="edit-input" type="text" id="edit-caption-en" placeholder="English caption">' +
+        '</div>' +
+        '<div class="edit-modal-actions">' +
+          '<button class="btn-secondary" id="edit-cancel-btn">取消</button>' +
+          '<button class="btn-primary" id="edit-save-btn">儲存</button>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+
+    // Batch AI modal
     '<div class="batch-modal-overlay" id="batch-modal-overlay">' +
       '<div class="batch-modal">' +
         '<h3>✨ 批次 AI 生成英文說明</h3>' +
@@ -50,16 +73,17 @@ app.pages['works'] = async function (container) {
 
   let pendingAiResult = null;
 
-  function openModal(result) {
+  // --- AI modal ---
+  function openAiModal(result) {
     pendingAiResult = result;
-    document.getElementById('ai-zh').textContent = result.captionZh || '（無）';
-    document.getElementById('ai-en').textContent = result.captionEn || '（無）';
+    document.getElementById('ai-zh').value = result.captionZh || '';
+    document.getElementById('ai-en').value = result.captionEn || '';
     document.getElementById('ai-cats').textContent = (result.categories || []).join(', ') || '（無）';
     document.getElementById('ai-group').textContent = result.fancyboxGroup || '（無）';
     document.getElementById('ai-modal-overlay').classList.add('open');
   }
 
-  function closeModal() {
+  function closeAiModal() {
     document.getElementById('ai-modal-overlay').classList.remove('open');
     pendingAiResult = null;
     aiInProgress = false;
@@ -70,8 +94,69 @@ app.pages['works'] = async function (container) {
     aiTarget = null;
   }
 
-  document.getElementById('ai-cancel-btn').addEventListener('click', closeModal);
+  document.getElementById('ai-cancel-btn').addEventListener('click', closeAiModal);
 
+  document.getElementById('ai-apply-btn').addEventListener('click', async function () {
+    if (!pendingAiResult || !aiTarget) return;
+    const applyBtn = document.getElementById('ai-apply-btn');
+    applyBtn.disabled = true;
+    applyBtn.textContent = '套用中…';
+    try {
+      await app.PUT('/works/' + aiTarget.work.id, {
+        caption: document.getElementById('ai-zh').value.trim(),
+        captionEn: document.getElementById('ai-en').value.trim(),
+        categories: pendingAiResult.categories,
+        fancyboxGroup: pendingAiResult.fancyboxGroup,
+      });
+      works = await app.GET('/works');
+      app.refreshPendingCount();
+      closeAiModal();
+      renderGrid();
+    } catch (err) {
+      applyBtn.textContent = '套用';
+      applyBtn.disabled = false;
+      alert('套用失敗：' + err.message);
+    }
+  });
+
+  // --- Edit caption modal ---
+  function openEditModal(work) {
+    editTarget = work;
+    document.getElementById('edit-caption-zh').value = work.caption || '';
+    document.getElementById('edit-caption-en').value = work.captionEn || '';
+    document.getElementById('edit-modal-overlay').classList.add('open');
+  }
+
+  function closeEditModal() {
+    document.getElementById('edit-modal-overlay').classList.remove('open');
+    editTarget = null;
+  }
+
+  document.getElementById('edit-cancel-btn').addEventListener('click', closeEditModal);
+
+  document.getElementById('edit-save-btn').addEventListener('click', async function () {
+    if (!editTarget) return;
+    const saveBtn = document.getElementById('edit-save-btn');
+    saveBtn.disabled = true;
+    saveBtn.textContent = '儲存中…';
+    try {
+      await app.PUT('/works/' + editTarget.id, {
+        caption: document.getElementById('edit-caption-zh').value.trim(),
+        captionEn: document.getElementById('edit-caption-en').value.trim(),
+      });
+      works = await app.GET('/works');
+      app.refreshPendingCount();
+      closeEditModal();
+      renderGrid();
+    } catch (err) {
+      alert('儲存失敗：' + err.message);
+    } finally {
+      saveBtn.disabled = false;
+      saveBtn.textContent = '儲存';
+    }
+  });
+
+  // --- Batch AI modal ---
   document.getElementById('batch-ai-btn').addEventListener('click', function () {
     var overlay = document.getElementById('batch-modal-overlay');
     overlay.classList.add('open');
@@ -120,29 +205,7 @@ app.pages['works'] = async function (container) {
     document.getElementById('batch-modal-overlay').classList.remove('open');
   });
 
-  document.getElementById('ai-apply-btn').addEventListener('click', async function () {
-    if (!pendingAiResult || !aiTarget) return;
-    const applyBtn = document.getElementById('ai-apply-btn');
-    applyBtn.disabled = true;
-    applyBtn.textContent = '套用中…';
-    try {
-      await app.PUT('/works/' + aiTarget.work.id, {
-        caption: pendingAiResult.captionZh,
-        captionEn: pendingAiResult.captionEn,
-        categories: pendingAiResult.categories,
-        fancyboxGroup: pendingAiResult.fancyboxGroup,
-      });
-      works = await app.GET('/works');
-      app.refreshPendingCount();
-      closeModal();
-      renderGrid();
-    } catch (err) {
-      applyBtn.textContent = '套用';
-      applyBtn.disabled = false;
-      alert('套用失敗：' + err.message);
-    }
-  });
-
+  // --- Grid rendering ---
   function renderGrid() {
     const filtered =
       activeFilter === '*'
@@ -172,20 +235,21 @@ app.pages['works'] = async function (container) {
         return '<span class="tag ' + c + '">' + c + '</span>';
       })
       .join('');
-    // AI button only for image works
     const aiBtn =
       w.type === 'image'
         ? '<button class="card-btn ai-card-btn" title="AI 生成">✨</button>'
         : '';
+    const hasEn = w.captionEn ? ' has-en' : '';
     return (
       '<div class="work-card" data-id="' + w.id + '">' +
         '<div class="thumb">' + thumbHTML + '</div>' +
         '<div class="card-actions">' +
           aiBtn +
+          '<button class="card-btn edit-card-btn" title="編輯說明">✏️</button>' +
           '<button class="card-btn del-btn" title="刪除">🗑</button>' +
         '</div>' +
         '<div class="card-info">' +
-          '<div class="card-caption">' +
+          '<div class="card-caption' + hasEn + '">' +
             (w.caption || w.label || w.videoId || '（無說明）') +
           '</div>' +
           '<div class="card-tags">' + tagsHTML + '</div>' +
@@ -219,13 +283,22 @@ app.pages['works'] = async function (container) {
         try {
           const result = await app.POST('/ai/caption', { imagePath: work.src });
           aiInProgress = false;
-          openModal(result);
+          openAiModal(result);
         } catch (err) {
           aiInProgress = false;
           btn.textContent = '✨';
           btn.disabled = false;
           alert('AI 生成失敗：' + err.message);
         }
+      });
+    });
+
+    document.querySelectorAll('.edit-card-btn').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        const card = e.target.closest('.work-card');
+        const work = works.find(function (w) { return w.id === card.dataset.id; });
+        if (!work) return;
+        openEditModal(work);
       });
     });
   }
