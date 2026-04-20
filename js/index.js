@@ -139,10 +139,17 @@ $.fancybox.defaults.caption = function (instance, item) {
 	var el = item.opts.$orig && item.opts.$orig[0];
 	if (!el) return '';
 	var isEn = document.documentElement.classList.contains('lang-en');
-	if (isEn) {
-		return el.dataset.captionEn || el.dataset.captionZhBackup || el.dataset.caption || '';
+	var desc = isEn
+		? (el.dataset.captionEn || el.dataset.captionZhBackup || el.dataset.caption || '')
+		: (el.dataset.captionZhBackup || el.dataset.caption || '');
+	// 從 href 取出檔名（去掉路徑和副檔名）
+	var href = el.getAttribute('href') || '';
+	var filename = href.split('/').pop().replace(/\.[^.]+$/, '') || '';
+	if (filename) {
+		return '<strong class="fb-caption-title">' + filename + '</strong>' +
+			(desc ? '<br><span class="fb-caption-desc">' + desc + '</span>' : '');
 	}
-	return el.dataset.captionZhBackup || el.dataset.caption || '';
+	return desc;
 };
 
 // YouTube 點擊播放（facade 容器原地換成 iframe，高度不變不跑版）
