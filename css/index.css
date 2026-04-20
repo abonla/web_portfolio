@@ -44,11 +44,11 @@ header h1 {
   text-align: center;
 }
 
-header h1 .lang-zh {
+header h1 > .lang-zh {
   font-size: 1em;
 }
 
-header h1 .lang-en {
+header h1 > .lang-en {
   font-size: 0.55em;
   display: block;
 }
@@ -57,6 +57,13 @@ header h1 .h1-name-line {
   margin: 0;
   padding: 0;
   line-height: 1em;
+}
+
+header h1 .h1-sub .lang-zh,
+header h1 .h1-sub .lang-en {
+  display: inline;
+  font-size: 1em;
+  vertical-align: middle;
 }
 
 header h1:hover {
@@ -69,7 +76,7 @@ header h1:hover {
 }
 
 header h1 .h1-sub {
-  font-size: 0.45em;
+  font-size: 0.5em;
   font-weight: normal;
   line-height: 1em;
   display: block;
