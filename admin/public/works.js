@@ -233,13 +233,15 @@ app.pages['works'] = async function (container) {
     var reader = new FileReader();
     reader.onload = function (e) {
       var cropImg = document.getElementById('edit-crop-img');
-      cropImg.src = e.target.result;
       document.getElementById('edit-drop-zone').classList.add('hidden');
       document.getElementById('edit-crop-wrapper').classList.remove('hidden');
-      if (replaceCropper) replaceCropper.destroy();
-      replaceCropper = new Cropper(cropImg, {
-        viewMode: 1, autoCropArea: 1, movable: true, zoomable: false,
-      });
+      if (replaceCropper) { replaceCropper.destroy(); replaceCropper = null; }
+      cropImg.onload = function () {
+        replaceCropper = new Cropper(cropImg, {
+          viewMode: 1, autoCropArea: 1, movable: true, zoomable: false,
+        });
+      };
+      cropImg.src = e.target.result;
     };
     reader.readAsDataURL(file);
   }

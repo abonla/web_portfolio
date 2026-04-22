@@ -50,16 +50,18 @@ app.pages['upload-image'] = function (container) {
     selectedFile = file;
     const reader = new FileReader();
     reader.onload = function (e) {
-      cropImg.src = e.target.result;
       cropWrapper.classList.remove('hidden');
       dropZone.classList.add('hidden');
-      if (cropper) cropper.destroy();
-      cropper = new Cropper(cropImg, {
-        viewMode: 1,
-        autoCropArea: 1,
-        movable: true,
-        zoomable: false,
-      });
+      if (cropper) { cropper.destroy(); cropper = null; }
+      cropImg.onload = function () {
+        cropper = new Cropper(cropImg, {
+          viewMode: 1,
+          autoCropArea: 1,
+          movable: true,
+          zoomable: false,
+        });
+      };
+      cropImg.src = e.target.result;
       document.getElementById('base-name').value = file.name
         .replace(/\.[^.]+$/, '')
         .replace(/[^\w\u4e00-\u9fff-]/g, '_');

@@ -1605,16 +1605,18 @@
     {
       "id": "0145e023-5d27-4194-941b-9b1208cdf6c6",
       "type": "image",
-      "src": "images/速度與美學的交匯.jpg",
-      "thumb": "images/速度與美學的交匯m.jpg",
-      "caption": "在設計的修業旅途上，如何將抽象的志向具象化？我在輔大應用美術系的 Photoshop 作業中，以一輛疾馳的高性能跑車作為主體，巧妙地將個人頭像嵌入駕駛座，象徵自己正是掌控這場藝術冒險的舵手。畫面中跑車輪框旋轉的動態模糊（Motion Blur），配合道路延伸的流線感，營造出時速百公里的視覺衝擊力，讓人感受到創作者對於學習設計的滿腔熱忱。\r\n這件作品不僅是單純的影像合成，更結合了精緻的後期特效處理。背景中躍動的「輔大應美」四個金屬質感立體字，與車身上的「AART」標誌遙相呼應，展現出強烈的系所歸屬感。最為吸睛的莫過於畫面左上方透出的強烈光暈（Lens Flare），不僅模擬了清晨或黃昏奔向陽光的真實感，更象徵著在輔大求學路上，前方的光明前景與希望。",
-      "captionEn": "On the journey of studying design, how can abstract aspirations be concretized? In my Photoshop assignment for the Department of Applied Arts at Fu Jen Catholic University, I used a speeding high-performance sports car as the main subject, cleverly embedding my own portrait into the driver's seat, symbolizing myself as the helmsman controlling this artistic adventure. The motion blur of the sports car's rotating wheels, combined with the streamlined extension of the road, creates a visual impact of speeding at 100 kilometers per hour, conveying the creator's passion for learning design.\r\n\r\nThis work is not merely a simple image composite; it also incorporates exquisite post-production effects. The four metallic, three-dimensional characters of \"Fu Jen Catholic University Applied Arts\" in the background echo the \"AART\" logo on the car, showcasing a strong sense of belonging to the department. Most eye-catching is the strong lens flare emanating from the upper left corner of the image, not only simulating the realism of rushing towards the sunlight at dawn or dusk, but also symbolizing the bright future and hope ahead on my academic journey at Fu Jen Catholic University.",
+      "src": "images/速度與美學的交匯-1776841127107.jpg",
+      "thumb": "images/速度與美學的交匯-1776841127107m.jpg",
+      "caption": "在設計的修業旅途上，如何將抽象的志向具象化？我在輔大應用美術系的 Photoshop 作業中，以一輛疾馳的高性能跑車作為主體，巧妙地將個人頭像嵌入駕駛座，象徵自己正是掌控這場藝術冒險的舵手。畫面中跑車輪框旋轉的動態模糊（Motion Blur），配合道路延伸的流線感，營造出時速百公里的視覺衝擊力，讓人感受到創作者對於學習設計的滿腔熱忱。這件作品不僅是單純的影像合成，更結合了精緻的後期特效處理。背景中躍動的「輔大應美」四個金屬質感立體字，與車身上的「AART」標誌遙相呼應，展現出強烈的系所歸屬感。最為吸睛的莫過於畫面左上方透出的強烈光暈（Lens Flare），不僅模擬了清晨或黃昏奔向陽光的真實感，更象徵著在輔大求學路上，前方的光明前景與希望。",
+      "captionEn": "On the journey of studying design, how can abstract aspirations be concretized? In my Photoshop assignment for the Department of Applied Arts at Fu Jen Catholic University, I used a speeding high-performance sports car as the main subject, cleverly embedding my own portrait into the driver's seat, symbolizing myself as the helmsman controlling this artistic adventure. The motion blur of the sports car's rotating wheels, combined with the streamlined extension of the road, creates a visual impact of speeding at 100 kilometers per hour, conveying the creator's passion for learning design.This work is not merely a simple image composite; it also incorporates exquisite post-production effects. The four metallic, three-dimensional characters of \"Fu Jen Catholic University Applied Arts\" in the background echo the \"AART\" logo on the car, showcasing a strong sense of belonging to the department. Most eye-catching is the strong lens flare emanating from the upper left corner of the image, not only simulating the realism of rushing towards the sunlight at dawn or dusk, but also symbolizing the bright future and hope ahead on my academic journey at Fu Jen Catholic University.",
       "categories": [
         "painter",
         "digital"
       ],
       "fancyboxGroup": "",
-      "order": 123
+      "order": 123,
+      "titleZh": "設計之路_輔大應美",
+      "titleEn": "Design Pathways_Department of Applied Arts, Fu Jen Catholic University"
     },
     {
       "id": "ebc84be1-848b-409f-914d-d446537ec89f",
@@ -1774,8 +1776,8 @@
     {
       "id": "399a6bd5-8391-4fa1-b8e1-759a086fbda3",
       "type": "image",
-      "src": "images/設計素描.jpg",
-      "thumb": "images/設計素描m.jpg",
+      "src": "images/設計素描-1776842077841.jpg",
+      "thumb": "images/設計素描-1776842077841m.jpg",
       "caption": "輔大應美設計素描課，向明光老師作業",
       "captionEn": "Homework by Professor Hsiang Ming-kuang from the Design Sketching Class at Fu Jen Catholic University's Applied Fine Arts Institute.",
       "categories": [
@@ -1783,13 +1785,15 @@
         "sketch"
       ],
       "fancyboxGroup": "",
-      "order": 134
+      "order": 134,
+      "titleZh": "設計素描_水果、白蘿蔔與木桶",
+      "titleEn": "Design Sketches_Fruits, Carrots & Casks"
     },
     {
       "id": "9e736644-9b30-420b-afa3-deee0fb95880",
       "type": "image",
-      "src": "images/設計素描_材質練習.jpg",
-      "thumb": "images/設計素描_材質練習m.jpg",
+      "src": "images/設計素描_材質練習-1776842130260.jpg",
+      "thumb": "images/設計素描_材質練習-1776842130260m.jpg",
       "caption": "輔大應美設計素描課，臨摹向明光老師《鉆筆素描的奧秘》範例",
       "captionEn": "In a design sketching class at Fu Jen Catholic University's Applied Fine Arts Department, I copied examples from Professor Hsiang Ming-kuang's \"The Secrets of Drill Pen Sketching.\"",
       "categories": [
@@ -1797,7 +1801,9 @@
         "sketch"
       ],
       "fancyboxGroup": "",
-      "order": 135
+      "order": 135,
+      "titleZh": "設計素描_水果、竹籃、花瓶",
+      "titleEn": ""
     },
     {
       "id": "37dcb250-97b6-4626-8bf8-e5099aae471c",
