@@ -148,10 +148,18 @@ $.fancybox.defaults.caption = function (instance, item) {
 	var title = isEn
 		? (el.dataset.titleEn || el.dataset.titleZh || filename)
 		: (el.dataset.titleZh || filename);
+	var linkUrl = el.dataset.linkUrl || '';
+	var linkBtn = linkUrl
+		? '<a href="' + linkUrl + '" target="_blank" rel="noopener" class="fb-visit-btn">' +
+		  '<span class="lang-zh">開啟網站</span><span class="lang-en">Visit Site</span></a>'
+		: '';
+	var body = '';
 	if (title) {
-		return '<strong class="fb-caption-title">' + title + '</strong>' +
+		body = '<strong class="fb-caption-title">' + title + '</strong>' +
 			(desc ? '<br><span class="fb-caption-desc">' + desc + '</span>' : '');
+	} else {
+		body = desc;
 	}
-	return desc;
+	return body + (linkBtn ? '<br>' + linkBtn : '');
 };
 

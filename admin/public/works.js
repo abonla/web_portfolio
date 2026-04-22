@@ -67,6 +67,10 @@ app.pages['works'] = async function (container) {
               '<label class="edit-label">標題（英文）</label>' +
               '<div class="caption-row"><input class="edit-input" type="text" id="edit-title-en" placeholder="English title"><button class="btn-ai edit-trans-btn" type="button" data-src="edit-title-zh" data-dst="edit-title-en">譯</button></div>' +
             '</div>' +
+            '<div class="edit-field" id="edit-link-field" style="display:none">' +
+              '<label class="edit-label">網站連結</label>' +
+              '<input class="edit-input" type="url" id="edit-link-url" placeholder="https://...">' +
+            '</div>' +
             '<div class="edit-field">' +
               '<label class="edit-label">說明（中文）</label>' +
               '<input class="edit-input" type="text" id="edit-caption-zh" placeholder="中文說明">' +
@@ -182,6 +186,7 @@ app.pages['works'] = async function (container) {
     document.getElementById('edit-crop-wrapper').classList.add('hidden');
     document.getElementById('edit-drop-zone').classList.remove('hidden');
     document.getElementById('edit-replace-field').style.display = work.type === 'image' ? '' : 'none';
+    document.getElementById('edit-link-url').value = work.linkUrl || '';
     document.getElementById('edit-new-tag').value = '';
     // 移除上次新增的自訂標籤按鈕
     document.querySelectorAll('.cat-toggle.custom').forEach(function (b) { b.remove(); });
@@ -196,6 +201,7 @@ app.pages['works'] = async function (container) {
     document.querySelectorAll('.cat-toggle').forEach(function (btn) {
       btn.classList.toggle('active', activeCats.includes(btn.dataset.cat));
     });
+    syncLinkField();
     document.getElementById('edit-modal-overlay').classList.add('open');
   }
 
@@ -268,9 +274,15 @@ app.pages['works'] = async function (container) {
     if (replaceCropper) replaceCropper.reset();
   });
 
+  function syncLinkField() {
+    var hasWeb = !!document.querySelector('.cat-toggle.active[data-cat="web"]');
+    document.getElementById('edit-link-field').style.display = hasWeb ? '' : 'none';
+  }
+
   document.getElementById('edit-modal-overlay').addEventListener('click', function (e) {
     if (e.target.classList.contains('cat-toggle')) {
       e.target.classList.toggle('active');
+      syncLinkField();
     }
   });
 
@@ -315,6 +327,7 @@ app.pages['works'] = async function (container) {
         caption: document.getElementById('edit-caption-zh').value.trim(),
         captionEn: document.getElementById('edit-caption-en').value.trim(),
         categories: selectedCats,
+        linkUrl: document.getElementById('edit-link-url').value.trim(),
       });
       works = await app.GET('/works');
       app.refreshPendingCount();

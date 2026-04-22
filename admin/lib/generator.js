@@ -18,8 +18,9 @@ function buildImageItem(w) {
   const captionEn = escapeAttr(w.captionEn || '');
   const titleZh = escapeAttr(w.titleZh || '');
   const titleEn = escapeAttr(w.titleEn || '');
+  const linkUrl = escapeAttr(w.linkUrl || '');
   return `<div class="${classes}">
-        <a href="${w.src}" data-fancybox="${w.fancyboxGroup}" data-caption="${caption}" data-caption-en="${captionEn}" data-title-zh="${titleZh}" data-title-en="${titleEn}"><img loading="lazy" decoding="async" src="${w.thumb}" /></a>
+        <a href="${w.src}" data-fancybox="${w.fancyboxGroup}" data-caption="${caption}" data-caption-en="${captionEn}" data-title-zh="${titleZh}" data-title-en="${titleEn}"${linkUrl ? ` data-link-url="${linkUrl}"` : ''}><img loading="lazy" decoding="async" src="${w.thumb}" /></a>
       </div>`;
 }
 

@@ -28,6 +28,7 @@ app.pages['upload-image'] = function (container) {
         '<div class="form-field"><label class="form-label">說明文字（英）</label>' +
           '<div class="caption-row"><textarea class="form-textarea" id="caption-en" placeholder="English caption…"></textarea><button class="btn-ai" id="btn-trans-caption" type="button">譯</button></div>' +
         '</div>' +
+        '<div class="form-field" id="link-url-field" style="display:none"><label class="form-label">網站連結</label><input class="form-input" id="link-url" type="url" placeholder="https://..."></div>' +
         '<div class="form-field"><label class="form-label">FancyBox 群組</label><input class="form-input" id="fancybox-group" placeholder="painter"></div>' +
         '<div class="form-field"><label class="form-label">分類標籤</label><div class="chip-group" id="chip-group"></div></div>' +
         '<div class="btn-row"><button class="btn-primary" id="save-btn" disabled>儲存作品</button><button class="btn-secondary" onclick="location.hash=\'#works\'">取消</button></div>' +
@@ -36,6 +37,14 @@ app.pages['upload-image'] = function (container) {
     '</div>';
 
   app.buildChips(document.getElementById('chip-group'), ['painter']);
+
+  function syncUploadLinkField() {
+    var hasWeb = !!document.querySelector('#chip-group .chip.selected[data-cat="web"]');
+    document.getElementById('link-url-field').style.display = hasWeb ? '' : 'none';
+  }
+  document.getElementById('chip-group').addEventListener('click', function (e) {
+    if (e.target.classList.contains('chip')) setTimeout(syncUploadLinkField, 0);
+  });
 
   const dropZone    = document.getElementById('drop-zone');
   const fileInput   = document.getElementById('file-input');
@@ -158,6 +167,7 @@ app.pages['upload-image'] = function (container) {
       formData.append('captionEn', document.getElementById('caption-en').value);
       formData.append('titleZh', document.getElementById('title-zh').value);
       formData.append('titleEn', document.getElementById('title-en').value);
+      formData.append('linkUrl', document.getElementById('link-url').value.trim());
       formData.append('fancyboxGroup', document.getElementById('fancybox-group').value);
       formData.append(
         'categories',

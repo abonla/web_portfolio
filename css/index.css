@@ -802,3 +802,16 @@ html.lang-en #lang-toggle {
   opacity: 0.85;
   line-height: 1.5;
 }
+.fb-visit-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 16px;
+  background: #2563eb;
+  color: #fff !important;
+  border-radius: 6px;
+  font-size: 0.82em;
+  font-weight: 600;
+  text-decoration: none !important;
+  letter-spacing: 0.03em;
+}
+.fb-visit-btn:hover { background: #1d4ed8; }

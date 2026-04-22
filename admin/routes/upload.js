@@ -33,6 +33,7 @@ router.post('/image', upload.single('file'), async function(req, res) {
       captionEn: req.body.captionEn || '',
       titleZh: req.body.titleZh || '',
       titleEn: req.body.titleEn || '',
+      linkUrl: req.body.linkUrl || '',
       categories: JSON.parse(req.body.categories || '[]'),
       fancyboxGroup: req.body.fancyboxGroup || '',
     };
