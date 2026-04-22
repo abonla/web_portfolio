@@ -110,15 +110,17 @@ document.addEventListener('DOMContentLoaded', function() {
   setInterval(refreshPendingCount, 30000);
 });
 
-// ── Translation helper (MyMemory free API) ──
+// ── Translation helper (proxied through local server) ──
 async function translateZhToEn(text) {
   if (!text || !text.trim()) return '';
-  const url = 'https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text.trim()) + '&langpair=zh-TW%7Cen';
-  const res = await fetch(url);
-  if (!res.ok) throw new Error('翻譯服務無回應');
+  const res = await fetch('/api/translate', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text: text.trim() }),
+  });
   const data = await res.json();
-  if (data.responseStatus !== 200) throw new Error(data.responseDetails || '翻譯失敗');
-  return data.responseData.translatedText || '';
+  if (!res.ok) throw new Error(data.error || '翻譯失敗');
+  return data.result || '';
 }
 
 // Export for page modules

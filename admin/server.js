@@ -65,6 +65,9 @@ const navRoute = require('./routes/nav');
 navRoute.init({ readData, writeData });
 app.use('/api/nav', navRoute.router);
 
+const translateRoute = require('./routes/translate');
+app.use('/api/translate', translateRoute.router);
+
 const publishRoute = require('./routes/publish');
 app.use('/api/publish', publishRoute.router);
 
