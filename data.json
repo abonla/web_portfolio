@@ -3716,6 +3716,21 @@
       "captionEn": ""
     },
     {
+      "id": "81a262b5-4336-4fe8-bab7-4eb085f84a68",
+      "type": "image",
+      "src": "images/www_chenhong_tw___2_.jpg",
+      "thumb": "images/www_chenhong_tw___2_m.jpg",
+      "caption": "《蘋果》易主大裁員，我離開待了18年的公司，嘗試轉換跑道做設計相關的工作，在「辰紘行銷」當視覺設計，幫台北捷運設計活動海報、燈箱，還有政府標案提案設計，並幫公司製作官網，layout和配色都是老闆的想法。",
+      "captionEn": "\"Apple\" changed hands and laid off people. I left the company I had stayed at for 18 years and tried to change my career path to design-related work. I worked as a visual designer at \"Chen Hong Marketing\" and helped Taipei MRT design event posters, light boxes, and government tender proposals. I also helped the company create its official website. The layout and color matching were all the boss's ideas.",
+      "titleZh": "辰紘行銷官網",
+      "titleEn": "Chenhong marketing official website",
+      "categories": [
+        "web"
+      ],
+      "fancyboxGroup": "",
+      "order": 294
+    },
+    {
       "id": "4c363cbe-8654-4ae5-9049-c4b20fc51e31",
       "type": "image",
       "src": "images/宜蘭_舞台模擬.jpg",
@@ -3725,7 +3740,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 294
+      "order": 295
     },
     {
       "id": "9c1212d5-ab05-4b7e-a250-ecb484282e9a",
@@ -3737,7 +3752,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 295
+      "order": 296
     },
     {
       "id": "b8d6beea-2e10-4ad8-b4af-cec5a63f5608",
@@ -3749,7 +3764,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 296
+      "order": 297
     },
     {
       "id": "5c54f7da-e2da-48ea-a4e2-3eaa056423c5",
@@ -3761,7 +3776,7 @@
       "categories": [
         "cis7"
       ],
-      "order": 297
+      "order": 298
     },
     {
       "id": "4c862b96-ab40-4ffb-8bbf-0a3a5ec5784c",
@@ -3773,7 +3788,7 @@
       "categories": [
         "cis7"
       ],
-      "order": 298
+      "order": 299
     },
     {
       "id": "79eb1235-f188-4e1b-a7b2-9e4915e5960e",
@@ -3785,7 +3800,7 @@
       "categories": [
         "cis7"
       ],
-      "order": 299
+      "order": 300
     },
     {
       "id": "28f652be-e726-48f6-a794-2c42341558fe",
@@ -3797,7 +3812,7 @@
       "categories": [
         "cis7"
       ],
-      "order": 300
+      "order": 301
     },
     {
       "id": "2ef83bf2-2d99-4225-a34c-f7dbf95596ba",
@@ -3807,7 +3822,7 @@
       "categories": [
         "video"
       ],
-      "order": 301
+      "order": 302
     },
     {
       "id": "0eaba59a-75b2-4685-bbf5-eea22aae62eb",
@@ -3817,7 +3832,7 @@
       "categories": [
         "video"
       ],
-      "order": 302
+      "order": 303
     },
     {
       "id": "06fa9fdf-d3da-4d9a-bd08-7bbb41ec7b0d",
@@ -3827,7 +3842,7 @@
       "categories": [
         "video"
       ],
-      "order": 303
+      "order": 304
     },
     {
       "id": "807630cb-d802-406a-bac8-9f439b721fa6",
@@ -3837,7 +3852,7 @@
       "categories": [
         "video"
       ],
-      "order": 304
+      "order": 305
     },
     {
       "id": "824d53de-23b1-4c67-8d47-76bbc2907fc7",
@@ -3847,7 +3862,7 @@
       "categories": [
         "video"
       ],
-      "order": 305
+      "order": 306
     },
     {
       "id": "5bcbf697-ece0-4c1b-8a5c-0ae2afe0c3ca",
@@ -3857,7 +3872,7 @@
       "categories": [
         "video"
       ],
-      "order": 306
+      "order": 307
     },
     {
       "id": "d6813126-2883-4df1-a230-b3644b6527e3",
@@ -3867,7 +3882,7 @@
       "categories": [
         "video"
       ],
-      "order": 307
+      "order": 308
     },
     {
       "id": "b4c4c36b-f9c9-4b7a-af55-cc366d7be42d",
@@ -3877,7 +3892,7 @@
       "categories": [
         "video"
       ],
-      "order": 308
+      "order": 309
     },
     {
       "id": "5889ff44-2186-4f13-9b2b-a27dea2c680a",
@@ -3887,7 +3902,7 @@
       "categories": [
         "video"
       ],
-      "order": 309
+      "order": 310
     },
     {
       "id": "4e55275b-a8f4-4a9c-81f2-eba66a204e1b",
@@ -3897,7 +3912,7 @@
       "categories": [
         "video"
       ],
-      "order": 310
+      "order": 311
     },
     {
       "id": "b7313b99-62f4-4306-b51b-f754688ee72b",
@@ -3907,7 +3922,7 @@
       "categories": [
         "video"
       ],
-      "order": 311
+      "order": 312
     },
     {
       "id": "7e422a70-9ee4-4416-8caf-3dbcf45c54af",
@@ -3917,7 +3932,7 @@
       "categories": [
         "video"
       ],
-      "order": 312
+      "order": 313
     },
     {
       "id": "45d8ba9c-2ed5-4520-aa02-9bad9bccdfa7",
@@ -3927,7 +3942,7 @@
       "categories": [
         "video"
       ],
-      "order": 313
+      "order": 314
     },
     {
       "id": "da4a8a52-891f-4b14-85b2-6386caac9a50",
@@ -3937,7 +3952,7 @@
       "categories": [
         "video"
       ],
-      "order": 314
+      "order": 315
     },
     {
       "id": "963730d0-b913-4610-90d5-f345bbf64942",
@@ -3947,7 +3962,7 @@
       "categories": [
         "video"
       ],
-      "order": 315
+      "order": 316
     },
     {
       "id": "6de73f98-158c-4341-8073-b58be0b499b0",
@@ -3957,7 +3972,7 @@
       "categories": [
         "video"
       ],
-      "order": 316
+      "order": 317
     },
     {
       "id": "b86c821e-c863-4e90-9a87-cc66aa8f265a",
@@ -3967,7 +3982,7 @@
       "categories": [
         "video"
       ],
-      "order": 317
+      "order": 318
     },
     {
       "id": "cab976c9-54d9-494f-b6d2-a837f1c29aa7",
@@ -3977,7 +3992,7 @@
       "categories": [
         "video"
       ],
-      "order": 318
+      "order": 319
     },
     {
       "id": "22790e60-128b-456d-a49e-f59afa92b809",
@@ -3987,7 +4002,7 @@
       "categories": [
         "video"
       ],
-      "order": 319
+      "order": 320
     },
     {
       "id": "91d2e60e-71bd-4cc8-afb2-66fa56420962",
@@ -3997,7 +4012,7 @@
       "categories": [
         "video"
       ],
-      "order": 320
+      "order": 321
     },
     {
       "id": "4d6c784a-6734-42bb-86c8-f8c7f40c07dd",
@@ -4007,7 +4022,7 @@
       "categories": [
         "video"
       ],
-      "order": 321
+      "order": 322
     },
     {
       "id": "182f7596-f87c-416c-a526-36b49e6802d8",
@@ -4017,7 +4032,7 @@
       "categories": [
         "video"
       ],
-      "order": 322
+      "order": 323
     },
     {
       "id": "7a4dcb30-0a20-488b-bf8c-c79ee1dea12a",
@@ -4027,7 +4042,7 @@
       "categories": [
         "video"
       ],
-      "order": 323
+      "order": 324
     },
     {
       "id": "f838dd88-1694-4ee5-9151-00dfedf1cb3f",
@@ -4037,7 +4052,7 @@
       "categories": [
         "video"
       ],
-      "order": 324
+      "order": 325
     },
     {
       "id": "ecadb8c8-0fb3-4547-9354-5637b998f9ac",
@@ -4047,7 +4062,7 @@
       "categories": [
         "video"
       ],
-      "order": 325
+      "order": 326
     },
     {
       "id": "dbc5d0c9-14b2-4f20-910e-2f8f082fff36",
@@ -4057,7 +4072,7 @@
       "categories": [
         "video"
       ],
-      "order": 326
+      "order": 327
     },
     {
       "id": "fbc7ecfd-743d-41aa-a249-2e2dfb0b2dc6",
@@ -4067,7 +4082,7 @@
       "categories": [
         "video"
       ],
-      "order": 327
+      "order": 328
     },
     {
       "id": "3739f747-866b-4741-bee8-bb6356690346",
@@ -4077,7 +4092,7 @@
       "categories": [
         "video"
       ],
-      "order": 328
+      "order": 329
     },
     {
       "id": "a7af89c0-34ba-47fe-a725-799ddc7dc2c1",
@@ -4087,7 +4102,7 @@
       "categories": [
         "video"
       ],
-      "order": 329
+      "order": 330
     },
     {
       "id": "6ef1df1b-43ba-43ff-9da6-ecd2a8c0c8f5",
@@ -4097,7 +4112,7 @@
       "categories": [
         "video"
       ],
-      "order": 330
+      "order": 331
     },
     {
       "id": "cbd135d2-5868-4ee9-b2ab-9413a92a3aea",
@@ -4107,7 +4122,7 @@
       "categories": [
         "video"
       ],
-      "order": 331
+      "order": 332
     },
     {
       "id": "69c7e80c-6d3f-4462-ad52-a8db1a7e405d",
@@ -4117,7 +4132,7 @@
       "categories": [
         "video"
       ],
-      "order": 332
+      "order": 333
     },
     {
       "id": "55db606c-0eb5-4b8b-b728-e35cf09868d2",
@@ -4127,7 +4142,7 @@
       "categories": [
         "video"
       ],
-      "order": 333
+      "order": 334
     },
     {
       "id": "04552bd4-a679-43fd-ab10-4dfde5d0e02d",
@@ -4137,7 +4152,7 @@
       "categories": [
         "video"
       ],
-      "order": 334
+      "order": 335
     },
     {
       "id": "7c0ff889-a0c0-4887-9078-dcf19a2513a2",
@@ -4147,7 +4162,7 @@
       "categories": [
         "video"
       ],
-      "order": 335
+      "order": 336
     },
     {
       "id": "81a1987a-caad-4719-952a-32529da76d59",
@@ -4157,7 +4172,7 @@
       "categories": [
         "video"
       ],
-      "order": 336
+      "order": 337
     },
     {
       "id": "b7d2d1d5-7066-4bc7-94ea-17d9f13cc9aa",
@@ -4167,7 +4182,7 @@
       "categories": [
         "video"
       ],
-      "order": 337
+      "order": 338
     },
     {
       "id": "5f1679f1-9968-4569-b0a1-0dd8d994c9f0",
@@ -4177,7 +4192,7 @@
       "categories": [
         "video"
       ],
-      "order": 338
+      "order": 339
     },
     {
       "id": "7a398637-d5b4-4b68-8f94-b19f9c8aa4c8",
@@ -4187,7 +4202,7 @@
       "categories": [
         "video"
       ],
-      "order": 339
+      "order": 340
     },
     {
       "id": "19a456ef-c759-45f8-952c-718f0ac58df3",
@@ -4197,7 +4212,7 @@
       "categories": [
         "video"
       ],
-      "order": 340
+      "order": 341
     },
     {
       "id": "8b9ddaa9-2eb6-4693-aaf9-0a6a25e7a7f2",
@@ -4207,7 +4222,7 @@
       "categories": [
         "video"
       ],
-      "order": 341
+      "order": 342
     },
     {
       "id": "1b5001c8-97ca-4e1b-bed4-7b24321a6569",
@@ -4217,7 +4232,7 @@
       "categories": [
         "video"
       ],
-      "order": 342
+      "order": 343
     },
     {
       "id": "f613eccb-0847-4f3f-ace3-4ca20e60d12f",
@@ -4227,7 +4242,7 @@
       "categories": [
         "video"
       ],
-      "order": 343
+      "order": 344
     },
     {
       "id": "226e26c9-c3cb-42b9-b6c9-485b87beaa81",
@@ -4237,7 +4252,7 @@
       "categories": [
         "video"
       ],
-      "order": 344
+      "order": 345
     },
     {
       "id": "a6fb4316-bf8e-465f-a363-723355b3b399",
@@ -4247,7 +4262,7 @@
       "categories": [
         "video"
       ],
-      "order": 345
+      "order": 346
     },
     {
       "id": "4ec8b45e-5771-4dae-ae26-b008a7092eeb",
@@ -4257,7 +4272,7 @@
       "categories": [
         "video"
       ],
-      "order": 346
+      "order": 347
     },
     {
       "id": "5998ad63-27b4-478a-a17c-7bcf45c87998",
@@ -4267,7 +4282,7 @@
       "categories": [
         "video"
       ],
-      "order": 347
+      "order": 348
     },
     {
       "id": "91fc9672-c014-4408-bfb0-1200cf64e072",
@@ -4277,7 +4292,7 @@
       "categories": [
         "video"
       ],
-      "order": 348
+      "order": 349
     },
     {
       "id": "fe2f4fa9-477b-4b26-9341-ffcbc606df17",
@@ -4287,7 +4302,7 @@
       "categories": [
         "video"
       ],
-      "order": 349
+      "order": 350
     },
     {
       "id": "01d8b523-d890-4ac7-90fd-8b843d1f6dcf",
@@ -4297,7 +4312,7 @@
       "categories": [
         "video"
       ],
-      "order": 350
+      "order": 351
     },
     {
       "id": "bd873710-5c1e-436a-bbe5-750cc0c07092",
@@ -4307,7 +4322,7 @@
       "categories": [
         "video"
       ],
-      "order": 351
+      "order": 352
     },
     {
       "id": "2e3fae36-1da5-474b-b399-c5ad173b1bd3",
@@ -4317,7 +4332,7 @@
       "categories": [
         "video"
       ],
-      "order": 352
+      "order": 353
     },
     {
       "id": "4522b3f3-b2fe-4337-826f-cf7ea5e04b19",
@@ -4327,7 +4342,7 @@
       "categories": [
         "video"
       ],
-      "order": 353
+      "order": 354
     },
     {
       "id": "ec0309b9-05b8-4601-9a67-ad8bd1c2caf5",
@@ -4337,7 +4352,7 @@
       "categories": [
         "video"
       ],
-      "order": 354,
+      "order": 355,
       "titleZh": "《熊出沒》遊戲介紹",
       "titleEn": "\"Bear Infested\" game introduction",
       "captionEn": "The basic design work of the Yingmei Department of FuDa was based on the frequent incidents of bear attacks in Japan. It designed a board game map and developed a computer version of the game through vibe coding."
@@ -4352,7 +4367,7 @@
       "categories": [
         "news"
       ],
-      "order": 355
+      "order": 356
     },
     {
       "id": "95bee65e-8ab4-4dc6-a86d-b423f2f10bc6",
@@ -4364,7 +4379,7 @@
       "categories": [
         "news"
       ],
-      "order": 356
+      "order": 357
     },
     {
       "id": "fedb1835-e3c7-461e-8ebd-f31d40728088",
@@ -4376,7 +4391,7 @@
       "categories": [
         "news"
       ],
-      "order": 357
+      "order": 358
     },
     {
       "id": "80a7e250-2fe5-440c-809d-e167a80b5f15",
@@ -4388,7 +4403,7 @@
       "categories": [
         "news"
       ],
-      "order": 358
+      "order": 359
     },
     {
       "id": "16d40b06-9336-4ff0-8eab-3d0614608c7f",
@@ -4400,7 +4415,7 @@
       "categories": [
         "news"
       ],
-      "order": 359
+      "order": 360
     },
     {
       "id": "5f098958-1a0e-40c8-8621-b1117ec642a2",
@@ -4412,7 +4427,7 @@
       "categories": [
         "news"
       ],
-      "order": 360
+      "order": 361
     },
     {
       "id": "66acd922-9d44-48f3-9ec1-f760342595b9",
@@ -4424,7 +4439,7 @@
       "categories": [
         "news"
       ],
-      "order": 361
+      "order": 362
     },
     {
       "id": "1e94c6ea-b015-4ba3-95ae-742fe05594da",
@@ -4436,7 +4451,7 @@
       "categories": [
         "news"
       ],
-      "order": 362
+      "order": 363
     },
     {
       "id": "0d2cd51e-ae36-4f6b-bd0f-c8a6fcba8a33",
@@ -4448,7 +4463,7 @@
       "categories": [
         "news"
       ],
-      "order": 363
+      "order": 364
     },
     {
       "id": "576ab1a7-0130-4041-bd99-60fdaf98e97e",
@@ -4460,7 +4475,7 @@
       "categories": [
         "news"
       ],
-      "order": 364
+      "order": 365
     },
     {
       "id": "256f9efa-5cd8-4a63-893f-f0e3e1e8614c",
@@ -4472,7 +4487,7 @@
       "categories": [
         "news"
       ],
-      "order": 365
+      "order": 366
     },
     {
       "id": "4f2f77cf-1d50-4b61-96e5-759e6ee4464f",
@@ -4484,7 +4499,7 @@
       "categories": [
         "news"
       ],
-      "order": 366
+      "order": 367
     },
     {
       "id": "7106e67b-b2fb-423d-8846-21f29e051c65",
@@ -4496,7 +4511,7 @@
       "categories": [
         "news"
       ],
-      "order": 367
+      "order": 368
     },
     {
       "id": "20c4a5a1-a5b2-45ba-81b2-67a122ce5b61",
@@ -4508,7 +4523,7 @@
       "categories": [
         "news"
       ],
-      "order": 368
+      "order": 369
     },
     {
       "id": "ad463ed0-c03a-403d-ad49-e9ad3350f467",
@@ -4520,7 +4535,7 @@
       "categories": [
         "news"
       ],
-      "order": 369
+      "order": 370
     },
     {
       "id": "7e0b7975-094d-49bc-ad9c-4be1b6bab065",
@@ -4532,7 +4547,7 @@
       "categories": [
         "news"
       ],
-      "order": 370
+      "order": 371
     },
     {
       "id": "d80454ed-e5ff-4a88-a0e6-514ae036a653",
@@ -4542,7 +4557,7 @@
       "categories": [
         "three"
       ],
-      "order": 371
+      "order": 372
     },
     {
       "id": "815814c5-3b7a-4273-93e0-9a8038e94d04",
@@ -4552,7 +4567,7 @@
       "categories": [
         "three"
       ],
-      "order": 372
+      "order": 373
     },
     {
       "id": "a18c52f2-b8f2-4b91-98e9-6ff6708fcbf5",
@@ -4562,7 +4577,7 @@
       "categories": [
         "three"
       ],
-      "order": 373
+      "order": 374
     },
     {
       "id": "33ed5958-841e-49be-af1a-ec69a31d5da8",
@@ -4572,7 +4587,7 @@
       "categories": [
         "three"
       ],
-      "order": 374
+      "order": 375
     },
     {
       "id": "7fb6eaa5-8772-4bb7-a67a-aea697936331",
@@ -4582,7 +4597,7 @@
       "categories": [
         "three"
       ],
-      "order": 375
+      "order": 376
     },
     {
       "id": "3f861094-5c05-4ccb-936f-e342fe30ee82",
@@ -4592,7 +4607,7 @@
       "categories": [
         "three"
       ],
-      "order": 376
+      "order": 377
     }
   ],
   "about": {
