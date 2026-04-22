@@ -15,6 +15,8 @@ app.pages['upload-image'] = function (container) {
       '<div class="section-box">' +
         '<h3>作品資訊</h3>' +
         '<div class="form-field"><label class="form-label">檔名</label><input class="form-input" id="base-name" placeholder="例：媽祖插畫"></div>' +
+        '<div class="form-field"><label class="form-label">標題（中文）</label><input class="form-input" id="title-zh" placeholder="作品標題"></div>' +
+        '<div class="form-field"><label class="form-label">標題（英文）</label><input class="form-input" id="title-en" placeholder="English title"></div>' +
         '<div class="form-field"><label class="form-label">說明文字（中）</label>' +
           '<div class="caption-row">' +
             '<textarea class="form-textarea" id="caption" placeholder="作品說明…"></textarea>' +
@@ -131,6 +133,8 @@ app.pages['upload-image'] = function (container) {
       formData.append('baseName', document.getElementById('base-name').value);
       formData.append('caption', document.getElementById('caption').value);
       formData.append('captionEn', document.getElementById('caption-en').value);
+      formData.append('titleZh', document.getElementById('title-zh').value);
+      formData.append('titleEn', document.getElementById('title-en').value);
       formData.append('fancyboxGroup', document.getElementById('fancybox-group').value);
       formData.append(
         'categories',
