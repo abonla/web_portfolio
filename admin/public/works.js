@@ -15,7 +15,7 @@ app.pages['works'] = async function (container) {
       '<button id="add-image-btn" class="btn-primary">＋ 圖片</button>' +
       '<button id="add-video-btn" class="btn-secondary">＋ YouTube</button>' +
       '<button id="add-model-btn" class="btn-secondary">＋ 3D</button>' +
-      '<button id="batch-ai-btn" class="btn-secondary">✨ 批次英文說明</button>' +
+      '<button id="batch-ai-btn" class="btn-secondary" style="display:none">✨ 批次英文說明</button>' +
       '<div class="filter-tabs">' +
         FILTER_TABS.map(function (f, i) {
           return '<button class="filter-tab ' + (f === '*' ? 'active' : '') + '" data-filter="' + f + '">' + FILTER_NAMES[i] + '</button>';
@@ -41,57 +41,68 @@ app.pages['works'] = async function (container) {
 
     // Edit caption modal
     '<div class="edit-modal-overlay" id="edit-modal-overlay">' +
-      '<div class="edit-modal">' +
+      '<div class="edit-modal edit-modal-wide">' +
         '<h3>✏️ 編輯作品</h3>' +
-        '<div class="edit-field" id="edit-replace-field">' +
-          '<label class="edit-label">換圖</label>' +
-          '<input type="file" class="edit-input" id="edit-replace-file" accept="image/*">' +
-          '<div id="edit-replace-preview" style="margin-top:6px;display:none;">' +
-            '<img id="edit-replace-img" style="max-width:100%;max-height:120px;border-radius:4px;">' +
+        '<div class="edit-modal-body">' +
+          // Left: replace image (image type only)
+          '<div class="edit-modal-left" id="edit-replace-field">' +
+            '<div class="edit-label" style="margin-bottom:8px;">換圖（拖拉或點選）</div>' +
+            '<div class="upload-zone" id="edit-drop-zone">' +
+              '<div class="upload-icon">📂</div>拖拉圖片到這裡，或點擊選擇' +
+              '<small class="text-muted" style="display:block;margin-top:6px;">JPG、PNG、WebP</small>' +
+            '</div>' +
+            '<input type="file" id="edit-replace-file" accept="image/*" style="display:none">' +
+            '<div class="crop-wrapper hidden" id="edit-crop-wrapper">' +
+              '<div class="crop-container"><img id="edit-crop-img" src="" alt=""></div>' +
+              '<div class="crop-controls"><button class="btn-sm" id="edit-reset-crop">重設裁切</button></div>' +
+            '</div>' +
           '</div>' +
-        '</div>' +
-        '<div class="edit-field">' +
-          '<label class="edit-label">標題（中文）</label>' +
-          '<input class="edit-input" type="text" id="edit-title-zh" placeholder="中文標題">' +
-        '</div>' +
-        '<div class="edit-field">' +
-          '<label class="edit-label">標題（英文）</label>' +
-          '<input class="edit-input" type="text" id="edit-title-en" placeholder="English title">' +
-        '</div>' +
-        '<div class="edit-field">' +
-          '<label class="edit-label">說明（中文）</label>' +
-          '<input class="edit-input" type="text" id="edit-caption-zh" placeholder="中文說明">' +
-        '</div>' +
-        '<div class="edit-field">' +
-          '<label class="edit-label">說明（英文）</label>' +
-          '<input class="edit-input" type="text" id="edit-caption-en" placeholder="English caption">' +
-        '</div>' +
-        '<div class="edit-field">' +
-          '<label class="edit-label">分類標籤（點選切換）</label>' +
-          '<div class="edit-cat-group"><span class="edit-cat-heading">設計</span>' +
-            ['cis1','cis2','cis3','cis4','cis5','cis6','cis7','cis8'].map(function(c){
-              return '<button type="button" class="cat-toggle" data-cat="'+c+'">'+c+'</button>';
-            }).join('') +
+          // Right: all text fields
+          '<div class="edit-modal-right">' +
+            '<div class="edit-field">' +
+              '<label class="edit-label">標題（中文）</label>' +
+              '<input class="edit-input" type="text" id="edit-title-zh" placeholder="中文標題">' +
+            '</div>' +
+            '<div class="edit-field">' +
+              '<label class="edit-label">標題（英文）</label>' +
+              '<input class="edit-input" type="text" id="edit-title-en" placeholder="English title">' +
+            '</div>' +
+            '<div class="edit-field">' +
+              '<label class="edit-label">說明（中文）</label>' +
+              '<input class="edit-input" type="text" id="edit-caption-zh" placeholder="中文說明">' +
+            '</div>' +
+            '<div class="edit-field">' +
+              '<label class="edit-label">說明（英文）</label>' +
+              '<input class="edit-input" type="text" id="edit-caption-en" placeholder="English caption">' +
+            '</div>' +
+            '<div class="edit-field">' +
+              '<label class="edit-label">分類標籤（點選切換）</label>' +
+              '<div class="edit-cat-group"><span class="edit-cat-heading">設計</span>' +
+                ['cis1','cis2','cis3','cis4','cis5','cis6','cis7','cis8'].map(function(c){
+                  return '<button type="button" class="cat-toggle" data-cat="'+c+'">'+c+'</button>';
+                }).join('') +
+              '</div>' +
+              '<div class="edit-cat-group"><span class="edit-cat-heading">繪畫</span>' +
+                ['painter','sketch','water','ink','oil','mark','digital'].map(function(c){
+                  return '<button type="button" class="cat-toggle" data-cat="'+c+'">'+c+'</button>';
+                }).join('') +
+              '</div>' +
+              '<div class="edit-cat-group"><span class="edit-cat-heading">其他</span>' +
+                ['photo','video','web','three','news'].map(function(c){
+                  return '<button type="button" class="cat-toggle" data-cat="'+c+'">'+c+'</button>';
+                }).join('') +
+              '</div>' +
+              '<div class="edit-cat-group edit-cat-custom">' +
+                '<span class="edit-cat-heading">新增</span>' +
+                '<input class="edit-input edit-tag-input" type="text" id="edit-new-tag" placeholder="自訂標籤名稱">' +
+                '<button type="button" class="btn-secondary edit-tag-add-btn" id="edit-add-tag-btn">＋</button>' +
+              '</div>' +
+            '</div>' +
+            '<div class="edit-modal-actions">' +
+              '<button class="btn-secondary" id="edit-cancel-btn">取消</button>' +
+              '<button class="btn-primary" id="edit-save-btn">儲存</button>' +
+            '</div>' +
           '</div>' +
-          '<div class="edit-cat-group"><span class="edit-cat-heading">繪畫</span>' +
-            ['painter','sketch','water','ink','oil','mark','digital'].map(function(c){
-              return '<button type="button" class="cat-toggle" data-cat="'+c+'">'+c+'</button>';
-            }).join('') +
-          '</div>' +
-          '<div class="edit-cat-group"><span class="edit-cat-heading">其他</span>' +
-            ['photo','video','web','three','news'].map(function(c){
-              return '<button type="button" class="cat-toggle" data-cat="'+c+'">'+c+'</button>';
-            }).join('') +
-          '</div>' +
-          '<div class="edit-cat-group edit-cat-custom">' +
-            '<span class="edit-cat-heading">新增</span>' +
-            '<input class="edit-input edit-tag-input" type="text" id="edit-new-tag" placeholder="自訂標籤名稱">' +
-            '<button type="button" class="btn-secondary edit-tag-add-btn" id="edit-add-tag-btn">＋</button>' +
-          '</div>' +
-        '</div>' +
-        '<div class="edit-modal-actions">' +
-          '<button class="btn-secondary" id="edit-cancel-btn">取消</button>' +
-          '<button class="btn-primary" id="edit-save-btn">儲存</button>' +
         '</div>' +
       '</div>' +
     '</div>' +
@@ -110,6 +121,7 @@ app.pages['works'] = async function (container) {
     '</div>';
 
   let pendingAiResult = null;
+  let replaceCropper = null;
 
   // --- AI modal ---
   function openAiModal(result) {
@@ -164,8 +176,11 @@ app.pages['works'] = async function (container) {
     document.getElementById('edit-title-en').value = work.titleEn || '';
     document.getElementById('edit-caption-zh').value = work.caption || '';
     document.getElementById('edit-caption-en').value = work.captionEn || '';
+    // Reset replace image area
+    if (replaceCropper) { replaceCropper.destroy(); replaceCropper = null; }
     document.getElementById('edit-replace-file').value = '';
-    document.getElementById('edit-replace-preview').style.display = 'none';
+    document.getElementById('edit-crop-wrapper').classList.add('hidden');
+    document.getElementById('edit-drop-zone').classList.remove('hidden');
     document.getElementById('edit-replace-field').style.display = work.type === 'image' ? '' : 'none';
     document.getElementById('edit-new-tag').value = '';
     // 移除上次新增的自訂標籤按鈕
@@ -194,18 +209,48 @@ app.pages['works'] = async function (container) {
   }
 
   function closeEditModal() {
+    if (replaceCropper) { replaceCropper.destroy(); replaceCropper = null; }
     document.getElementById('edit-modal-overlay').classList.remove('open');
     editTarget = null;
   }
 
   document.getElementById('edit-cancel-btn').addEventListener('click', closeEditModal);
 
+  function loadReplaceFile(file) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      var cropImg = document.getElementById('edit-crop-img');
+      cropImg.src = e.target.result;
+      document.getElementById('edit-drop-zone').classList.add('hidden');
+      document.getElementById('edit-crop-wrapper').classList.remove('hidden');
+      if (replaceCropper) replaceCropper.destroy();
+      replaceCropper = new Cropper(cropImg, {
+        viewMode: 1, autoCropArea: 1, movable: true, zoomable: false,
+      });
+    };
+    reader.readAsDataURL(file);
+  }
+
   document.getElementById('edit-replace-file').addEventListener('change', function () {
-    var file = this.files[0];
-    if (!file) { document.getElementById('edit-replace-preview').style.display = 'none'; return; }
-    var url = URL.createObjectURL(file);
-    document.getElementById('edit-replace-img').src = url;
-    document.getElementById('edit-replace-preview').style.display = '';
+    if (this.files[0]) loadReplaceFile(this.files[0]);
+  });
+
+  document.getElementById('edit-drop-zone').addEventListener('click', function () {
+    document.getElementById('edit-replace-file').click();
+  });
+  document.getElementById('edit-drop-zone').addEventListener('dragover', function (e) {
+    e.preventDefault(); this.classList.add('dragover');
+  });
+  document.getElementById('edit-drop-zone').addEventListener('dragleave', function () {
+    this.classList.remove('dragover');
+  });
+  document.getElementById('edit-drop-zone').addEventListener('drop', function (e) {
+    e.preventDefault(); this.classList.remove('dragover');
+    var file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith('image/')) loadReplaceFile(file);
+  });
+  document.getElementById('edit-reset-crop').addEventListener('click', function () {
+    if (replaceCropper) replaceCropper.reset();
   });
 
   document.getElementById('edit-modal-overlay').addEventListener('click', function (e) {
@@ -237,9 +282,10 @@ app.pages['works'] = async function (container) {
     try {
       // 若有選新圖，先上傳換圖
       var replaceFile = document.getElementById('edit-replace-file').files[0];
-      if (replaceFile) {
+      if (replaceFile && replaceCropper) {
         var fd = new FormData();
         fd.append('file', replaceFile);
+        fd.append('crop', JSON.stringify(replaceCropper.getData(true)));
         var replaceRes = await fetch('/api/upload/replace/' + editTarget.id, { method: 'POST', body: fd });
         if (!replaceRes.ok) {
           var txt = await replaceRes.text();

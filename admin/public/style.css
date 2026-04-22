@@ -352,6 +352,39 @@ body {
   width: 440px;
   max-width: 90vw;
 }
+.edit-modal.edit-modal-wide {
+  width: 900px;
+  max-width: 96vw;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+}
+.edit-modal-wide h3 { flex-shrink: 0; }
+.edit-modal-body {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  min-height: 0;
+}
+.edit-modal-left {
+  width: 380px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+.edit-modal-left .upload-zone {
+  flex: 1;
+  min-height: 200px;
+}
+.edit-modal-left .crop-wrapper { flex: 1; min-height: 0; }
+.edit-modal-left .crop-container { height: 100%; min-height: 200px; }
+.edit-modal-right {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.edit-modal-right .edit-modal-actions { margin-top: auto; padding-top: 16px; }
 .edit-modal h3 { color: #f1f5f9; font-size: 15px; margin-bottom: 16px; }
 .edit-field { margin-bottom: 14px; }
 .edit-label { display: block; font-size: 11px; color: #64748b; margin-bottom: 4px; }

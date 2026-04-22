@@ -18,7 +18,7 @@ app.pages['upload-image'] = function (container) {
         '<div class="form-field"><label class="form-label">說明文字（中）</label>' +
           '<div class="caption-row">' +
             '<textarea class="form-textarea" id="caption" placeholder="作品說明…"></textarea>' +
-            '<button class="btn-ai" id="btn-ai-gen" type="button" disabled>✨ AI 生成</button>' +
+            '<button class="btn-ai" id="btn-ai-gen" type="button" disabled style="display:none">✨ AI 生成</button>' +
           '</div>' +
         '</div>' +
         '<div class="form-field"><label class="form-label">說明文字（英）</label><textarea class="form-textarea" id="caption-en" placeholder="English caption…"></textarea></div>' +
