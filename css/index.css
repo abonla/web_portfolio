@@ -533,6 +533,9 @@ section#timeline article:hover {
 .yt-facade:hover .yt-play {
   background: #ff0000;
 }
+.yt-play {
+  pointer-events: none;
+}
 /* 點擊後的 iframe，絕對定位填滿同一容器 */
 .yt-playing {
   position: relative;

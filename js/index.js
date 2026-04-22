@@ -155,17 +155,3 @@ $.fancybox.defaults.caption = function (instance, item) {
 	return desc;
 };
 
-// YouTube 點擊播放（facade 容器原地換成 iframe，高度不變不跑版）
-$(document).on('click', '.yt-facade', function () {
-	var vid = $(this).data('vid');
-	var iframe = '<iframe src="https://www.youtube-nocookie.com/embed/' + vid
-		+ '?autoplay=1" frameborder="0"'
-		+ ' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"'
-		+ ' allowfullscreen></iframe>';
-	$(this)
-		.removeClass('yt-facade')
-		.addClass('yt-playing')
-		.removeAttr('data-vid')
-		.html(iframe);
-	// 容器高度不變（padding-bottom 56.25% 維持），masonry 無需重排
-});

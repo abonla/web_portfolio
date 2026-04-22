@@ -25,8 +25,13 @@ function buildImageItem(w) {
 
 function buildVideoItem(w) {
   const ytThumb = `https://i.ytimg.com/vi/${w.videoId}/mqdefault.jpg`;
+  const ytUrl = `https://www.youtube.com/watch?v=${w.videoId}`;
+  const caption = escapeAttr(w.caption || '');
+  const captionEn = escapeAttr(w.captionEn || '');
+  const titleZh = escapeAttr(w.titleZh || '');
+  const titleEn = escapeAttr(w.titleEn || '');
   return `<div class="grid-item video">
-        <div class="yt-facade" data-vid="${w.videoId}"><img src="${ytThumb}" alt="" loading="lazy" decoding="async"><button class="yt-play" aria-label="播放"></button></div>
+        <a href="${ytUrl}" class="yt-facade" data-fancybox="video" data-caption="${caption}" data-caption-en="${captionEn}" data-title-zh="${titleZh}" data-title-en="${titleEn}"><img src="${ytThumb}" alt="" loading="lazy" decoding="async"><span class="yt-play"></span></a>
       </div>`;
 }
 
