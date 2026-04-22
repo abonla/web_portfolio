@@ -277,7 +277,7 @@ body {
 
 /* AI generate button */
 .btn-ai {
-  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  background: #2563eb;
   color: white;
   border: none;
   border-radius: 6px;
@@ -289,7 +289,7 @@ body {
   align-self: flex-end;
   margin-bottom: 2px;
 }
-.btn-ai:hover { opacity: 0.85; }
+.btn-ai:hover { background: #1d4ed8; }
 .btn-ai:disabled { opacity: 0.4; cursor: not-allowed; }
 
 .caption-row {
@@ -297,7 +297,8 @@ body {
   gap: 8px;
   align-items: flex-start;
 }
-.caption-row textarea {
+.caption-row textarea,
+.caption-row input {
   flex: 1;
 }
 

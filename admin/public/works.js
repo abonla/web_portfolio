@@ -65,7 +65,7 @@ app.pages['works'] = async function (container) {
             '</div>' +
             '<div class="edit-field">' +
               '<label class="edit-label">標題（英文）</label>' +
-              '<input class="edit-input" type="text" id="edit-title-en" placeholder="English title">' +
+              '<div class="caption-row"><input class="edit-input" type="text" id="edit-title-en" placeholder="English title"><button class="btn-ai edit-trans-btn" type="button" data-src="edit-title-zh" data-dst="edit-title-en">譯</button></div>' +
             '</div>' +
             '<div class="edit-field">' +
               '<label class="edit-label">說明（中文）</label>' +
@@ -73,7 +73,7 @@ app.pages['works'] = async function (container) {
             '</div>' +
             '<div class="edit-field">' +
               '<label class="edit-label">說明（英文）</label>' +
-              '<input class="edit-input" type="text" id="edit-caption-en" placeholder="English caption">' +
+              '<div class="caption-row"><input class="edit-input" type="text" id="edit-caption-en" placeholder="English caption"><button class="btn-ai edit-trans-btn" type="button" data-src="edit-caption-zh" data-dst="edit-caption-en">譯</button></div>' +
             '</div>' +
             '<div class="edit-field">' +
               '<label class="edit-label">分類標籤（點選切換）</label>' +
@@ -215,6 +215,19 @@ app.pages['works'] = async function (container) {
   }
 
   document.getElementById('edit-cancel-btn').addEventListener('click', closeEditModal);
+
+  document.getElementById('edit-modal-overlay').addEventListener('click', async function (e) {
+    if (!e.target.classList.contains('edit-trans-btn')) return;
+    const btn = e.target;
+    const src = document.getElementById(btn.dataset.src);
+    const dst = document.getElementById(btn.dataset.dst);
+    if (!src || !dst || !src.value.trim()) return;
+    btn.textContent = '…'; btn.disabled = true;
+    try {
+      dst.value = await app.translateZhToEn(src.value);
+    } catch (err) { alert('翻譯失敗：' + err.message); }
+    btn.textContent = '譯'; btn.disabled = false;
+  });
 
   function loadReplaceFile(file) {
     var reader = new FileReader();

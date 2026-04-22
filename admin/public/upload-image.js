@@ -16,14 +16,18 @@ app.pages['upload-image'] = function (container) {
         '<h3>作品資訊</h3>' +
         '<div class="form-field"><label class="form-label">檔名</label><input class="form-input" id="base-name" placeholder="例：媽祖插畫"></div>' +
         '<div class="form-field"><label class="form-label">標題（中文）</label><input class="form-input" id="title-zh" placeholder="作品標題"></div>' +
-        '<div class="form-field"><label class="form-label">標題（英文）</label><input class="form-input" id="title-en" placeholder="English title"></div>' +
+        '<div class="form-field"><label class="form-label">標題（英文）</label>' +
+          '<div class="caption-row"><input class="form-input" id="title-en" placeholder="English title"><button class="btn-ai" id="btn-trans-title" type="button">譯</button></div>' +
+        '</div>' +
         '<div class="form-field"><label class="form-label">說明文字（中）</label>' +
           '<div class="caption-row">' +
             '<textarea class="form-textarea" id="caption" placeholder="作品說明…"></textarea>' +
             '<button class="btn-ai" id="btn-ai-gen" type="button" disabled style="display:none">✨ AI 生成</button>' +
           '</div>' +
         '</div>' +
-        '<div class="form-field"><label class="form-label">說明文字（英）</label><textarea class="form-textarea" id="caption-en" placeholder="English caption…"></textarea></div>' +
+        '<div class="form-field"><label class="form-label">說明文字（英）</label>' +
+          '<div class="caption-row"><textarea class="form-textarea" id="caption-en" placeholder="English caption…"></textarea><button class="btn-ai" id="btn-trans-caption" type="button">譯</button></div>' +
+        '</div>' +
         '<div class="form-field"><label class="form-label">FancyBox 群組</label><input class="form-input" id="fancybox-group" placeholder="painter"></div>' +
         '<div class="form-field"><label class="form-label">分類標籤</label><div class="chip-group" id="chip-group"></div></div>' +
         '<div class="btn-row"><button class="btn-primary" id="save-btn" disabled>儲存作品</button><button class="btn-secondary" onclick="location.hash=\'#works\'">取消</button></div>' +
@@ -85,6 +89,23 @@ app.pages['upload-image'] = function (container) {
   document.getElementById('reset-crop').addEventListener('click', function () {
     if (cropper) cropper.reset();
   });
+
+  function makeTranslateHandler(srcId, dstId, btnId) {
+    document.getElementById(btnId).addEventListener('click', async function () {
+      const btn = this;
+      const src = document.getElementById(srcId);
+      const dst = document.getElementById(dstId);
+      if (!src.value.trim()) return;
+      btn.textContent = '…'; btn.disabled = true;
+      try {
+        const result = await app.translateZhToEn(src.value);
+        dst.value = result;
+      } catch (e) { statusEl.textContent = '✗ 翻譯失敗：' + e.message; }
+      btn.textContent = '譯'; btn.disabled = false;
+    });
+  }
+  makeTranslateHandler('title-zh', 'title-en', 'btn-trans-title');
+  makeTranslateHandler('caption', 'caption-en', 'btn-trans-caption');
 
   aiBtn.addEventListener('click', async function () {
     if (!cropImg.src || !selectedFile) return;

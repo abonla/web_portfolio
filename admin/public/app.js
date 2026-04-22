@@ -110,5 +110,16 @@ document.addEventListener('DOMContentLoaded', function() {
   setInterval(refreshPendingCount, 30000);
 });
 
+// ── Translation helper (MyMemory free API) ──
+async function translateZhToEn(text) {
+  if (!text || !text.trim()) return '';
+  const url = 'https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text.trim()) + '&langpair=zh-TW%7Cen';
+  const res = await fetch(url);
+  if (!res.ok) throw new Error('翻譯服務無回應');
+  const data = await res.json();
+  if (data.responseStatus !== 200) throw new Error(data.responseDetails || '翻譯失敗');
+  return data.responseData.translatedText || '';
+}
+
 // Export for page modules
-window.adminApp = { pages: pages, GET: GET, POST: POST, PUT: PUT, DEL: DEL, refreshPendingCount: refreshPendingCount, buildChips: buildChips, getSelectedChips: getSelectedChips, buildStars: buildStars, getStarValue: getStarValue };
+window.adminApp = { pages: pages, GET: GET, POST: POST, PUT: PUT, DEL: DEL, refreshPendingCount: refreshPendingCount, buildChips: buildChips, getSelectedChips: getSelectedChips, buildStars: buildStars, getStarValue: getStarValue, translateZhToEn: translateZhToEn };
