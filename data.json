@@ -1871,6 +1871,23 @@
       "order": 139
     },
     {
+      "id": "cc184f89-af87-4714-858c-c7bcf0ef9291",
+      "type": "image",
+      "src": "images/刮刻畫_貓.jpg",
+      "thumb": "images/刮刻畫_貓m.jpg",
+      "caption": "輔大應美系色彩學作業，在水彩紙上兩層Gesso（打底劑），後再塗上墨汁，等乾後再用刀片刻出貓的剪影，練習「負像畫」技法。",
+      "captionEn": "In the color science assignment of the Department of Art and Design at Fudan University, I applied two layers of Gesso (primer) on watercolor paper, then applied ink. After drying, I used a knife to cut out the silhouette of a cat to practice the \"negative painting\" technique.",
+      "titleZh": "刮刻畫_貓",
+      "titleEn": "scratch carving_cat",
+      "linkUrl": "",
+      "categories": [
+        "painter",
+        "sketch"
+      ],
+      "fancyboxGroup": "",
+      "order": 140
+    },
+    {
       "id": "37dcb250-97b6-4626-8bf8-e5099aae471c",
       "type": "image",
       "src": "images/160488761.jpg",
@@ -1880,7 +1897,7 @@
       "categories": [
         "photo"
       ],
-      "order": 140
+      "order": 141
     },
     {
       "id": "5275c0f3-6184-4364-ab82-d84686217513",
@@ -1892,7 +1909,7 @@
       "categories": [
         "photo"
       ],
-      "order": 141
+      "order": 142
     },
     {
       "id": "4442afa3-ad6c-40dd-9b63-09a491d42477",
@@ -1904,7 +1921,7 @@
       "categories": [
         "photo"
       ],
-      "order": 142
+      "order": 143
     },
     {
       "id": "6b64a9fa-e1cd-4f0b-8c15-c37a7a2d5583",
@@ -1916,7 +1933,7 @@
       "categories": [
         "photo"
       ],
-      "order": 143
+      "order": 144
     },
     {
       "id": "3591ee20-07ff-47e2-981f-e46dbdc4acb7",
@@ -1928,7 +1945,7 @@
       "categories": [
         "photo"
       ],
-      "order": 144
+      "order": 145
     },
     {
       "id": "a8eee215-b497-493d-8461-a19a51d8f890",
@@ -1940,7 +1957,7 @@
       "categories": [
         "photo"
       ],
-      "order": 145
+      "order": 146
     },
     {
       "id": "347ce1be-f372-4f41-ad38-a674bd17a48e",
@@ -1952,7 +1969,7 @@
       "categories": [
         "photo"
       ],
-      "order": 146
+      "order": 147
     },
     {
       "id": "4c02ea35-c1b0-4b04-a786-7fb3919b718e",
@@ -1964,7 +1981,7 @@
       "categories": [
         "photo"
       ],
-      "order": 147
+      "order": 148
     },
     {
       "id": "a6886350-3963-4795-9e92-7fe693b27cba",
@@ -1976,7 +1993,7 @@
       "categories": [
         "photo"
       ],
-      "order": 148
+      "order": 149
     },
     {
       "id": "a6425446-eacb-4326-a913-28c0374ab9cb",
@@ -1988,7 +2005,7 @@
       "categories": [
         "photo"
       ],
-      "order": 149
+      "order": 150
     },
     {
       "id": "ba220e3c-86bb-4dc4-8683-86aa54c31b34",
@@ -2000,7 +2017,7 @@
       "categories": [
         "photo"
       ],
-      "order": 150
+      "order": 151
     },
     {
       "id": "69ef3cc9-b676-4124-87ab-496fa788aed3",
@@ -2012,7 +2029,7 @@
       "categories": [
         "photo"
       ],
-      "order": 151
+      "order": 152
     },
     {
       "id": "5a41f388-e1c1-4176-8a3b-81932b752205",
@@ -2024,7 +2041,7 @@
       "categories": [
         "photo"
       ],
-      "order": 152
+      "order": 153
     },
     {
       "id": "b0aceb48-a75a-48f3-9bb1-a273aeb22367",
@@ -2036,7 +2053,7 @@
       "categories": [
         "photo"
       ],
-      "order": 153
+      "order": 154
     },
     {
       "id": "1b23a2fb-e1f9-4fca-9ee7-2bf183d067ee",
@@ -2048,7 +2065,7 @@
       "categories": [
         "photo"
       ],
-      "order": 154
+      "order": 155
     },
     {
       "id": "0b8d4bd9-0435-4853-976c-7dbf39564d82",
@@ -2060,7 +2077,7 @@
       "categories": [
         "photo"
       ],
-      "order": 155
+      "order": 156
     },
     {
       "id": "267f7c51-19ff-432b-a8c8-343368ec828e",
@@ -2072,7 +2089,7 @@
       "categories": [
         "photo"
       ],
-      "order": 156
+      "order": 157
     },
     {
       "id": "7946f44b-7d70-47ba-a2b4-72a4651ee66c",
@@ -2084,7 +2101,7 @@
       "categories": [
         "photo"
       ],
-      "order": 157
+      "order": 158
     },
     {
       "id": "1494a364-6694-402c-911e-0c97089feb6e",
@@ -2096,7 +2113,7 @@
       "categories": [
         "photo"
       ],
-      "order": 158
+      "order": 159
     },
     {
       "id": "3f1cfa07-588e-4867-8291-8c70cc1db579",
@@ -2108,7 +2125,7 @@
       "categories": [
         "photo"
       ],
-      "order": 159
+      "order": 160
     },
     {
       "id": "3ea8183b-94ae-4739-957a-30f0c7da65e5",
@@ -2120,7 +2137,7 @@
       "categories": [
         "photo"
       ],
-      "order": 160
+      "order": 161
     },
     {
       "id": "f8693973-6d37-4a8b-88dd-b7e7ecb03587",
@@ -2132,7 +2149,7 @@
       "categories": [
         "photo"
       ],
-      "order": 161
+      "order": 162
     },
     {
       "id": "e2f9b790-aec7-48c4-8845-53ed2a903e4f",
@@ -2144,7 +2161,7 @@
       "categories": [
         "photo"
       ],
-      "order": 162
+      "order": 163
     },
     {
       "id": "4b1a2be2-6494-48eb-a73c-ef643d8a9bf3",
@@ -2156,7 +2173,7 @@
       "categories": [
         "photo"
       ],
-      "order": 163
+      "order": 164
     },
     {
       "id": "71d9cffb-ff94-4ce6-b880-98dcb6d4339e",
@@ -2168,7 +2185,7 @@
       "categories": [
         "photo"
       ],
-      "order": 164
+      "order": 165
     },
     {
       "id": "4bb189aa-02fb-4c2d-8f04-a0fdb8e19806",
@@ -2180,7 +2197,7 @@
       "categories": [
         "photo"
       ],
-      "order": 165
+      "order": 166
     },
     {
       "id": "31e42367-e452-4db5-b16d-be6d58547c55",
@@ -2192,7 +2209,7 @@
       "categories": [
         "photo"
       ],
-      "order": 166
+      "order": 167
     },
     {
       "id": "0dc70535-cdba-4d2e-9e0c-11eb1b0b4012",
@@ -2204,7 +2221,7 @@
       "categories": [
         "photo"
       ],
-      "order": 167
+      "order": 168
     },
     {
       "id": "db25f57f-ef1e-45a2-8448-2a78ea7b867d",
@@ -2216,7 +2233,7 @@
       "categories": [
         "photo"
       ],
-      "order": 168
+      "order": 169
     },
     {
       "id": "ac11269f-4f39-4a9d-bebc-28a29b658cc7",
@@ -2228,7 +2245,7 @@
       "categories": [
         "photo"
       ],
-      "order": 169
+      "order": 170
     },
     {
       "id": "8c82f835-4eae-4a32-8a84-fd0e85ab244a",
@@ -2240,7 +2257,7 @@
       "categories": [
         "photo"
       ],
-      "order": 170
+      "order": 171
     },
     {
       "id": "c57b4149-4eba-42ba-a701-7d22b5ad3fbf",
@@ -2252,7 +2269,7 @@
       "categories": [
         "photo"
       ],
-      "order": 171
+      "order": 172
     },
     {
       "id": "ec1b5db5-4ad7-4257-9197-ef6a3c248b55",
@@ -2264,7 +2281,7 @@
       "categories": [
         "photo"
       ],
-      "order": 172
+      "order": 173
     },
     {
       "id": "cf8de790-0189-4cc6-ba87-66d1ec885267",
@@ -2276,7 +2293,7 @@
       "categories": [
         "photo"
       ],
-      "order": 173
+      "order": 174
     },
     {
       "id": "dcaffc1b-5c53-44f5-9326-d81c01219f50",
@@ -2288,7 +2305,7 @@
       "categories": [
         "photo"
       ],
-      "order": 174
+      "order": 175
     },
     {
       "id": "dd8fcc4f-5d97-4322-8dbe-68c1ee3f3a0c",
@@ -2300,7 +2317,7 @@
       "categories": [
         "photo"
       ],
-      "order": 175
+      "order": 176
     },
     {
       "id": "28e594f9-d485-485a-86bf-b545d0eeaaab",
@@ -2312,7 +2329,7 @@
       "categories": [
         "cis1"
       ],
-      "order": 176
+      "order": 177
     },
     {
       "id": "f9234894-52be-4f79-9aad-35c310daa0f3",
@@ -2324,7 +2341,7 @@
       "categories": [
         "cis1"
       ],
-      "order": 177
+      "order": 178
     },
     {
       "id": "4c98dd51-4cb8-4b27-bde5-6b54ff336545",
@@ -2336,7 +2353,7 @@
       "categories": [
         "cis1"
       ],
-      "order": 178
+      "order": 179
     },
     {
       "id": "e0a104f0-3e37-48c4-87aa-f96d09721688",
@@ -2348,7 +2365,7 @@
       "categories": [
         "cis1"
       ],
-      "order": 179
+      "order": 180
     },
     {
       "id": "61e706de-f214-4730-9096-e5559a25d59f",
@@ -2360,7 +2377,7 @@
       "categories": [
         "cis1"
       ],
-      "order": 180
+      "order": 181
     },
     {
       "id": "5ccbe1cd-0e68-4fda-958a-815a90306bb1",
@@ -2372,7 +2389,7 @@
       "categories": [
         "cis1"
       ],
-      "order": 181
+      "order": 182
     },
     {
       "id": "d93bde94-e758-49b7-b596-cfd1dbc13e5b",
@@ -2384,7 +2401,7 @@
       "categories": [
         "cis1"
       ],
-      "order": 182
+      "order": 183
     },
     {
       "id": "594ef9fe-1e81-486b-8c76-819b6cae7dcb",
@@ -2396,7 +2413,7 @@
       "categories": [
         "cis1"
       ],
-      "order": 183
+      "order": 184
     },
     {
       "id": "1c1c2aa8-376b-43c6-817f-97f52ae96b7f",
@@ -2408,7 +2425,7 @@
       "categories": [
         "cis1"
       ],
-      "order": 184
+      "order": 185
     },
     {
       "id": "321bd1f2-182f-4814-9cd4-233ac8446e07",
@@ -2420,7 +2437,7 @@
       "categories": [
         "cis1"
       ],
-      "order": 185
+      "order": 186
     },
     {
       "id": "50ea9e58-85ba-494e-9506-27cfd4e26dbd",
@@ -2432,7 +2449,7 @@
       "categories": [
         "cis1"
       ],
-      "order": 186
+      "order": 187
     },
     {
       "id": "d1dc6038-8d03-4356-b9b6-d72c3efa8372",
@@ -2444,7 +2461,7 @@
       "categories": [
         "cis1"
       ],
-      "order": 187
+      "order": 188
     },
     {
       "id": "ed0c91b7-86f9-4a99-9e62-38513b51d3fa",
@@ -2456,7 +2473,7 @@
       "categories": [
         "cis1"
       ],
-      "order": 188
+      "order": 189
     },
     {
       "id": "6fb20875-20f3-4777-84db-f003800f55c5",
@@ -2468,7 +2485,7 @@
       "categories": [
         "cis1"
       ],
-      "order": 189
+      "order": 190
     },
     {
       "id": "57a310b7-5a3e-413a-9341-7af0ad03f0ad",
@@ -2480,7 +2497,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 190
+      "order": 191
     },
     {
       "id": "4b1facbc-bec2-4a71-ba71-fd47a2e6244f",
@@ -2492,7 +2509,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 191
+      "order": 192
     },
     {
       "id": "9bb4e469-8bfc-4f2e-a7b1-c946fd670a2f",
@@ -2504,7 +2521,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 192
+      "order": 193
     },
     {
       "id": "5893fe4d-dc23-4582-8760-958300524e7b",
@@ -2516,7 +2533,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 193
+      "order": 194
     },
     {
       "id": "171136b2-e942-4177-9332-23b887280730",
@@ -2528,7 +2545,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 194
+      "order": 195
     },
     {
       "id": "2d79e91b-c339-45d5-993c-56429ca7bbd0",
@@ -2540,7 +2557,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 195
+      "order": 196
     },
     {
       "id": "113e0c97-83ab-48c5-9b12-8561da214ed3",
@@ -2552,7 +2569,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 196
+      "order": 197
     },
     {
       "id": "a81c2582-24d8-447e-bedf-1c2612d9f967",
@@ -2564,7 +2581,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 197
+      "order": 198
     },
     {
       "id": "f92643c3-e0bc-4f3b-aa56-024cfcda9098",
@@ -2576,7 +2593,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 198
+      "order": 199
     },
     {
       "id": "b95b709f-1860-4cfc-be7a-d4b225d88d9a",
@@ -2588,7 +2605,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 199
+      "order": 200
     },
     {
       "id": "cd6c887c-2978-45c0-b1c7-c1c62088b045",
@@ -2600,7 +2617,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 200
+      "order": 201
     },
     {
       "id": "8ec47f88-68d5-4773-af07-b89c3ce28c0c",
@@ -2612,7 +2629,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 201
+      "order": 202
     },
     {
       "id": "4c7e7d93-4d96-448a-b11f-42d753f870a2",
@@ -2624,7 +2641,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 202
+      "order": 203
     },
     {
       "id": "b43d1689-29ab-45e2-be86-29a5c8fcbd21",
@@ -2636,7 +2653,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 203
+      "order": 204
     },
     {
       "id": "51564466-791a-4832-b1d7-b0108066cc09",
@@ -2648,7 +2665,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 204
+      "order": 205
     },
     {
       "id": "3ef88903-c9c1-4025-8716-14189b0ae817",
@@ -2660,7 +2677,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 205
+      "order": 206
     },
     {
       "id": "2d48f4f9-1dd1-4cbf-9ec7-269c2fc8d51e",
@@ -2672,7 +2689,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 206
+      "order": 207
     },
     {
       "id": "ee9c7d86-1e09-4219-aa57-26a6681eda55",
@@ -2684,7 +2701,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 207
+      "order": 208
     },
     {
       "id": "80c9d68a-9bab-4388-8429-187c0c1c13eb",
@@ -2696,7 +2713,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 208
+      "order": 209
     },
     {
       "id": "a0a965e3-bb5f-428f-93c9-2f4bc946c9c4",
@@ -2708,7 +2725,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 209
+      "order": 210
     },
     {
       "id": "b3dd24ed-578b-4b62-a114-3d90dbc17a02",
@@ -2720,7 +2737,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 210
+      "order": 211
     },
     {
       "id": "fc1bf164-2cac-4996-a6d8-0f8cdca153a3",
@@ -2732,7 +2749,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 211
+      "order": 212
     },
     {
       "id": "f1752e17-0412-4c14-8e8e-1aca0bfbb7d4",
@@ -2744,7 +2761,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 212
+      "order": 213
     },
     {
       "id": "a19db38e-23ed-4a57-94a0-0cd78709ce79",
@@ -2756,7 +2773,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 213
+      "order": 214
     },
     {
       "id": "719f0a84-ba82-4929-ada4-9f75e267de3d",
@@ -2768,7 +2785,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 214
+      "order": 215
     },
     {
       "id": "7d2a3fd3-bbdd-4adf-947e-8d7377f59840",
@@ -2780,7 +2797,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 215
+      "order": 216
     },
     {
       "id": "3a8a84d8-a3a0-4fcc-8e7e-cbf3d9a4c349",
@@ -2792,7 +2809,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 216
+      "order": 217
     },
     {
       "id": "f1a883fe-6746-440b-a0f0-baa80cfc690a",
@@ -2804,7 +2821,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 217
+      "order": 218
     },
     {
       "id": "065cd113-30cf-40b2-8fe7-90df1e77e804",
@@ -2816,7 +2833,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 218
+      "order": 219
     },
     {
       "id": "f6e0b5e0-31aa-45b1-b7e8-9adfacd63064",
@@ -2828,7 +2845,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 219
+      "order": 220
     },
     {
       "id": "ad6e2431-165e-4bf2-824e-f36747ab9240",
@@ -2840,7 +2857,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 220
+      "order": 221
     },
     {
       "id": "4bd958ce-6d8c-41e1-81d7-05bf7e5380d9",
@@ -2852,7 +2869,7 @@
       "categories": [
         "cis2"
       ],
-      "order": 221
+      "order": 222
     },
     {
       "id": "0e8c7317-ba9f-4bec-9ec5-c053bdefe691",
@@ -2864,7 +2881,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 222
+      "order": 223
     },
     {
       "id": "ead31857-881a-49a6-81e7-374ee2ce235c",
@@ -2876,7 +2893,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 223
+      "order": 224
     },
     {
       "id": "0754c532-2ae9-4d58-b493-f9305de822df",
@@ -2888,7 +2905,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 224
+      "order": 225
     },
     {
       "id": "6dd0a87f-b4ab-41da-9276-784794ac3d3d",
@@ -2900,7 +2917,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 225
+      "order": 226
     },
     {
       "id": "bf065dd3-75b6-4614-a14a-73c99cf0b3e2",
@@ -2912,7 +2929,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 226
+      "order": 227
     },
     {
       "id": "938b1219-6579-4b1e-b7e3-dcde3b1936de",
@@ -2924,7 +2941,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 227
+      "order": 228
     },
     {
       "id": "a1035b11-2309-4508-ae13-e2e27296cc69",
@@ -2936,7 +2953,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 228
+      "order": 229
     },
     {
       "id": "cb90b98d-0431-4268-8a5f-a965573614e6",
@@ -2948,7 +2965,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 229
+      "order": 230
     },
     {
       "id": "27e6a145-1fba-42bf-9205-782a4ad0254b",
@@ -2960,7 +2977,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 230
+      "order": 231
     },
     {
       "id": "4c53cdf2-af1d-4289-bb89-646b2f597840",
@@ -2972,7 +2989,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 231
+      "order": 232
     },
     {
       "id": "147e7a59-6e93-428b-bf71-eda2a699ce87",
@@ -2984,7 +3001,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 232
+      "order": 233
     },
     {
       "id": "ef23fdc8-0cf4-4179-b5e1-a5952c033107",
@@ -2996,7 +3013,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 233
+      "order": 234
     },
     {
       "id": "d596b07f-d5c8-4c31-b9ab-41b833f57cad",
@@ -3008,7 +3025,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 234
+      "order": 235
     },
     {
       "id": "549141ae-022a-4ffd-aa86-28372497b0b6",
@@ -3020,7 +3037,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 235
+      "order": 236
     },
     {
       "id": "3a4dc8a8-db15-4a0a-bd36-b153690da4e5",
@@ -3032,7 +3049,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 236
+      "order": 237
     },
     {
       "id": "f3bb46fa-be5c-497d-8cfc-85c9b978b60e",
@@ -3044,7 +3061,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 237
+      "order": 238
     },
     {
       "id": "2c359fa8-2802-452c-b395-311910a094e0",
@@ -3056,7 +3073,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 238
+      "order": 239
     },
     {
       "id": "65152881-8cc3-46a3-beae-ccd2504d0fd2",
@@ -3068,7 +3085,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 239
+      "order": 240
     },
     {
       "id": "1ca0c3c6-42e3-4e19-a9f7-bac33c21fcab",
@@ -3080,7 +3097,7 @@
       "categories": [
         "cis3"
       ],
-      "order": 240
+      "order": 241
     },
     {
       "id": "8aafd37d-360b-4586-b555-4ae67650c49c",
@@ -3092,7 +3109,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 241
+      "order": 242
     },
     {
       "id": "ba26669e-79a4-405b-8f3e-16d55b23ea87",
@@ -3104,7 +3121,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 242
+      "order": 243
     },
     {
       "id": "da2d58f1-77b3-44c4-a413-772594c291e7",
@@ -3116,7 +3133,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 243
+      "order": 244
     },
     {
       "id": "a2c92fcb-497e-4fac-82c7-11674776e274",
@@ -3128,7 +3145,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 244
+      "order": 245
     },
     {
       "id": "4ed9ac5e-1e12-4fa9-9d7a-e6ad25cca645",
@@ -3140,7 +3157,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 245
+      "order": 246
     },
     {
       "id": "dc6cbb75-7772-46ef-8f7e-29bcc7da0abc",
@@ -3152,7 +3169,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 246
+      "order": 247
     },
     {
       "id": "b68eb029-6cc5-4846-982f-ce3f0e1abea4",
@@ -3164,7 +3181,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 247
+      "order": 248
     },
     {
       "id": "c86bedb6-15f4-4672-8841-92905dcba50c",
@@ -3176,7 +3193,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 248
+      "order": 249
     },
     {
       "id": "373758d9-436e-496b-9983-3706a50fd2d8",
@@ -3188,7 +3205,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 249
+      "order": 250
     },
     {
       "id": "31a4747d-cf9b-47be-8614-1e19698d9349",
@@ -3200,7 +3217,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 250
+      "order": 251
     },
     {
       "id": "4b05f22e-05de-4dfb-b11b-4514143196b7",
@@ -3212,7 +3229,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 251
+      "order": 252
     },
     {
       "id": "37a56637-e387-4252-98a6-6fa8a45dbbf1",
@@ -3224,7 +3241,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 252
+      "order": 253
     },
     {
       "id": "b2dd11d8-660f-4623-b6fc-89a0486f46ef",
@@ -3236,7 +3253,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 253
+      "order": 254
     },
     {
       "id": "ef834d36-4f5f-464b-88e0-a33eb05fa267",
@@ -3248,7 +3265,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 254
+      "order": 255
     },
     {
       "id": "985a994a-e028-484d-89db-09130f010796",
@@ -3260,7 +3277,7 @@
       "categories": [
         "cis4"
       ],
-      "order": 255
+      "order": 256
     },
     {
       "id": "db9a6ba5-0957-4a67-aa86-93078e8e3b83",
@@ -3272,7 +3289,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 256
+      "order": 257
     },
     {
       "id": "6fa9dcb3-27c5-427a-8c7b-b86c1867734d",
@@ -3284,7 +3301,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 257
+      "order": 258
     },
     {
       "id": "63ccf138-c242-4477-af20-c8e35ee6d332",
@@ -3296,7 +3313,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 258
+      "order": 259
     },
     {
       "id": "43846942-67c9-4dd5-b53f-7fd9c7d996a2",
@@ -3308,7 +3325,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 259
+      "order": 260
     },
     {
       "id": "61f18d08-3fba-47a0-bc89-c6c7b703ba5f",
@@ -3320,7 +3337,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 260
+      "order": 261
     },
     {
       "id": "d48f4bd7-19ee-45a8-b685-24454b04043e",
@@ -3332,7 +3349,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 261
+      "order": 262
     },
     {
       "id": "bf03a8bb-1d4f-47f0-bcd2-e9e6a6f11313",
@@ -3344,7 +3361,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 262
+      "order": 263
     },
     {
       "id": "1b37e550-f25c-4ffb-93cc-b7a80feb4ed3",
@@ -3356,7 +3373,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 263
+      "order": 264
     },
     {
       "id": "13392064-81f8-45ed-bbfa-1f8ab76fa7bc",
@@ -3368,7 +3385,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 264
+      "order": 265
     },
     {
       "id": "67e02a64-93b7-46ae-aca5-0074a669ac10",
@@ -3380,7 +3397,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 265
+      "order": 266
     },
     {
       "id": "005d78ed-5139-46eb-8a1d-3a9f2f9d5601",
@@ -3392,7 +3409,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 266
+      "order": 267
     },
     {
       "id": "face1d29-db01-423d-a787-3ac142d0fb4a",
@@ -3404,7 +3421,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 267
+      "order": 268
     },
     {
       "id": "83f2d34a-7735-4f59-8690-e094d5960f0f",
@@ -3416,7 +3433,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 268
+      "order": 269
     },
     {
       "id": "a2e9e16d-008e-4ae1-abb9-f4a391711a8a",
@@ -3428,7 +3445,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 269
+      "order": 270
     },
     {
       "id": "a7e4cd7a-baa4-4440-8d6b-4f4dbce3e903",
@@ -3440,7 +3457,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 270
+      "order": 271
     },
     {
       "id": "5b1282bc-be26-45c2-881a-46bf6a588a6f",
@@ -3452,7 +3469,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 271
+      "order": 272
     },
     {
       "id": "efe818bf-39e9-4bda-8cf4-2298c7e14190",
@@ -3464,7 +3481,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 272
+      "order": 273
     },
     {
       "id": "b61285ed-c7b9-4fdc-9244-bd1f8b48ecc4",
@@ -3476,7 +3493,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 273
+      "order": 274
     },
     {
       "id": "4ccdedd2-ced0-4121-8b60-69d7f30e13c5",
@@ -3488,7 +3505,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 274
+      "order": 275
     },
     {
       "id": "83ca2b3d-d39b-4d8f-96c6-c029b060a916",
@@ -3500,7 +3517,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 275
+      "order": 276
     },
     {
       "id": "b3358f1e-b73d-46a9-b618-661eb0296bf2",
@@ -3512,7 +3529,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 276
+      "order": 277
     },
     {
       "id": "066da7c1-4ad8-4b21-a715-7e90b7b5b669",
@@ -3524,7 +3541,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 277
+      "order": 278
     },
     {
       "id": "a443549e-2af6-4dd3-8c76-ef03bde01a59",
@@ -3536,7 +3553,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 278
+      "order": 279
     },
     {
       "id": "7012c17d-59ea-4fed-b114-aad3c058cf8b",
@@ -3548,7 +3565,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 279
+      "order": 280
     },
     {
       "id": "8b87f443-1918-4b48-b072-ce3e33887902",
@@ -3560,7 +3577,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 280
+      "order": 281
     },
     {
       "id": "ce1ac048-296e-4d72-b4f5-ad5eec2058c6",
@@ -3572,7 +3589,7 @@
       "categories": [
         "cis5"
       ],
-      "order": 281
+      "order": 282
     },
     {
       "id": "d4bd8ab6-0ef5-4718-8129-47ab19903514",
@@ -3584,7 +3601,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 282
+      "order": 283
     },
     {
       "id": "bec1707e-aa06-4a7a-a8f8-69c075727832",
@@ -3596,7 +3613,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 283
+      "order": 284
     },
     {
       "id": "3b80d52d-2df8-4961-9dec-f3861997ff60",
@@ -3608,7 +3625,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 284
+      "order": 285
     },
     {
       "id": "e4152373-e353-47f4-8fed-d424d98716e0",
@@ -3620,7 +3637,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 285
+      "order": 286
     },
     {
       "id": "9da391fe-d01e-4b86-bfae-339425ae425b",
@@ -3632,7 +3649,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 286
+      "order": 287
     },
     {
       "id": "837ad862-2a34-4cdf-be55-7a0cc4919f57",
@@ -3644,7 +3661,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 287
+      "order": 288
     },
     {
       "id": "2191689d-059b-4d75-a8d4-9d41c146198f",
@@ -3656,7 +3673,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 288
+      "order": 289
     },
     {
       "id": "3c262b4d-d6df-488e-8c10-338620c84d19",
@@ -3668,7 +3685,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 289
+      "order": 290
     },
     {
       "id": "f55aabb0-f55f-472d-bee4-cb27b292685a",
@@ -3680,7 +3697,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 290
+      "order": 291
     },
     {
       "id": "e6e4672d-a7b1-4cf9-82e8-f2d379fdbe71",
@@ -3692,7 +3709,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 291
+      "order": 292
     },
     {
       "id": "ea860c4d-8879-4a50-bdff-59e169f44c8e",
@@ -3704,7 +3721,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 292
+      "order": 293
     },
     {
       "id": "960a91e1-c2d8-4823-93a2-b6a681dfd39f",
@@ -3716,7 +3733,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 293
+      "order": 294
     },
     {
       "id": "82fbbb98-59ea-4868-883a-51eac1199048",
@@ -3729,7 +3746,7 @@
         "cis6",
         "web"
       ],
-      "order": 294,
+      "order": 295,
       "captionEn": ""
     },
     {
@@ -3745,7 +3762,7 @@
         "web"
       ],
       "fancyboxGroup": "",
-      "order": 295,
+      "order": 296,
       "linkUrl": "https://www.chenhong.tw/"
     },
     {
@@ -3758,7 +3775,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 296
+      "order": 297
     },
     {
       "id": "9c1212d5-ab05-4b7e-a250-ecb484282e9a",
@@ -3770,7 +3787,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 297
+      "order": 298
     },
     {
       "id": "b8d6beea-2e10-4ad8-b4af-cec5a63f5608",
@@ -3782,7 +3799,7 @@
       "categories": [
         "cis6"
       ],
-      "order": 298
+      "order": 299
     },
     {
       "id": "5c54f7da-e2da-48ea-a4e2-3eaa056423c5",
@@ -3794,7 +3811,7 @@
       "categories": [
         "cis7"
       ],
-      "order": 299
+      "order": 300
     },
     {
       "id": "4c862b96-ab40-4ffb-8bbf-0a3a5ec5784c",
@@ -3806,7 +3823,7 @@
       "categories": [
         "cis7"
       ],
-      "order": 300
+      "order": 301
     },
     {
       "id": "79eb1235-f188-4e1b-a7b2-9e4915e5960e",
@@ -3818,7 +3835,7 @@
       "categories": [
         "cis7"
       ],
-      "order": 301
+      "order": 302
     },
     {
       "id": "28f652be-e726-48f6-a794-2c42341558fe",
@@ -3830,7 +3847,7 @@
       "categories": [
         "cis7"
       ],
-      "order": 302
+      "order": 303
     },
     {
       "id": "2ef83bf2-2d99-4225-a34c-f7dbf95596ba",
@@ -3840,7 +3857,7 @@
       "categories": [
         "video"
       ],
-      "order": 303,
+      "order": 304,
       "titleZh": "阿邦2017AE作品集",
       "titleEn": "Abang 2017AE Portfolio",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -3853,7 +3870,7 @@
       "categories": [
         "video"
       ],
-      "order": 304,
+      "order": 305,
       "titleZh": "葉天倫導演談國片困境與展望",
       "titleEn": "Director Ye Tianlun talks about the dilemma and prospects of Chinese films",
       "captionEn": "Final report of \"Cultural and Creative Industry Research\" of the Institute of Communication of Fudan University"
@@ -3866,7 +3883,7 @@
       "categories": [
         "video"
       ],
-      "order": 305,
+      "order": 306,
       "titleZh": "遊戲場景製作",
       "titleEn": "Game scene production",
       "captionEn": "3DsMAX instructor Liao Jinggu"
@@ -3879,7 +3896,7 @@
       "categories": [
         "video"
       ],
-      "order": 306,
+      "order": 307,
       "titleZh": "衛星瞰《蘋果》",
       "titleEn": "Satellite view of \"Apple\"",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -3892,7 +3909,7 @@
       "categories": [
         "video"
       ],
-      "order": 307,
+      "order": 308,
       "titleZh": "轟頭直播",
       "titleEn": "Hongtou live broadcast",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -3905,7 +3922,7 @@
       "categories": [
         "video"
       ],
-      "order": 308,
+      "order": 309,
       "titleZh": "蜜月照簽名",
       "titleEn": "honeymoon photos signed",
       "captionEn": "AE text effects practice"
@@ -3918,7 +3935,7 @@
       "categories": [
         "video"
       ],
-      "order": 309,
+      "order": 310,
       "titleZh": "時間凍結",
       "titleEn": "time freeze",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -3931,7 +3948,7 @@
       "categories": [
         "video"
       ],
-      "order": 310,
+      "order": 311,
       "titleZh": "文字特效",
       "titleEn": "text effects",
       "captionEn": "AE special effects exercises, motion sketch, write on, character offset, splite, radio blur, word processor"
@@ -3944,7 +3961,7 @@
       "categories": [
         "video"
       ],
-      "order": 311,
+      "order": 312,
       "titleZh": "分割畫面",
       "titleEn": "split-screen",
       "captionEn": "linear wipe split screen exercise"
@@ -3957,7 +3974,7 @@
       "categories": [
         "video"
       ],
-      "order": 312,
+      "order": 313,
       "titleZh": "威尼斯、彩虹島",
       "titleEn": "Venice, Rainbow Island",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -3970,7 +3987,7 @@
       "categories": [
         "video"
       ],
-      "order": 313,
+      "order": 314,
       "titleZh": "米蘭、維諾娜",
       "titleEn": "Milan, Winona",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -3983,7 +4000,7 @@
       "categories": [
         "video"
       ],
-      "order": 314,
+      "order": 315,
       "titleZh": "佛羅倫斯、比薩斜塔",
       "titleEn": "Florence, Leaning Tower of Pisa",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -3996,7 +4013,7 @@
       "categories": [
         "video"
       ],
-      "order": 315,
+      "order": 316,
       "titleZh": "天空之城、托斯卡尼",
       "titleEn": "Castle in the Sky, Tuscany",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4009,7 +4026,7 @@
       "categories": [
         "video"
       ],
-      "order": 316,
+      "order": 317,
       "titleZh": "卡布里島、藍洞",
       "titleEn": "Capri Island, Blue Grotto",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4022,7 +4039,7 @@
       "categories": [
         "video"
       ],
-      "order": 317,
+      "order": 318,
       "titleZh": "龐貝古城",
       "titleEn": "Pompeii",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4035,7 +4052,7 @@
       "categories": [
         "video"
       ],
-      "order": 318,
+      "order": 319,
       "titleZh": "蘑菇村、馬特拉",
       "titleEn": "Mushroom Village, Matra",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4048,7 +4065,7 @@
       "categories": [
         "video"
       ],
-      "order": 319,
+      "order": 320,
       "titleZh": "躍動文字",
       "titleEn": "moving text",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4061,7 +4078,7 @@
       "categories": [
         "video"
       ],
-      "order": 320,
+      "order": 321,
       "titleZh": "震撼標語",
       "titleEn": "shock slogan",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4074,7 +4091,7 @@
       "categories": [
         "video"
       ],
-      "order": 321,
+      "order": 322,
       "titleZh": "血漬塗鴉",
       "titleEn": "Bloody graffiti",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4087,7 +4104,7 @@
       "categories": [
         "video"
       ],
-      "order": 322,
+      "order": 323,
       "titleZh": "3D海面倒影",
       "titleEn": "3D sea reflection",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4100,7 +4117,7 @@
       "categories": [
         "video"
       ],
-      "order": 323,
+      "order": 324,
       "titleZh": "照片倒影變焦",
       "titleEn": "photo reflection zoom",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4113,7 +4130,7 @@
       "categories": [
         "video"
       ],
-      "order": 324,
+      "order": 325,
       "titleZh": "鬼火",
       "titleEn": "Will-o'-the-wisp",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4126,7 +4143,7 @@
       "categories": [
         "video"
       ],
-      "order": 325,
+      "order": 326,
       "titleZh": "天搖地動",
       "titleEn": "The earth is shaking",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4139,7 +4156,7 @@
       "categories": [
         "video"
       ],
-      "order": 326,
+      "order": 327,
       "titleZh": "阿邦空軍一號",
       "titleEn": "Abang Air Force One",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4152,7 +4169,7 @@
       "categories": [
         "video"
       ],
-      "order": 327,
+      "order": 328,
       "titleZh": "3D隧道",
       "titleEn": "3D tunnel",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4165,7 +4182,7 @@
       "categories": [
         "video"
       ],
-      "order": 328,
+      "order": 329,
       "titleZh": "衝擊轉場特效",
       "titleEn": "Impact transition effects",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4178,7 +4195,7 @@
       "categories": [
         "video"
       ],
-      "order": 329,
+      "order": 330,
       "titleZh": "光束特效2",
       "titleEn": "Beam effects 2",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4191,7 +4208,7 @@
       "categories": [
         "video"
       ],
-      "order": 330,
+      "order": 331,
       "titleZh": "粒子特效",
       "titleEn": "Particle effects",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4204,7 +4221,7 @@
       "categories": [
         "video"
       ],
-      "order": 331,
+      "order": 332,
       "titleZh": "北海道破冰船",
       "titleEn": "Hokkaido icebreaker",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4217,7 +4234,7 @@
       "categories": [
         "video"
       ],
-      "order": 332,
+      "order": 333,
       "titleZh": "北海道旭山動物園",
       "titleEn": "Hokkaido Asahiyama Zoo",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4230,7 +4247,7 @@
       "categories": [
         "video"
       ],
-      "order": 333,
+      "order": 334,
       "titleZh": "北海道冬季濕原號",
       "titleEn": "Hokkaido Winter Wetlands",
       "captionEn": "Enjoy your favorite videos and music, upload original content, and share your videos with friends, family, and the world on YouTube."
@@ -4243,7 +4260,7 @@
       "categories": [
         "video"
       ],
-      "order": 334,
+      "order": 335,
       "titleZh": "小丑盒動畫",
       "titleEn": "clown box animation",
       "captionEn": "MAYA NURBS modeling exercises"
@@ -4256,7 +4273,7 @@
       "categories": [
         "video"
       ],
-      "order": 335,
+      "order": 336,
       "titleZh": "3D模型尬舞",
       "titleEn": "3D model dance",
       "captionEn": "Use AE's trackcamera to import the video coordinates into MAYA and place them into the 3D model"
@@ -4269,7 +4286,7 @@
       "categories": [
         "video"
       ],
-      "order": 336,
+      "order": 337,
       "titleZh": "海鷗追日",
       "titleEn": "Seagulls chasing the sun",
       "captionEn": "3DMAX practice, use noise to create sea water and land, and use the sunlight system to create the sunset effect"
@@ -4282,7 +4299,7 @@
       "categories": [
         "video"
       ],
-      "order": 337,
+      "order": 338,
       "titleZh": "古城巡禮",
       "titleEn": "Ancient city tour",
       "captionEn": "3DMAX practice removing UVs and textures, and using the trajectory of CAMERA CONSTRAIN LINE to create a surround scene effect"
@@ -4295,7 +4312,7 @@
       "categories": [
         "video"
       ],
-      "order": 338,
+      "order": 339,
       "titleZh": "機器人與毛怪",
       "titleEn": "Robots and Sulley",
       "captionEn": ""
@@ -4308,7 +4325,7 @@
       "categories": [
         "video"
       ],
-      "order": 339,
+      "order": 340,
       "titleZh": "末日追車",
       "titleEn": "Doomsday car chase",
       "captionEn": "Referring to Don Mupasi's teaching video, first create a scene in C4D, output the multi_pass layer, then add glow special effects, color grading and synthesis in AE to create a retro neon loop animation."
@@ -4321,7 +4338,7 @@
       "categories": [
         "video"
       ],
-      "order": 340,
+      "order": 341,
       "titleZh": "北捷五倍券廣告",
       "titleEn": "Beijie five times coupon advertisement",
       "captionEn": "Beijie 5x coupon advertisement, with finger sliding, sprinkles and gold coin animations"
@@ -4334,7 +4351,7 @@
       "categories": [
         "video"
       ],
-      "order": 341,
+      "order": 342,
       "titleZh": "台北捷運 X 快車肉乾活動花絮",
       "titleEn": "Taipei MRT X Express Meat Dried Event Highlights",
       "captionEn": "20211128 Zhongshan MRT Station Taipei MRT X Express Dried Meat Event Highlights Video"
@@ -4347,7 +4364,7 @@
       "categories": [
         "video"
       ],
-      "order": 342,
+      "order": 343,
       "titleZh": "渡商共讀會花絮",
       "titleEn": "Highlights of Dushang's Reading Meeting",
       "captionEn": "20211126 Dushang Shared Reading Meeting Highlights Video_Reader Teacher Xu Wenfu"
@@ -4360,7 +4377,7 @@
       "categories": [
         "video"
       ],
-      "order": 343,
+      "order": 344,
       "titleZh": "DLive女警翻車",
       "titleEn": "DLive female police officer overturned car",
       "captionEn": "A female police officer from the Traffic Team of Kaohsiung Linyuan Branch recently handled a traffic accident. On her way back to her unit from Chang Gung Memorial Hospital, she was suspected of being mentally disturbed. She hit two cars on the side of the road and overturned, and almost hit an SUV that was going straight. Fortunately, the female police officer had no external injuries and was conscious. Her sobriety test was 0. She was sent to the hospital and was fine."
@@ -4373,7 +4390,7 @@
       "categories": [
         "video"
       ],
-      "order": 344,
+      "order": 345,
       "titleZh": "DLive花菜難運",
       "titleEn": "DLive cauliflower is difficult to transport",
       "captionEn": "The collapse of the Suhua Highway Tunnel has affected Hualien's weekend sightseeing. Restaurants and hotels have continued to receive calls from people to cancel reservations. Fruit and vegetable transportation has also been affected. The government has launched a mechanism to subsidize farmers' increased transportation costs."
@@ -4386,7 +4403,7 @@
       "categories": [
         "video"
       ],
-      "order": 345,
+      "order": 346,
       "titleZh": "DLive慢跑被撞",
       "titleEn": "Hit while jogging on DLive",
       "captionEn": "A car accident occurred in Kinmen a few days ago. A master sergeant surnamed Zhong was jogging along Section 1 of Taihu Road in Jinhu Town when he was chased from behind by a vocational student. The sergeant suffered a scratch on his left elbow but was not seriously injured. The student flew off and fell onto the road, causing abrasions on his hands and feet, and the motorcycle subsequently fell into a ditch. The police were informed and went to the scene to conduct a breathalyzer test on the student. They found that the student was not drinking, but was driving without a license. The police reported him in accordance with the law."
@@ -4399,7 +4416,7 @@
       "categories": [
         "video"
       ],
-      "order": 346,
+      "order": 347,
       "titleZh": "DLive蘇花疏運",
       "titleEn": "DLive Su Hua Shu Yun",
       "captionEn": "In response to the road blockage caused by the collapse of the Daqingshui Tunnel on Line 9 of the Suhua Highway, Minister of Transportation Wang Guocai instructed the Port Bureau to dispatch four ships to Hualien Port for transportation, and the military and navy sent warships to support them to minimize the inconvenience for everyone. Many people drove up early in the morning and queued up, fearing that they would not be able to catch a boat."
@@ -4412,7 +4429,7 @@
       "categories": [
         "video"
       ],
-      "order": 347,
+      "order": 348,
       "titleZh": "DLive騎士摔溝",
       "titleEn": "DLive knight fell into the ditch",
       "captionEn": "A serious car accident occurred in Taoyuan a few days ago. At around 5 o'clock in the morning, a motorcycle rider surnamed Chen fell into a 14-meter-deep culvert at a sewage sewer construction site for unknown reasons. Construction workers on the morning shift quickly reported the accident after discovering it. After the police arrived at the scene, they rescued him with equipment and a stretcher and sent him to the hospital. However, the man had no breathing or heartbeat before he arrived at the hospital. The detailed cause of the accident needs to be investigated by the police."
@@ -4425,7 +4442,7 @@
       "categories": [
         "video"
       ],
-      "order": 348,
+      "order": 349,
       "titleZh": "DLive大米吃鍋",
       "titleEn": "DLive rice eating pot",
       "captionEn": "The writer Huang Da Mi recently packed up the endless hot pot ingredients and took them to the train station for street residents to eat. She even claimed that the homeless people would feel that it was \"food given to them by God.\" Unexpectedly, this move was criticized by netizens, and she was asked to delete the article quickly to avoid spreading the controversy. She even returned to the scene to find the street friend and care about his current situation, and used high EQ to resolve the public opinion crisis."
@@ -4438,7 +4455,7 @@
       "categories": [
         "video"
       ],
-      "order": 349,
+      "order": 350,
       "titleZh": "DLive台鐵打人",
       "titleEn": "DLive Taiwan Railway hits people",
       "captionEn": "A passenger attacked a station staff late at night at Taiwan Railways Shulin Station! A disabled woman surnamed Zhu was riding in a wheelchair and was dissatisfied that the care carriage was too far away. She had an argument with the station attendant who was guiding her, and actually picked up the wheelchair support board and attacked the station attendant surnamed Lai. Fortunately, other passengers happened to get off the bus at that time to help stop the incident. Afterwards, the railway police also came to the scene to support and dissuade the incident, and neither party filed a complaint."
@@ -4451,7 +4468,7 @@
       "categories": [
         "video"
       ],
-      "order": 350,
+      "order": 351,
       "titleZh": "DLive火鍋玩火",
       "titleEn": "DLive Hot Pot Playing with Fire",
       "captionEn": "A Japanese high school student licked sauce in a sushi bar, which greatly affected the reputation of sushi bar. However, a replica of the sushi bar incident also occurred in Taichung! A group of high school students went to a hot pot restaurant to eat, and the toilet paper on the table was burned into fireballs. However, not only did this group of high school students have no sense of crisis, they even kept laughing and put the toilet paper balls into the hot pot to put out the fire, which made the people who witnessed it shake their heads at the behavior of this group of high school students."
@@ -4464,7 +4481,7 @@
       "categories": [
         "video"
       ],
-      "order": 351,
+      "order": 352,
       "titleZh": "DLive砸雞排店",
       "titleEn": "DLive chicken chop shop",
       "captionEn": "Yesterday, a debt collection and injury case was reported at a chicken chop shop on Yongli Road, Yonghe District, New Taipei City. Someone in the shop was attacked with a pepper spray gun, beaten on the head with a stick, and suffered multiple injuries on the body. Fortunately, his life was not in danger. The incident was suspected to be a debt dispute. The chicken chop shop had been smashed before. The police were reported to have intercepted 5 suspects and arrested 4 more people in the evening. The whole case will be investigated for crimes such as injury and disrupting order."
@@ -4477,7 +4494,7 @@
       "categories": [
         "video"
       ],
-      "order": 352,
+      "order": 353,
       "titleZh": "DLive酒駕頂包",
       "titleEn": "DLive drunk driving top bag",
       "captionEn": "A series of car chases occurred recently at the intersection of Diding Avenue and Gangqian Road in Taipei City. The police arrived at the scene and took the 29-year-old female driver surnamed Huang, who was suspected of drunk driving, back for investigation. Unexpectedly, her confession was repeated. After continuous questioning by the police, it was discovered that Huang was helping a friend to cover the crime. The real perpetrator was a woman surnamed Yang in the back seat. It was found that Yang's alcohol level was as high as 0.84mg/L. After the interrogation, she was deemed a public danger and the two were sent to prison as substitute suspects."
@@ -4490,7 +4507,7 @@
       "categories": [
         "video"
       ],
-      "order": 353,
+      "order": 354,
       "titleZh": "DLive脫幫被打",
       "titleEn": "DLive broke away from the gang and was beaten",
       "captionEn": "Wang Nan, a former member of the Bamboo Union Gang Akihito, formed his own gang. Recently, he led four of his subordinates to beat up the gang members with knives and sticks, and forced them to sign a promissory note worth 350,000 yuan. The police received the report and searched for evidence for more than a month. They arrested people in New Taipei City and Taoyuan with search tickets and seized evidence related to the crime and brought them back for investigation."
@@ -4503,7 +4520,7 @@
       "categories": [
         "video"
       ],
-      "order": 354,
+      "order": 355,
       "titleZh": "DLive八炯嗆警",
       "titleEn": "DLive Eight-Jiong Choking Police",
       "captionEn": "YouTuber Bajiong accumulated nearly 700,000 fan subscriptions on the \"Photographer's Diary Fun TV\" channel with anti-communist issues, but he went to the police station for causing trouble while drunk. A few days ago, Bajiong got into a drunken argument with his girlfriend on Banqiao Road in New Taipei City early in the morning and called the police. The police found that there was nothing illegal and found it difficult to intervene. Unexpectedly, Bajiong became emotional, pushed the policeman, and kept making loud noises. The policeman had no choice but to take him back to the police station for restraint."
@@ -4516,7 +4533,7 @@
       "categories": [
         "video"
       ],
-      "order": 355,
+      "order": 356,
       "titleZh": "DLive桃勤釀罷",
       "titleEn": "DLive Tao Qin brews it",
       "captionEn": "EVA Airline employees took collective leave at the beginning of the year in accordance with the law, causing delays in EVA Air flights. It was also reported that Taoyuan Airlines, a subsidiary of China Airlines, intended to take collective leave during the Spring Festival and the 228 consecutive holidays, leaving other airlines to \"wait in frustration.\""
@@ -4529,7 +4546,7 @@
       "categories": [
         "video"
       ],
-      "order": 356,
+      "order": 357,
       "titleZh": "《熊出沒》遊戲介紹",
       "titleEn": "\"Bear Infested\" game introduction",
       "captionEn": "The basic design work of the Yingmei Department of FuDa was based on the frequent incidents of bear attacks in Japan. It designed a board game map and developed a computer version of the game through vibe coding."
@@ -4544,7 +4561,7 @@
       "categories": [
         "news"
       ],
-      "order": 357
+      "order": 358
     },
     {
       "id": "95bee65e-8ab4-4dc6-a86d-b423f2f10bc6",
@@ -4556,7 +4573,7 @@
       "categories": [
         "news"
       ],
-      "order": 358
+      "order": 359
     },
     {
       "id": "fedb1835-e3c7-461e-8ebd-f31d40728088",
@@ -4568,7 +4585,7 @@
       "categories": [
         "news"
       ],
-      "order": 359
+      "order": 360
     },
     {
       "id": "80a7e250-2fe5-440c-809d-e167a80b5f15",
@@ -4580,7 +4597,7 @@
       "categories": [
         "news"
       ],
-      "order": 360
+      "order": 361
     },
     {
       "id": "16d40b06-9336-4ff0-8eab-3d0614608c7f",
@@ -4592,7 +4609,7 @@
       "categories": [
         "news"
       ],
-      "order": 361
+      "order": 362
     },
     {
       "id": "5f098958-1a0e-40c8-8621-b1117ec642a2",
@@ -4604,7 +4621,7 @@
       "categories": [
         "news"
       ],
-      "order": 362
+      "order": 363
     },
     {
       "id": "66acd922-9d44-48f3-9ec1-f760342595b9",
@@ -4616,7 +4633,7 @@
       "categories": [
         "news"
       ],
-      "order": 363
+      "order": 364
     },
     {
       "id": "1e94c6ea-b015-4ba3-95ae-742fe05594da",
@@ -4628,7 +4645,7 @@
       "categories": [
         "news"
       ],
-      "order": 364
+      "order": 365
     },
     {
       "id": "0d2cd51e-ae36-4f6b-bd0f-c8a6fcba8a33",
@@ -4640,7 +4657,7 @@
       "categories": [
         "news"
       ],
-      "order": 365
+      "order": 366
     },
     {
       "id": "576ab1a7-0130-4041-bd99-60fdaf98e97e",
@@ -4652,7 +4669,7 @@
       "categories": [
         "news"
       ],
-      "order": 366
+      "order": 367
     },
     {
       "id": "256f9efa-5cd8-4a63-893f-f0e3e1e8614c",
@@ -4664,7 +4681,7 @@
       "categories": [
         "news"
       ],
-      "order": 367
+      "order": 368
     },
     {
       "id": "4f2f77cf-1d50-4b61-96e5-759e6ee4464f",
@@ -4676,7 +4693,7 @@
       "categories": [
         "news"
       ],
-      "order": 368
+      "order": 369
     },
     {
       "id": "7106e67b-b2fb-423d-8846-21f29e051c65",
@@ -4688,7 +4705,7 @@
       "categories": [
         "news"
       ],
-      "order": 369
+      "order": 370
     },
     {
       "id": "20c4a5a1-a5b2-45ba-81b2-67a122ce5b61",
@@ -4700,7 +4717,7 @@
       "categories": [
         "news"
       ],
-      "order": 370
+      "order": 371
     },
     {
       "id": "ad463ed0-c03a-403d-ad49-e9ad3350f467",
@@ -4712,7 +4729,7 @@
       "categories": [
         "news"
       ],
-      "order": 371
+      "order": 372
     },
     {
       "id": "7e0b7975-094d-49bc-ad9c-4be1b6bab065",
@@ -4724,7 +4741,7 @@
       "categories": [
         "news"
       ],
-      "order": 372
+      "order": 373
     },
     {
       "id": "d80454ed-e5ff-4a88-a0e6-514ae036a653",
@@ -4734,7 +4751,7 @@
       "categories": [
         "three"
       ],
-      "order": 373
+      "order": 374
     },
     {
       "id": "815814c5-3b7a-4273-93e0-9a8038e94d04",
@@ -4744,7 +4761,7 @@
       "categories": [
         "three"
       ],
-      "order": 374
+      "order": 375
     },
     {
       "id": "a18c52f2-b8f2-4b91-98e9-6ff6708fcbf5",
@@ -4754,7 +4771,7 @@
       "categories": [
         "three"
       ],
-      "order": 375
+      "order": 376
     },
     {
       "id": "33ed5958-841e-49be-af1a-ec69a31d5da8",
@@ -4764,7 +4781,7 @@
       "categories": [
         "three"
       ],
-      "order": 376
+      "order": 377
     },
     {
       "id": "7fb6eaa5-8772-4bb7-a67a-aea697936331",
@@ -4774,7 +4791,7 @@
       "categories": [
         "three"
       ],
-      "order": 377
+      "order": 378
     },
     {
       "id": "3f861094-5c05-4ccb-936f-e342fe30ee82",
@@ -4784,7 +4801,7 @@
       "categories": [
         "three"
       ],
-      "order": 378
+      "order": 379
     }
   ],
   "about": {
