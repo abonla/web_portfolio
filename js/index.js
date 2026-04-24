@@ -142,9 +142,10 @@ $.fancybox.defaults.caption = function (instance, item) {
 	var desc = isEn
 		? (el.dataset.captionEn || el.dataset.captionZhBackup || el.dataset.caption || '')
 		: (el.dataset.captionZhBackup || el.dataset.caption || '');
-	// 標題：優先用 titleZh/titleEn，否則用檔名
+	// 標題：優先用 titleZh/titleEn，影片連結不用路徑當備援
 	var href = el.getAttribute('href') || '';
-	var filename = href.split('/').pop().replace(/\.[^.]+$/, '') || '';
+	var isVideo = href.indexOf('youtube.com') !== -1 || href.indexOf('youtu.be') !== -1;
+	var filename = isVideo ? '' : (href.split('/').pop().replace(/\.[^.]+$/, '') || '');
 	var title = isEn
 		? (el.dataset.titleEn || el.dataset.titleZh || filename)
 		: (el.dataset.titleZh || filename);
