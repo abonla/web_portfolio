@@ -59,6 +59,9 @@ app.pages['works'] = async function (container) {
           '</div>' +
           // Right: all text fields
           '<div class="edit-modal-right">' +
+            '<div class="edit-field" id="edit-yt-fetch-field" style="display:none">' +
+              '<button class="btn-secondary" id="edit-yt-fetch-btn" type="button" style="width:100%">⬇ 從YouTube抓取標題與說明</button>' +
+            '</div>' +
             '<div class="edit-field">' +
               '<label class="edit-label">標題（中文）</label>' +
               '<input class="edit-input" type="text" id="edit-title-zh" placeholder="中文標題">' +
@@ -186,6 +189,7 @@ app.pages['works'] = async function (container) {
     document.getElementById('edit-crop-wrapper').classList.add('hidden');
     document.getElementById('edit-drop-zone').classList.remove('hidden');
     document.getElementById('edit-replace-field').style.display = work.type === 'image' ? '' : 'none';
+    document.getElementById('edit-yt-fetch-field').style.display = work.type === 'video' ? '' : 'none';
     document.getElementById('edit-link-url').value = work.linkUrl || '';
     document.getElementById('edit-new-tag').value = '';
     // 移除上次新增的自訂標籤按鈕
@@ -233,6 +237,29 @@ app.pages['works'] = async function (container) {
       dst.value = await app.translateZhToEn(src.value);
     } catch (err) { alert('翻譯失敗：' + err.message); }
     btn.textContent = '譯'; btn.disabled = false;
+  });
+
+  document.getElementById('edit-yt-fetch-btn').addEventListener('click', async function () {
+    if (!editTarget || editTarget.type !== 'video') return;
+    const btn = this;
+    btn.textContent = '抓取中…'; btn.disabled = true;
+    try {
+      const data = await app.POST('/youtube/fetch', { videoId: editTarget.videoId });
+      const titleZhEl = document.getElementById('edit-title-zh');
+      const titleEnEl = document.getElementById('edit-title-en');
+      const captionZhEl = document.getElementById('edit-caption-zh');
+      const captionEnEl = document.getElementById('edit-caption-en');
+      if (data.title) titleZhEl.value = data.title;
+      if (data.description) captionZhEl.value = data.description;
+      // Auto-translate title and caption if Chinese content was fetched
+      if (data.title) {
+        try { titleEnEl.value = await app.translateZhToEn(data.title); } catch (e) {}
+      }
+      if (data.description) {
+        try { captionEnEl.value = await app.translateZhToEn(data.description); } catch (e) {}
+      }
+    } catch (err) { alert('抓取失敗：' + err.message); }
+    btn.textContent = '⬇ 從YouTube抓取標題與說明'; btn.disabled = false;
   });
 
   function loadReplaceFile(file) {
