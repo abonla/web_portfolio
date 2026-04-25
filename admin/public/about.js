@@ -8,10 +8,6 @@ app.pages['about'] = async function(container) {
   const about = await app.GET('/about');
   let activeTab = 'info';
 
-  async function aiTranslate(zhValue, context) {
-    return app.POST('/ai/translate', { text: zhValue, context: context }).then(function(r) { return r.en; });
-  }
-
   container.innerHTML =
     '<h2 style="margin-bottom:16px;color:#f1f5f9;">關於我</h2>' +
     '<div class="about-tabs">' +
@@ -38,18 +34,18 @@ app.pages['about'] = async function(container) {
       '<div class="section-box"><h3>聯絡資訊</h3>' +
       '<div class="form-grid">' +
         '<div class="form-field"><label class="form-label">姓名（中）</label><input class="form-input" id="f-name" value="' + esc(about.name) + '"></div>' +
-        '<div class="form-field"><label class="form-label">姓名（英）</label><div class="input-ai-row"><input class="form-input" id="f-name-en" value="' + esc(about.nameEn || '') + '"><button class="btn-ai-sm" data-src="f-name" data-target="f-name-en" data-ctx="person full name">✨</button></div></div>' +
+        '<div class="form-field"><label class="form-label">姓名（英）</label><div class="input-ai-row"><input class="form-input" id="f-name-en" value="' + esc(about.nameEn || '') + '"><button class="btn-ai-sm" data-src="f-name" data-target="f-name-en" data-ctx="person full name">譯</button></div></div>' +
         '<div class="form-field"><label class="form-label">現職職稱（中）</label><input class="form-input" id="f-title" value="' + esc(about.currentTitle) + '"></div>' +
-        '<div class="form-field"><label class="form-label">現職職稱（英）</label><div class="input-ai-row"><input class="form-input" id="f-title-en" value="' + esc(about.currentTitleEn || '') + '"><button class="btn-ai-sm" data-src="f-title" data-target="f-title-en" data-ctx="job title">✨</button></div></div>' +
+        '<div class="form-field"><label class="form-label">現職職稱（英）</label><div class="input-ai-row"><input class="form-input" id="f-title-en" value="' + esc(about.currentTitleEn || '') + '"><button class="btn-ai-sm" data-src="f-title" data-target="f-title-en" data-ctx="job title">譯</button></div></div>' +
         '<div class="form-field"><label class="form-label">學歷（中）</label><input class="form-input" id="f-edu" value="' + esc(about.education) + '"></div>' +
-        '<div class="form-field"><label class="form-label">學歷（英）</label><div class="input-ai-row"><input class="form-input" id="f-edu-en" value="' + esc(about.educationEn || '') + '"><button class="btn-ai-sm" data-src="f-edu" data-target="f-edu-en" data-ctx="education history">✨</button></div></div>' +
+        '<div class="form-field"><label class="form-label">學歷（英）</label><div class="input-ai-row"><input class="form-input" id="f-edu-en" value="' + esc(about.educationEn || '') + '"><button class="btn-ai-sm" data-src="f-edu" data-target="f-edu-en" data-ctx="education history">譯</button></div></div>' +
         '<div class="form-field"><label class="form-label">電話</label><input class="form-input" id="f-phone" value="' + esc(about.phone) + '"></div>' +
         '<div class="form-field"><label class="form-label">Email</label><input class="form-input" id="f-email" value="' + esc(about.email) + '"></div>' +
         '<div class="form-field"><label class="form-label">Facebook</label><input class="form-input" id="f-fb" value="' + esc(about.facebook) + '"></div>' +
         '<div class="form-field"><label class="form-label">Instagram</label><input class="form-input" id="f-ig" value="' + esc(about.instagram) + '"></div>' +
       '</div>' +
       '<div class="form-field"><label class="form-label">自我介紹（中）</label><textarea class="form-textarea" id="f-bio" style="height:140px">' + esc(about.bio) + '</textarea></div>' +
-      '<div class="form-field"><label class="form-label">自我介紹（英）</label><div class="input-ai-row" style="align-items:flex-start"><textarea class="form-textarea" id="f-bio-en" style="height:140px">' + esc(about.bioEn || '') + '</textarea><button class="btn-ai-sm" data-src="f-bio" data-target="f-bio-en" data-ctx="personal biography" style="margin-top:4px">✨</button></div></div>' +
+      '<div class="form-field"><label class="form-label">自我介紹（英）</label><div class="input-ai-row" style="align-items:flex-start"><textarea class="form-textarea" id="f-bio-en" style="height:140px">' + esc(about.bioEn || '') + '</textarea><button class="btn-ai-sm" data-src="f-bio" data-target="f-bio-en" data-ctx="personal biography" style="margin-top:4px">譯</button></div></div>' +
       '<div class="btn-row"><button class="btn-primary" id="save-info">儲存基本資料</button></div>' +
       '<p id="info-status" class="text-muted" style="margin-top:8px;"></p></div>';
 
@@ -60,10 +56,9 @@ app.pages['about'] = async function(container) {
         if (!srcEl || !srcEl.value.trim()) return;
         btn.disabled = true; btn.textContent = '…';
         try {
-          var en = await aiTranslate(srcEl.value, btn.dataset.ctx);
-          targetEl.value = en;
+          targetEl.value = await app.translateZhToEn(srcEl.value);
         } catch(e) { /* silent */ }
-        btn.textContent = '✨'; btn.disabled = false;
+        btn.textContent = '譯'; btn.disabled = false;
       });
     });
 
@@ -105,7 +100,7 @@ app.pages['about'] = async function(container) {
         return '<div class="skill-row" data-i="' + i + '">' +
           '<input class="form-input skill-name-input" value="' + esc(s.name) + '" placeholder="技能名稱（中）" style="flex:1">' +
           '<input class="form-input skill-name-en-input" value="' + esc(s.nameEn || '') + '" placeholder="Skill (English)" style="flex:1">' +
-          '<button class="btn-ai-sm skill-ai-btn" data-i="' + i + '" title="AI 翻譯">✨</button>' +
+          '<button class="btn-ai-sm skill-ai-btn" data-i="' + i + '" title="中翻英">譯</button>' +
           '<div class="star-editor" id="stars-' + i + '"></div>' +
           '<button class="btn-danger" data-del="' + i + '">✕</button>' +
         '</div>';
@@ -122,10 +117,9 @@ app.pages['about'] = async function(container) {
           if (!zhInput.value.trim()) return;
           btn.disabled = true; btn.textContent = '…';
           try {
-            var en = await aiTranslate(zhInput.value, 'job skill name');
-            enInput.value = en;
+            enInput.value = await app.translateZhToEn(zhInput.value);
           } catch(e) { /* silent */ }
-          btn.textContent = '✨'; btn.disabled = false;
+          btn.textContent = '譯'; btn.disabled = false;
         });
       });
     }
@@ -165,7 +159,7 @@ app.pages['about'] = async function(container) {
           '<th style="width:110px">期間</th>' +
           '<th>公司（中）</th><th>公司（英）</th>' +
           '<th>職稱（中）</th><th>職稱（英）</th>' +
-          '<th style="width:36px">✨</th><th style="width:36px"></th>' +
+          '<th style="width:36px">譯</th><th style="width:36px"></th>' +
         '</tr></thead>' +
         '<tbody>' + exp.map(function(e, i) {
           return '<tr data-i="' + i + '">' +
@@ -174,7 +168,7 @@ app.pages['about'] = async function(container) {
             '<td><input class="exp-input" data-field="companyEn" value="' + esc(e.companyEn || '') + '"></td>' +
             '<td><input class="exp-input" data-field="title" value="' + esc(e.title) + '"></td>' +
             '<td><input class="exp-input" data-field="titleEn" value="' + esc(e.titleEn || '') + '"></td>' +
-            '<td><button class="btn-ai-sm exp-ai-btn" data-i="' + i + '">✨</button></td>' +
+            '<td><button class="btn-ai-sm exp-ai-btn" data-i="' + i + '">譯</button></td>' +
             '<td><button class="btn-danger" data-del="' + i + '" style="padding:4px 8px;">✕</button></td>' +
           '</tr>';
         }).join('') + '</tbody></table>';
@@ -189,12 +183,10 @@ app.pages['about'] = async function(container) {
           var title = tr.querySelector('[data-field="title"]').value;
           btn.disabled = true; btn.textContent = '…';
           try {
-            var r1 = await aiTranslate(company, 'company name');
-            tr.querySelector('[data-field="companyEn"]').value = r1;
-            var r2 = await aiTranslate(title, 'job title');
-            tr.querySelector('[data-field="titleEn"]').value = r2;
+            tr.querySelector('[data-field="companyEn"]').value = await app.translateZhToEn(company);
+            tr.querySelector('[data-field="titleEn"]').value = await app.translateZhToEn(title);
           } catch(e) { /* silent */ }
-          btn.textContent = '✨'; btn.disabled = false;
+          btn.textContent = '譯'; btn.disabled = false;
         });
       });
     }
@@ -246,11 +238,11 @@ app.pages['about'] = async function(container) {
           '<div>' +
             '<div class="form-field"><label class="form-label">日期</label><input class="form-input tl-date" value="' + t.date + '"></div>' +
             '<div class="form-field"><label class="form-label">機構名稱（中）</label><input class="form-input tl-inst" value="' + esc(t.institution) + '"></div>' +
-            '<div class="form-field"><label class="form-label">機構名稱（英）</label><div class="input-ai-row"><input class="form-input tl-inst-en" value="' + esc(t.institutionEn || '') + '"><button class="btn-ai-sm tl-ai-btn" data-zh="tl-inst" data-en="tl-inst-en" data-ctx="institution name">✨</button></div></div>' +
+            '<div class="form-field"><label class="form-label">機構名稱（英）</label><div class="input-ai-row"><input class="form-input tl-inst-en" value="' + esc(t.institutionEn || '') + '"><button class="btn-ai-sm tl-ai-btn" data-zh="tl-inst" data-en="tl-inst-en" data-ctx="institution name">譯</button></div></div>' +
             '<div class="form-field"><label class="form-label">標題（中）</label><input class="form-input tl-heading" value="' + esc(t.heading) + '"></div>' +
-            '<div class="form-field"><label class="form-label">標題（英）</label><div class="input-ai-row"><input class="form-input tl-heading-en" value="' + esc(t.headingEn || '') + '"><button class="btn-ai-sm tl-ai-btn" data-zh="tl-heading" data-en="tl-heading-en" data-ctx="section heading">✨</button></div></div>' +
+            '<div class="form-field"><label class="form-label">標題（英）</label><div class="input-ai-row"><input class="form-input tl-heading-en" value="' + esc(t.headingEn || '') + '"><button class="btn-ai-sm tl-ai-btn" data-zh="tl-heading" data-en="tl-heading-en" data-ctx="section heading">譯</button></div></div>' +
             '<div class="form-field"><label class="form-label">內文（中）</label><textarea class="form-textarea tl-body" style="height:80px">' + esc(t.body) + '</textarea></div>' +
-            '<div class="form-field"><label class="form-label">內文（英）</label><div class="input-ai-row" style="align-items:flex-start"><textarea class="form-textarea tl-body-en" style="height:80px">' + esc(t.bodyEn || '') + '</textarea><button class="btn-ai-sm tl-ai-btn" data-zh="tl-body" data-en="tl-body-en" data-ctx="biography paragraph" style="margin-top:4px">✨</button></div></div>' +
+            '<div class="form-field"><label class="form-label">內文（英）</label><div class="input-ai-row" style="align-items:flex-start"><textarea class="form-textarea tl-body-en" style="height:80px">' + esc(t.bodyEn || '') + '</textarea><button class="btn-ai-sm tl-ai-btn" data-zh="tl-body" data-en="tl-body-en" data-ctx="biography paragraph" style="margin-top:4px">譯</button></div></div>' +
             '<div class="form-field"><label class="form-label">底部備註</label><input class="form-input tl-footer" value="' + esc(t.footer || '') + '"></div>' +
           '</div>' +
         '</div>' +
@@ -280,10 +272,9 @@ app.pages['about'] = async function(container) {
         if (!zhEl || !zhEl.value.trim()) return;
         btn.disabled = true; btn.textContent = '…';
         try {
-          var en = await aiTranslate(zhEl.value, btn.dataset.ctx);
-          enEl.value = en;
+          enEl.value = await app.translateZhToEn(zhEl.value);
         } catch(e) { /* silent */ }
-        btn.textContent = '✨'; btn.disabled = false;
+        btn.textContent = '譯'; btn.disabled = false;
       });
     });
     document.querySelectorAll('.tl-save-btn').forEach(function(btn) {
