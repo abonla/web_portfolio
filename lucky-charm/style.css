@@ -1,0 +1,618 @@
+/* ============================================================
+   幸運物物語 ✦ 蘋果與小熊 (Apple & Bear Lucky Charm)
+   Design System & Styling
+   ============================================================ */
+
+:root {
+  --bg-gradient: radial-gradient(circle at 50% 30%, #fff7eb 0%, #faecd7 50%, #e2cbaf 100%);
+  --primary-red: #e63946;
+  --primary-red-hover: #d62828;
+  --apple-glow: rgba(230, 57, 70, 0.4);
+  --bear-caramel: #8d5b36;
+  --forest-green: #386641;
+  --clover-accent: #6a994e;
+  --gold-accent: #ffb703;
+  --text-dark: #2c1a0e;
+  --text-sub: #6c584c;
+  --surface-glass: rgba(255, 255, 255, 0.72);
+  --surface-border: rgba(255, 255, 255, 0.85);
+  --glass-shadow: 0 8px 32px rgba(92, 59, 31, 0.12);
+  --font-display: 'Fredoka', 'Outfit', 'Noto Sans TC', sans-serif;
+  --font-body: 'Noto Sans TC', 'Outfit', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: var(--font-body);
+  background: var(--bg-gradient);
+  color: var(--text-dark);
+  user-select: none;
+  position: relative;
+}
+
+/* 3D Canvas 容器滿版 */
+#canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* 頂部 HUD */
+.hud-header {
+  position: absolute;
+  top: 24px;
+  left: 28px;
+  right: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--surface-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--glass-shadow);
+  pointer-events: auto;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.brand-badge:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+.badge-icon {
+  font-size: 26px;
+  animation: floatBounce 2.4s ease-in-out infinite alternate;
+}
+
+@keyframes floatBounce {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-4px) rotate(12deg); }
+}
+
+.brand-tag {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--forest-green);
+}
+
+.brand-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: 0.5px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+  pointer-events: auto;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--glass-shadow);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.icon-btn:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(92, 59, 31, 0.16);
+}
+
+.icon-btn:active {
+  transform: translateY(0);
+}
+
+/* 幸運能量條 HUD（右上浮動） */
+.lucky-meter-panel {
+  position: absolute;
+  top: 96px;
+  right: 28px;
+  background: var(--surface-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--glass-shadow);
+  padding: 16px 20px;
+  border-radius: 20px;
+  width: 240px;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.lucky-meter-panel:hover {
+  transform: translateY(-2px);
+}
+
+.meter-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+  font-family: var(--font-display);
+}
+
+.meter-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-sub);
+}
+
+.meter-val {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-red);
+}
+
+.meter-track {
+  width: 100%;
+  height: 10px;
+  background: rgba(141, 91, 54, 0.15);
+  border-radius: 999px;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.meter-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff9f1c, #e63946);
+  border-radius: 999px;
+  transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 0 12px var(--apple-glow);
+}
+
+.apple-counter {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.apple-counter strong {
+  color: var(--primary-red);
+  margin: 0 4px;
+}
+
+/* 互動懸浮介面 (底部) */
+.interactive-overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 28px;
+  right: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* 操作說明卡片 */
+.instruction-card {
+  background: var(--surface-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--glass-shadow);
+  padding: 16px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 380px;
+  pointer-events: auto;
+  transition: transform 0.3s ease;
+}
+
+.instruction-card:hover {
+  transform: translateY(-2px);
+}
+
+.instruction-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--text-dark);
+}
+
+.key-icon {
+  font-size: 18px;
+  width: 28px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* 主要操作 Dock */
+.action-dock {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.primary-action-btn {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(135deg, #e63946, #c1121f);
+  color: #ffffff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 24px;
+  font-family: var(--font-display);
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(230, 57, 70, 0.38), 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.primary-action-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 16px 36px rgba(230, 57, 70, 0.5);
+}
+
+.primary-action-btn:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+.primary-action-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.btn-emoji {
+  font-size: 28px;
+  animation: pulseEmoji 1.8s infinite;
+}
+
+@keyframes pulseEmoji {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.18); }
+}
+
+.btn-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.primary-text {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.sub-text {
+  font-size: 11px;
+  opacity: 0.85;
+  font-weight: 400;
+}
+
+.btn-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.primary-action-btn:hover .btn-glow {
+  opacity: 1;
+}
+
+.secondary-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--glass-shadow);
+  padding: 16px 22px;
+  border-radius: 24px;
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.secondary-action-btn:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(92, 59, 31, 0.16);
+}
+
+/* 3D 浮動 Tooltip 標籤 */
+.floating-tooltip {
+  position: absolute;
+  z-index: 5;
+  background: rgba(30, 20, 10, 0.85);
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 12px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -100%) scale(0.9);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.floating-tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: rgba(30, 20, 10, 0.85) transparent transparent transparent;
+}
+
+.floating-tooltip.active {
+  opacity: 1;
+  transform: translate(-50%, -120%) scale(1);
+}
+
+.floating-tooltip .tooltip-icon {
+  font-size: 16px;
+}
+
+.floating-tooltip small {
+  color: #ffb703;
+}
+
+/* 幸運籤彈窗 Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(44, 26, 14, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.modal-backdrop.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fortune-card {
+  position: relative;
+  background: #ffffff;
+  background: linear-gradient(145deg, #ffffff 0%, #fff9f0 100%);
+  border: 2px solid #f2e2d0;
+  box-shadow: 0 24px 60px rgba(92, 59, 31, 0.25);
+  border-radius: 32px;
+  padding: 36px 32px 30px;
+  width: 90%;
+  max-width: 440px;
+  text-align: center;
+  transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.modal-backdrop.hidden .fortune-card {
+  transform: scale(0.9);
+}
+
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--text-sub);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--text-dark);
+}
+
+.fortune-icon {
+  font-size: 54px;
+  margin-bottom: 8px;
+  filter: drop-shadow(0 8px 16px rgba(230, 57, 70, 0.25));
+}
+
+.fortune-badge {
+  display: inline-block;
+  background: #ffe3e3;
+  color: var(--primary-red);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 14px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.fortune-title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.fortune-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-sub);
+  margin-bottom: 24px;
+}
+
+.fortune-tips {
+  display: flex;
+  background: #fff3e3;
+  border-radius: 16px;
+  padding: 14px 16px;
+  margin-bottom: 24px;
+}
+
+.tip-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tip-col:first-child {
+  border-right: 1px dashed #e6caa8;
+}
+
+.tip-label {
+  font-size: 11px;
+  color: #a47148;
+  font-weight: 600;
+}
+
+.tip-val {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.fortune-confirm-btn {
+  width: 100%;
+  background: linear-gradient(135deg, var(--forest-green), #2d5435);
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  border-radius: 16px;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(56, 102, 65, 0.3);
+  transition: all 0.25s ease;
+}
+
+.fortune-confirm-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(56, 102, 65, 0.4);
+}
+
+/* 響應式佈局 */
+@media (max-width: 860px) {
+  .hud-header {
+    top: 14px;
+    left: 14px;
+    right: 14px;
+  }
+  
+  .lucky-meter-panel {
+    top: auto;
+    bottom: 120px;
+    right: 14px;
+    width: 200px;
+    padding: 12px 14px;
+  }
+
+  .interactive-overlay {
+    bottom: 16px;
+    left: 14px;
+    right: 14px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .instruction-card {
+    max-width: 100%;
+    padding: 12px 14px;
+    font-size: 12px;
+  }
+
+  .action-dock {
+    justify-content: stretch;
+  }
+
+  .primary-action-btn {
+    flex: 1;
+    padding: 12px 18px;
+  }
+
+  .secondary-action-btn {
+    padding: 12px 14px;
+  }
+}

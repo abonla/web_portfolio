@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>幸運物物語 ✦ 蘋果與小熊 (Apple & Bear Lucky Charm)</title>
+  <meta name="description" content="輔大應美網頁設計作業：幸運物 3D 低面數互動網頁。點擊滑鼠餵小熊吃蘋果，感受療癒的互動與幸運祝福！">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Noto+Sans+TC:wght@400;600;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Three.js + GSAP + Canvas Confetti -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <!-- 3D 畫布容器 -->
+  <div id="canvas-container"></div>
+
+  <!-- 頂部與左側 UI 品牌資訊 -->
+  <header class="hud-header">
+    <div class="brand-badge">
+      <span class="badge-icon">🍀</span>
+      <div class="brand-text">
+        <span class="brand-tag">網頁設計 ✦ 互動作業</span>
+        <h1 class="brand-title">幸運物物語・蘋果與熊</h1>
+      </div>
+    </div>
+    
+    <div class="header-actions">
+      <button id="sound-btn" class="icon-btn" title="開關音效" aria-label="切換音效">
+        <span class="btn-icon">🔊</span>
+        <span class="btn-label">音效開啟</span>
+      </button>
+      <button id="reset-cam-btn" class="icon-btn" title="重置視角" aria-label="重置視角">
+        <span class="btn-icon">🔄</span>
+        <span class="btn-label">重置視角</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 幸運值狀態條 HUD -->
+  <div class="lucky-meter-panel">
+    <div class="meter-info">
+      <span class="meter-label">幸運能量蓄力</span>
+      <span id="lucky-score" class="meter-val">100%</span>
+    </div>
+    <div class="meter-track">
+      <div id="meter-fill" class="meter-fill" style="width: 100%;"></div>
+    </div>
+    <div class="apple-counter">
+      <span>已享用蘋果：<strong id="eaten-count">0</strong> 顆 🍎</span>
+    </div>
+  </div>
+
+  <!-- 提示引導與主要互動按鈕 -->
+  <main class="interactive-overlay">
+    <!-- 懸停指示卡片 -->
+    <div class="instruction-card">
+      <div class="instruction-item">
+        <span class="key-icon">🖱️</span>
+        <span><strong>滑鼠移動</strong>：小熊眼神與頭部跟隨、懸停微光</span>
+      </div>
+      <div class="instruction-item">
+        <span class="key-icon">🍎</span>
+        <span><strong>點擊蘋果 / 小熊</strong>：小熊伸手拿起蘋果大口吃！</span>
+      </div>
+      <div class="instruction-item">
+        <span class="key-icon">🔄</span>
+        <span><strong>拖曳畫面</strong>：360° 旋轉觀賞 3D 低面數場景</span>
+      </div>
+    </div>
+
+    <!-- 主要互動按鍵 -->
+    <div class="action-dock">
+      <button id="feed-action-btn" class="primary-action-btn">
+        <span class="btn-emoji">🍎</span>
+        <span class="btn-text">
+          <span class="primary-text">餵小熊吃蘋果！</span>
+          <span class="sub-text">點擊觸發吃蘋果動畫</span>
+        </span>
+        <span class="btn-glow"></span>
+      </button>
+      
+      <button id="fortune-btn" class="secondary-action-btn">
+        <span class="btn-emoji">✨</span>
+        <span>抽取今日幸運籤</span>
+      </button>
+    </div>
+  </main>
+
+  <!-- 幸運籤彈窗 Modal -->
+  <div id="fortune-modal" class="modal-backdrop hidden">
+    <div class="fortune-card">
+      <button id="close-modal-btn" class="close-btn">&times;</button>
+      <div class="fortune-icon">🐻🍎</div>
+      <div class="fortune-badge">今日幸運籤</div>
+      <h2 id="fortune-title" class="fortune-title">蘋安大吉・熊有元氣</h2>
+      <p id="fortune-desc" class="fortune-desc">小熊咬了一口多汁的蘋果，將滿滿的甜美與幸運送給努力的你。今天做什麼事都無比順利！</p>
+      <div class="fortune-tips">
+        <div class="tip-col">
+          <span class="tip-label">幸運顏色</span>
+          <span id="lucky-color" class="tip-val">蘋果紅 & 暖焦糖</span>
+        </div>
+        <div class="tip-col">
+          <span class="tip-label">幸運方位</span>
+          <span class="tip-val">東南方（向陽之林）</span>
+        </div>
+      </div>
+      <button id="accept-fortune-btn" class="fortune-confirm-btn">收下幸運祝福 🍀</button>
+    </div>
+  </div>
+
+  <!-- 3D 浮動標籤（跟隨 3D 世界座標） -->
+  <div id="apple-tooltip" class="floating-tooltip">
+    <span class="tooltip-icon">🍎</span>
+    <span class="tooltip-text">多汁脆甜的幸運蘋果！<br><small>點我餵小熊</small></span>
+  </div>
+
+  <div id="bear-tooltip" class="floating-tooltip">
+    <span class="tooltip-icon">🐻</span>
+    <span class="tooltip-text">肚子餓的小熊<br><small>「好想吃蘋果喔〜」</small></span>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
