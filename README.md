@@ -10,9 +10,13 @@
 
 ## 📌 一、專案總覽
 
-本專案為輔仁大學應用美術學系網頁設計課程之綜合成果，包含兩大核心架構：
+本專案為輔仁大學應用美術學系網頁設計課程之綜合成果，包含三大核心單元：
 1. **個人作品集網站與本地端動態管理系統**：整合靜態發佈（GitHub Pages）與本地 Express 後台系統，具備作品資料庫編輯、圖片壓縮處理與一鍵生成發佈機制。
-2. **幸運物 3D 動態互動網頁作業（蘋果與小熊）**：以 Three.js 低面數（Low-Poly）打造之 3D 互動單元，具備滑鼠目光跟隨、物件懸停回饋、吃蘋果多段關節動畫與原生音效合成。
+2. **【期末專題】颱風對台灣影響：原理 3D / 向量互動視覺化工作台**（[線上體驗入口](https://abonla.github.io/web_portfolio/typhoon-workbench/)）：
+   - 包含真實 3D 台灣立體地形沙盤（多層高程真實 translateZ 空間分層與玉山主峰 3952m 精準定位）、SVG 氣旋動態模擬、純原生 Web Audio 音訊合成、多媒體次世代格式自動協商與 $1600 \times 1050$ 高解析 3D 截圖下載引擎。
+   - 隨附完整四階段規準量化審查儀表板（`review.html`）、原始碼透視鏡（`pointout.html`）、工程決策報告（`response.md`）與量化評分表（`check.md`）。
+3. **【作業單元】幸運物 3D 動態互動網頁作業（蘋果與小熊）**（[線上體驗入口](https://abonla.github.io/web_portfolio/lucky-charm/)）：以 Three.js 低面數打造之 3D 互動單元。
+4. **【作業單元】3D 全息 TCG 卡牌展示系統**（[線上體驗入口](https://abonla.github.io/web_portfolio/tcg-card/)）：具備全息雷射箔面光影與陀螺儀傾斜感知。
 
 ---
 
@@ -32,26 +36,36 @@ web_portfolio/
 ├── model/                         ← 既有 3D 展示物件與 HTML 容器
 ├── js/ & css/                     ← 作品集靜態展示所需之腳本與樣式庫
 │
+├── typhoon-workbench/             ← 【期末專題】颱風對台灣影響：原理 3D/向量視覺化工作台
+│   ├── index.html                 ← 工作台主程式 (包含 3D 地貌、氣旋力學、Web Audio 與截圖引擎)
+│   ├── review.html                ← 四階段規準量化評分與視覺化審查儀表板
+│   ├── pointout.html              ← 原始碼精確落證透視鏡 (模組程式碼高亮比對)
+│   ├── response.md                ← 工程決策與物理底層機制深度剖析報告
+│   ├── check.md                   ← 規準量化評分檢核自評表
+│   ├── README.md                  ← 專題專屬說明文件與線上展示指引
+│   └── server.js                  ← 本地預覽專用 Node.js 伺服器
+│
 ├── lucky-charm/                   ← 【作業單元】幸運物 3D 動態互動網頁
 │   ├── index.html                 ← 幸運物互動頁面骨架與 HUD 介面
 │   ├── style.css                  ← 森林暖調視覺系統、毛玻璃設計與動畫樣式
 │   ├── main.js                    ← Three.js 程序化低面數建模、音效合成與動畫時序
 │   └── README.md                  ← 幸運物作業設計理念與互動機制報告
 │
+├── tcg-card/                      ← 【作業單元】3D 全息 TCG 卡牌展示系統
+│   ├── index.html                 ← 全息卡牌展示頁與裁切器
+│   ├── art.jpg & back.jpg         ← 卡牌正反面圖檔
+│   └── README.md                  ← 卡牌互動說明
+│
 ├── admin/                         ← 【後台系統】本地 Node.js + Express 管理後端
 │   ├── server.js                  ← 後台伺服器核心（監聽 port 3001）
 │   ├── template.html              ← 作品集頁面之 HTML 模板（具備佔位符）
 │   ├── generate.js                ← 手動觸發 index.html 重新生成腳本
 │   ├── lib/                       ← 核心功能模組庫
-│   │   ├── generator.js           ← 結合 data.json 與 template.html 產生 index.html
-│   │   ├── image-processor.js     ← Sharp 圖片裁切與縮圖處理邏輯
-│   │   └── git.js                 ← simple-git 一鍵提交並發佈至 GitHub
-│   ├── routes/                    ← RESTful API 路由（作品 CRUD、上傳、發佈）
-│   └── public/                    ← 後台前端單頁應用（SPA）介面
+│   └── routes/                    ← RESTful API 路由（作品 CRUD、上傳、發佈）
 │
 ├── docs/                          ← 專案開發報告與系統分析說明
 ├── package.json                   ← 專案套件依賴設定
-└── node_modules/                  ← 相依套件庫（如 express, sharp, simple-git 等）
+└── node_modules/                  ← 相依套件庫
 ```
 
 ---
