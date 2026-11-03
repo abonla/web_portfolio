@@ -1,0 +1,7 @@
+/* Global application styles */
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
