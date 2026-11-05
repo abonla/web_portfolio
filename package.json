@@ -10,7 +10,9 @@
     "start": "node admin/server.js",
     "migrate": "node admin/migrate.js",
     "generate": "node admin/generate.js",
-    "test": "jest"
+    "test": "jest",
+    "dev:bear-game": "npm --prefix bear-game-src run dev",
+    "build:bear-game": "npm --prefix bear-game-src run build"
   },
   "repository": {
     "type": "git",

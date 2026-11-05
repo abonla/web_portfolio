@@ -249,6 +249,33 @@ header nav ul li:hover > #submenu {
   color: gold;
 }
 
+.me article #social p {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.portfolio-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
+  color: #000000 !important;
+  font-weight: bold;
+  font-size: 0.95em;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: transform 0.2s, opacity 0.2s;
+  margin-left: 5px;
+}
+
+.portfolio-download-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
 footer {
   background: linear-gradient(-225deg, #ff057c 0%, #7c64d5 48%, #4cc3ff 100%);
   padding: 15px;
